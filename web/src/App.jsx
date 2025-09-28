@@ -37,7 +37,7 @@ export default function App() {
               fontSize: '14px', 
               color: '#6b7280'
             }}>
-              Comprehensive preparation for FAANG interviews
+              Comprehensive preparation for tech interviews
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export default function App() {
                 padding: 0,
                 lineHeight: '1.8'
               }}>
-                <li>✓ 500+ curated problems</li>
+                <li>✓ 300 curated problems</li>
                 <li>✓ Step-by-step explanations</li>
                 <li>✓ Python code execution</li>
                 <li>✓ Big-O analysis</li>
@@ -137,7 +137,7 @@ export default function App() {
                 padding: 0,
                 lineHeight: '1.8'
               }}>
-                <li>✓ Top 10 system design questions</li>
+                <li>✓ Top 30 system design questions</li>
                 <li>✓ Architecture patterns</li>
                 <li>✓ Scale estimations</li>
                 <li>✓ API & database design</li>
@@ -148,7 +148,7 @@ export default function App() {
 
           <div style={{ textAlign: 'center' }}>
             <p style={{ color: '#6b7280', fontSize: '14px' }}>
-              More tools coming soon: SQL Practice • Behavioral Questions • Mock Interviews
+              Your personal assistant!
             </p>
           </div>
         </div>

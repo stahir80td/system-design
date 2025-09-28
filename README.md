@@ -1,4 +1,4 @@
-# LeetCode Coach — MVP
+# LeetCode
 
 React (Vite) + Go minimal app that lists curated interview problems, lets you pick a problem *or paste your own*, select a language (Python default), and calls a model to get:
 - solution code
