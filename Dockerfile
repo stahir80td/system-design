@@ -28,7 +28,8 @@ RUN go mod download
 # Copy the main.go and server directory contents
 COPY server/main.go ./
 COPY server/data ./data
-COPY server/internal ./internal
+# Only copy internal if it exists and is needed
+# COPY server/internal ./internal
 
 # Build the Go binary
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
