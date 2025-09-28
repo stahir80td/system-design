@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: leetcode-coach
+    env: docker
+    plan: free
+    autoDeploy: true
+    region: oregon
+    healthCheckPath: /healthz
+    # Render sets PORT automatically; no need to define env vars here
+    disk:
+      name: cache
+      mountPath: /var/cache/app
+      sizeGB: 1

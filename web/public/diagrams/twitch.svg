@@ -1,0 +1,310 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Twitch Architecture - Live Streaming Platform
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="280" height="180" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  <rect x="310" y="60" width="450" height="180" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <rect x="780" y="60" width="300" height="180" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="5"/>
+  <rect x="1100" y="60" width="290" height="180" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="260" width="680" height="200" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="5"/>
+  <rect x="710" y="260" width="680" height="200" fill="#E0F2F1" stroke="#009688" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="480" width="450" height="160" fill="#FFF9C4" stroke="#FFEB3B" stroke-width="2" rx="5"/>
+  <rect x="480" y="480" width="450" height="160" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <rect x="950" y="480" width="440" height="160" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="150" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Stream Input</text>
+  <text x="535" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Transcoding Pipeline</text>
+  <text x="930" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Distribution</text>
+  <text x="1245" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Viewers</text>
+  
+  <text x="350" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Application Services</text>
+  <text x="1050" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Real-time Systems</text>
+  
+  <text x="235" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Storage Layer</text>
+  <text x="705" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Data Layer</text>
+  <text x="1170" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Analytics</text>
+  
+  <!-- Stream Input -->
+  <rect x="30" y="100" width="110" height="40" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="85" y="120" font-family="Arial" font-size="11" text-anchor="middle">OBS Studio</text>
+  <text x="85" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Broadcaster)</text>
+  
+  <rect x="160" y="100" width="110" height="40" fill="#CE93D8" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="215" y="120" font-family="Arial" font-size="11" text-anchor="middle">Mobile App</text>
+  <text x="215" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(IRL Streaming)</text>
+  
+  <rect x="30" y="150" width="240" height="70" fill="#9C27B0" stroke="#6A1B9A" stroke-width="2" rx="3"/>
+  <text x="150" y="175" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">RTMP Ingest Servers</text>
+  <text x="150" y="190" font-family="Arial" font-size="10" fill="#E1BEE7" text-anchor="middle">• 50+ POPs globally</text>
+  <text x="150" y="203" font-family="Arial" font-size="10" fill="#E1BEE7" text-anchor="middle">• Auto-routing to nearest</text>
+  <text x="150" y="216" font-family="Arial" font-size="10" fill="#E1BEE7" text-anchor="middle">• Backup ingest failover</text>
+  
+  <!-- Transcoding Pipeline -->
+  <rect x="330" y="100" width="180" height="50" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="420" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Transcoding Cluster</text>
+  <text x="420" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">GPU Accelerated (NVENC)</text>
+  <text x="420" y="148" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">15,000 servers</text>
+  
+  <rect x="530" y="100" width="210" height="50" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="635" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Quality Ladder Generator</text>
+  <text x="635" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Source/1080p/720p/480p/360p/160p</text>
+  <text x="635" y="148" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Adaptive based on viewers</text>
+  
+  <rect x="330" y="160" width="180" height="60" fill="#81C784" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="420" y="180" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">HLS Packager</text>
+  <text x="420" y="195" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• 2-second segments</text>
+  <text x="420" y="208" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Low latency mode</text>
+  
+  <rect x="530" y="160" width="210" height="60" fill="#66BB6A" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="635" y="180" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Origin Servers</text>
+  <text x="635" y="195" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Store HLS segments</text>
+  <text x="635" y="208" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Serve to CDN</text>
+  
+  <!-- Distribution -->
+  <rect x="800" y="100" width="260" height="50" fill="#FFE0B2" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="930" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">CDN Edge Servers</text>
+  <text x="930" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">200+ Edge Locations</text>
+  <text x="930" y="148" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Anycast Routing</text>
+  
+  <rect x="800" y="160" width="120" height="60" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="860" y="180" font-family="Arial" font-size="11" text-anchor="middle">Cache Layer</text>
+  <text x="860" y="195" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Hot content</text>
+  <text x="860" y="208" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Pre-warming</text>
+  
+  <rect x="940" y="160" width="120" height="60" fill="#FFB74D" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="1000" y="180" font-family="Arial" font-size="11" text-anchor="middle">ISP Peering</text>
+  <text x="1000" y="195" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Direct connect</text>
+  <text x="1000" y="208" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Lower latency</text>
+  
+  <!-- Viewers -->
+  <rect x="1120" y="100" width="120" height="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="1180" y="120" font-family="Arial" font-size="11" text-anchor="middle">Web Browser</text>
+  <text x="1180" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(HLS.js)</text>
+  
+  <rect x="1260" y="100" width="110" height="40" fill="#90CAF9" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="1315" y="120" font-family="Arial" font-size="11" text-anchor="middle">Mobile Apps</text>
+  <text x="1315" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(iOS/Android)</text>
+  
+  <rect x="1120" y="150" width="120" height="40" fill="#64B5F6" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="1180" y="170" font-family="Arial" font-size="11" text-anchor="middle">Smart TV</text>
+  <text x="1180" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Console/Roku)</text>
+  
+  <rect x="1260" y="150" width="110" height="40" fill="#42A5F5" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="1315" y="170" font-family="Arial" font-size="11" text-anchor="middle">Desktop App</text>
+  <text x="1315" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Electron)</text>
+  
+  <rect x="1120" y="200" width="250" height="30" fill="#2196F3" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="1245" y="220" font-family="Arial" font-size="11" fill="white" text-anchor="middle">7.5M Concurrent Viewers (Peak)</text>
+  
+  <!-- Application Services -->
+  <rect x="30" y="300" width="150" height="45" fill="#FFCDD2" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="105" y="320" font-family="Arial" font-size="11" text-anchor="middle">Stream Service</text>
+  <text x="105" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Metadata/Status</text>
+  
+  <rect x="200" y="300" width="150" height="45" fill="#EF9A9A" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="275" y="320" font-family="Arial" font-size="11" text-anchor="middle">User Service</text>
+  <text x="275" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Auth/Profiles</text>
+  
+  <rect x="370" y="300" width="150" height="45" fill="#E57373" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="445" y="320" font-family="Arial" font-size="11" text-anchor="middle">Discovery Service</text>
+  <text x="445" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Browse/Search</text>
+  
+  <rect x="540" y="300" width="130" height="45" fill="#EF5350" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="605" y="320" font-family="Arial" font-size="11" text-anchor="middle">Clips Service</text>
+  <text x="605" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">60s Highlights</text>
+  
+  <rect x="30" y="355" width="150" height="45" fill="#FF8A80" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="105" y="375" font-family="Arial" font-size="11" text-anchor="middle">VOD Service</text>
+  <text x="105" y="390" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Past Broadcasts</text>
+  
+  <rect x="200" y="355" width="150" height="45" fill="#FF5252" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="275" y="375" font-family="Arial" font-size="11" text-anchor="middle">Monetization</text>
+  <text x="275" y="390" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Subs/Bits/Ads</text>
+  
+  <rect x="370" y="355" width="150" height="45" fill="#FF1744" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="445" y="375" font-family="Arial" font-size="11" text-anchor="middle">Moderation</text>
+  <text x="445" y="390" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">AutoMod/Tools</text>
+  
+  <rect x="540" y="355" width="130" height="45" fill="#D32F2F" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="605" y="375" font-family="Arial" font-size="11" text-anchor="middle">Extensions</text>
+  <text x="605" y="390" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Overlays/Games</text>
+  
+  <rect x="30" y="410" width="640" height="40" fill="#F44336" stroke="#B71C1C" stroke-width="2" rx="3"/>
+  <text x="350" y="430" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="350" y="443" font-family="Arial" font-size="10" fill="#FFCDD2" text-anchor="middle">REST APIs / GraphQL / Webhooks</text>
+  
+  <!-- Real-time Systems -->
+  <rect x="730" y="300" width="200" height="50" fill="#B2DFDB" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="830" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Chat Servers</text>
+  <text x="830" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">WebSocket Clusters</text>
+  <text x="830" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">15M msg/sec peak</text>
+  
+  <rect x="950" y="300" width="200" height="50" fill="#80CBC4" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="1050" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PubSub System</text>
+  <text x="1050" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Kafka/Redis</text>
+  <text x="1050" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Event Distribution</text>
+  
+  <rect x="1170" y="300" width="200" height="50" fill="#4DB6AC" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="1270" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Notification Service</text>
+  <text x="1270" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Push/Email/SMS</text>
+  <text x="1270" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Stream Alerts</text>
+  
+  <rect x="730" y="360" width="200" height="40" fill="#26A69A" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="830" y="380" font-family="Arial" font-size="11" text-anchor="middle">Emote Service</text>
+  <text x="830" y="393" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Global/Sub/BTTV/FFZ</text>
+  
+  <rect x="950" y="360" width="200" height="40" fill="#00897B" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="1050" y="380" font-family="Arial" font-size="11" text-anchor="middle">Raid/Host System</text>
+  <text x="1050" y="393" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Channel Redirects</text>
+  
+  <rect x="1170" y="360" width="200" height="40" fill="#00796B" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="1270" y="380" font-family="Arial" font-size="11" text-anchor="middle">Predictions/Polls</text>
+  <text x="1270" y="393" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Interactive Features</text>
+  
+  <rect x="730" y="410" width="640" height="40" fill="#009688" stroke="#004D40" stroke-width="2" rx="3"/>
+  <text x="1050" y="430" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Real-time Event Bus</text>
+  <text x="1050" y="443" font-family="Arial" font-size="10" fill="#B2DFDB" text-anchor="middle">Kafka Topics / Redis Pub-Sub / WebSocket Distribution</text>
+  
+  <!-- Storage Layer -->
+  <rect x="30" y="520" width="180" height="45" fill="#FFF59D" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="120" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">S3 Object Storage</text>
+  <text x="120" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">VODs, Clips, Segments</text>
+  
+  <rect x="230" y="520" width="210" height="45" fill="#FFEE58" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="335" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">CDN Storage</text>
+  <text x="335" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Edge Cache (Hot Content)</text>
+  
+  <rect x="30" y="575" width="180" height="45" fill="#FFD600" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="120" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Glacier Archive</text>
+  <text x="120" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Old VODs (>60 days)</text>
+  
+  <rect x="230" y="575" width="210" height="45" fill="#FFC400" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="335" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Thumbnail Storage</text>
+  <text x="335" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Preview Images</text>
+  
+  <!-- Data Layer -->
+  <rect x="500" y="520" width="180" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="590" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PostgreSQL</text>
+  <text x="590" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Users, Streams, Metadata</text>
+  
+  <rect x="700" y="520" width="210" height="45" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="805" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">DynamoDB</text>
+  <text x="805" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Chat History, Sessions</text>
+  
+  <rect x="500" y="575" width="180" height="45" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="590" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Redis Cluster</text>
+  <text x="590" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Cache, Rate Limiting</text>
+  
+  <rect x="700" y="575" width="210" height="45" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="805" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Cassandra</text>
+  <text x="805" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Time-series Metrics</text>
+  
+  <!-- Analytics -->
+  <rect x="970" y="520" width="180" height="45" fill="#C5CAE9" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1060" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Analytics Pipeline</text>
+  <text x="1060" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Spark/Hadoop</text>
+  
+  <rect x="1170" y="520" width="200" height="45" fill="#9FA8DA" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">ML Recommendations</text>
+  <text x="1270" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Content Discovery</text>
+  
+  <rect x="970" y="575" width="180" height="45" fill="#7986CB" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1060" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Real-time Analytics</text>
+  <text x="1060" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Viewer Stats Dashboard</text>
+  
+  <rect x="1170" y="575" width="200" height="45" fill="#5C6BC0" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">ElasticSearch</text>
+  <text x="1270" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Search, Logs</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Stream flow -->
+  <path d="M 270 185 L 330 185" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 510 125 L 530 125" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 740 125 L 800 125" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1060 125 L 1120 125" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- To services -->
+  <path d="M 350 240 L 350 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1050 240 L 1050 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- To storage -->
+  <path d="M 350 450 L 350 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 700 450 L 700 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1050 450 L 1050 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="20" y="670" font-family="Arial" font-size="12" font-weight="bold">Stream Flow:</text>
+  <text x="20" y="685" font-family="Arial" font-size="10">1. Broadcaster → RTMP ingest (nearest POP)</text>
+  <text x="20" y="698" font-family="Arial" font-size="10">2. Forward to transcoding cluster</text>
+  <text x="20" y="711" font-family="Arial" font-size="10">3. Generate quality ladder (6 versions)</text>
+  <text x="20" y="724" font-family="Arial" font-size="10">4. Package as HLS segments (2s each)</text>
+  <text x="20" y="737" font-family="Arial" font-size="10">5. Push to origin servers</text>
+  <text x="20" y="750" font-family="Arial" font-size="10">6. CDN distribution to edge servers</text>
+  <text x="20" y="763" font-family="Arial" font-size="10">7. Viewers pull adaptive bitrate stream</text>
+  
+  <rect x="360" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="370" y="670" font-family="Arial" font-size="12" font-weight="bold">System Scale:</text>
+  <text x="370" y="685" font-family="Arial" font-size="10">• 15M daily active users</text>
+  <text x="370" y="698" font-family="Arial" font-size="10">• 7.5M peak concurrent viewers</text>
+  <text x="370" y="711" font-family="Arial" font-size="10">• 150K concurrent live channels</text>
+  <text x="370" y="724" font-family="Arial" font-size="10">• 18.75 Tbps viewer bandwidth</text>
+  <text x="370" y="737" font-family="Arial" font-size="10">• 15M chat messages/sec (peak)</text>
+  <text x="370" y="750" font-family="Arial" font-size="10">• 1M clips created daily</text>
+  <text x="370" y="763" font-family="Arial" font-size="10">• 40 PB VOD storage (30 days)</text>
+  
+  <rect x="710" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="720" y="670" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="720" y="685" font-family="Arial" font-size="10">• Ultra-low latency mode (&lt;2 seconds)</text>
+  <text x="720" y="698" font-family="Arial" font-size="10">• 60-second clips with instant creation</text>
+  <text x="720" y="711" font-family="Arial" font-size="10">• Global emotes and custom emotes</text>
+  <text x="720" y="724" font-family="Arial" font-size="10">• AutoMod for content moderation</text>
+  <text x="720" y="737" font-family="Arial" font-size="10">• Raids and host mode</text>
+  <text x="720" y="750" font-family="Arial" font-size="10">• Monetization (Subs, Bits, Ads)</text>
+  <text x="720" y="763" font-family="Arial" font-size="10">• Squad streams (4 streams together)</text>
+  
+  <rect x="1060" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="1070" y="670" font-family="Arial" font-size="12" font-weight="bold">Optimizations:</text>
+  <text x="1070" y="685" font-family="Arial" font-size="10">• GPU transcoding (NVENC)</text>
+  <text x="1070" y="698" font-family="Arial" font-size="10">• Adaptive quality based on viewers</text>
+  <text x="1070" y="711" font-family="Arial" font-size="10">• ISP peering for bandwidth savings</text>
+  <text x="1070" y="724" font-family="Arial" font-size="10">• Regional ingest POPs</text>
+  <text x="1070" y="737" font-family="Arial" font-size="10">• Chat sharding for large channels</text>
+  <text x="1070" y="750" font-family="Arial" font-size="10">• Tiered VOD storage (hot/cold)</text>
+  <text x="1070" y="763" font-family="Arial" font-size="10">• P2P assist for popular streams</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="10" y="780" width="450" height="100" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="20" y="800" font-family="Arial" font-size="12" font-weight="bold">Performance Requirements:</text>
+  <text x="20" y="818" font-family="Arial" font-size="10">• Stream latency: &lt;5 seconds (normal), &lt;2 seconds (low latency)</text>
+  <text x="20" y="834" font-family="Arial" font-size="10">• Chat latency: &lt;500ms globally</text>
+  <text x="20" y="850" font-family="Arial" font-size="10">• 99.9% availability for streaming</text>
+  <text x="20" y="866" font-family="Arial" font-size="10">• Support 24-hour continuous streams</text>
+  
+  <rect x="480" y="780" width="450" height="100" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="3"/>
+  <text x="490" y="800" font-family="Arial" font-size="12" font-weight="bold">Storage Strategy:</text>
+  <text x="490" y="818" font-family="Arial" font-size="10">• Live segments in memory cache (last 90 seconds)</text>
+  <text x="490" y="834" font-family="Arial" font-size="10">• VODs: Partners 60 days, Affiliates 14 days</text>
+  <text x="490" y="850" font-family="Arial" font-size="10">• Clips stored permanently in S3</text>
+  <text x="490" y="866" font-family="Arial" font-size="10">• Cold storage for old content (Glacier)</text>
+  
+  <rect x="950" y="780" width="440" height="100" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="960" y="800" font-family="Arial" font-size="12" font-weight="bold">Chat System:</text>
+  <text x="960" y="818" font-family="Arial" font-size="10">• WebSocket connections with fallback to long polling</text>
+  <text x="960" y="834" font-family="Arial" font-size="10">• Horizontal sharding for channels &gt;100K viewers</text>
+  <text x="960" y="850" font-family="Arial" font-size="10">• Regional chat servers for lower latency</text>
+  <text x="960" y="866" font-family="Arial" font-size="10">• Redis pub/sub for real-time distribution</text>
+  
+</svg>

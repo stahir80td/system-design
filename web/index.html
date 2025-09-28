@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Coach</title>
+    <style>
+      :root { --bg:#0b1220; --card:#111a2b; --ink:#e6eefc; --muted:#91a4c7; --accent:#6ea8fe; }
+      *{ box-sizing:border-box; }
+      body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); }
+      .container{ max-width:1100px; margin:0 auto; padding:24px; }
+      .card{ background:var(--card); border:1px solid #1b2942; border-radius:16px; padding:16px 18px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+      .row{ display:flex; gap:12px; flex-wrap:wrap; }
+      label{ display:block; font-size:12px; color:var(--muted); margin-bottom:4px;}
+      select, textarea, input[type=text]{ width:100%; background:#0e1626; color:var(--ink); border:1px solid #203253; padding:10px 12px; border-radius:10px; }
+      textarea{ min-height:120px; }
+      button{ background:var(--accent); color:#081225; border:0; padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer; }
+      .grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+      .badge{ display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid #2a3f68; color:#cfe1ff; font-size:12px; margin-right:6px; }
+      .muted{ color:var(--muted); }
+      .title{ font-weight:700; font-size:20px; }
+      .panel-title{ font-weight:600; font-size:14px; color:#cfe1ff; margin-bottom:8px; }
+      .output{ white-space:pre-wrap; background:#0b1424; border:1px solid #1b2a49; padding:10px; border-radius:10px; min-height:90px;}
+      .split{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+      @media (max-width:900px){ .grid,.split{ grid-template-columns:1fr; } }
+      a{ color:#9bc1ff; text-decoration:none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

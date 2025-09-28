@@ -1,0 +1,51 @@
+# ----------------------------
+# OS / Editor cruft
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+.idea/
+.vscode/
+*.iml
+
+# ----------------------------
+# Node + package managers
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+# If you DO use a specific lockfile, remove it from ignore above.
+
+# ----------------------------
+# Build outputs
+# ----------------------------
+# Vite build
+web/dist/
+# TypeScript cache
+**/*.tsbuildinfo
+# Coverage / reports
+coverage/
+reports/
+.nyc_output/
+
+# ----------------------------
+# Env / secrets (keep out of git)
+# ----------------------------
+.env
+.env.*
+!.env.example   # keep a template with placeholder keys
+
+# ----------------------------
+# Server runtime artifacts
+# ----------------------------
+# If you copy the built frontend into server/public at build time,
+# don't commit those built files.
+server/public/*
+!server/public/.gitkeep
+
+# Logs & PI

@@ -1,0 +1,379 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="800" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#0077b5">
+    LinkedIn Architecture - Professional Network Platform
+  </text>
+  
+  <!-- Client Layer -->
+  <g id="client-layer">
+    <rect x="50" y="60" width="250" height="150" fill="#e7f3ff" stroke="#0077b5" stroke-width="2" rx="5"/>
+    <text x="175" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#0077b5">Client Layer</text>
+    
+    <rect x="70" y="100" width="100" height="35" fill="#cce4ff" stroke="#0077b5" rx="3"/>
+    <text x="120" y="122" font-size="11" text-anchor="middle">Web App</text>
+    
+    <rect x="180" y="100" width="100" height="35" fill="#cce4ff" stroke="#0077b5" rx="3"/>
+    <text x="230" y="122" font-size="11" text-anchor="middle">Mobile Apps</text>
+    
+    <rect x="70" y="145" width="100" height="35" fill="#cce4ff" stroke="#0077b5" rx="3"/>
+    <text x="120" y="167" font-size="11" text-anchor="middle">Recruiter Tools</text>
+    
+    <rect x="180" y="145" width="100" height="35" fill="#cce4ff" stroke="#0077b5" rx="3"/>
+    <text x="230" y="167" font-size="11" text-anchor="middle">Partner APIs</text>
+  </g>
+  
+  <!-- API Gateway -->
+  <g id="api-gateway">
+    <rect x="350" y="60" width="250" height="150" fill="#fff4e6" stroke="#ff9800" stroke-width="2" rx="5"/>
+    <text x="475" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff9800">API Gateway</text>
+    
+    <rect x="370" y="100" width="100" height="35" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="420" y="122" font-size="11" text-anchor="middle">Auth Service</text>
+    
+    <rect x="480" y="100" width="100" height="35" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="530" y="122" font-size="11" text-anchor="middle">Rate Limiter</text>
+    
+    <rect x="370" y="145" width="100" height="35" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="420" y="167" font-size="11" text-anchor="middle">Load Balancer</text>
+    
+    <rect x="480" y="145" width="100" height="35" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="530" y="167" font-size="11" text-anchor="middle">API Router</text>
+  </g>
+  
+  <!-- CDN Layer -->
+  <g id="cdn-layer">
+    <rect x="650" y="60" width="250" height="150" fill="#f0f4f8" stroke="#607d8b" stroke-width="2" rx="5"/>
+    <text x="775" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#607d8b">CDN &amp; Static Assets</text>
+    
+    <rect x="670" y="100" width="100" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="720" y="122" font-size="11" text-anchor="middle">Profile Photos</text>
+    
+    <rect x="780" y="100" width="100" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="830" y="122" font-size="11" text-anchor="middle">Media Files</text>
+    
+    <rect x="670" y="145" width="100" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="720" y="167" font-size="11" text-anchor="middle">Documents</text>
+    
+    <rect x="780" y="145" width="100" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="830" y="167" font-size="11" text-anchor="middle">Static JS/CSS</text>
+  </g>
+  
+  <!-- Real-time Services -->
+  <g id="realtime-services">
+    <rect x="950" y="60" width="250" height="150" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+    <text x="1075" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#4caf50">Real-time Services</text>
+    
+    <rect x="970" y="100" width="100" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1020" y="122" font-size="11" text-anchor="middle">WebSocket</text>
+    
+    <rect x="1080" y="100" width="100" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1130" y="122" font-size="11" text-anchor="middle">Notifications</text>
+    
+    <rect x="970" y="145" width="100" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1020" y="167" font-size="11" text-anchor="middle">Live Updates</text>
+    
+    <rect x="1080" y="145" width="100" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1130" y="167" font-size="11" text-anchor="middle">Presence</text>
+  </g>
+  
+  <!-- Analytics -->
+  <g id="analytics">
+    <rect x="1250" y="60" width="300" height="150" fill="#ffeef0" stroke="#e91e63" stroke-width="2" rx="5"/>
+    <text x="1400" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#e91e63">Analytics Pipeline</text>
+    
+    <rect x="1270" y="100" width="120" height="35" fill="#ffc1cc" stroke="#e91e63" rx="3"/>
+    <text x="1330" y="115" font-size="10" text-anchor="middle">Profile Views</text>
+    <text x="1330" y="127" font-size="9" text-anchor="middle" fill="#666">Tracking</text>
+    
+    <rect x="1410" y="100" width="120" height="35" fill="#ffc1cc" stroke="#e91e63" rx="3"/>
+    <text x="1470" y="115" font-size="10" text-anchor="middle">Engagement</text>
+    <text x="1470" y="127" font-size="9" text-anchor="middle" fill="#666">Metrics</text>
+    
+    <rect x="1270" y="145" width="120" height="35" fill="#ffc1cc" stroke="#e91e63" rx="3"/>
+    <text x="1330" y="160" font-size="10" text-anchor="middle">Search Analytics</text>
+    <text x="1330" y="172" font-size="9" text-anchor="middle" fill="#666">Insights</text>
+    
+    <rect x="1410" y="145" width="120" height="35" fill="#ffc1cc" stroke="#e91e63" rx="3"/>
+    <text x="1470" y="160" font-size="10" text-anchor="middle">Content Performance</text>
+    <text x="1470" y="172" font-size="9" text-anchor="middle" fill="#666">Reporting</text>
+  </g>
+  
+  <!-- Core Services Layer -->
+  <g id="core-services">
+    <rect x="50" y="260" width="350" height="180" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+    <text x="225" y="285" font-size="14" font-weight="bold" text-anchor="middle" fill="#9c27b0">Core Services</text>
+    
+    <rect x="70" y="300" width="150" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="145" y="318" font-size="11" text-anchor="middle">Profile Service</text>
+    <text x="145" y="330" font-size="9" text-anchor="middle" fill="#666">User data &amp; history</text>
+    
+    <rect x="230" y="300" width="150" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="305" y="318" font-size="11" text-anchor="middle">Connection Service</text>
+    <text x="305" y="330" font-size="9" text-anchor="middle" fill="#666">Network graph</text>
+    
+    <rect x="70" y="350" width="150" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="145" y="368" font-size="11" text-anchor="middle">Feed Service</text>
+    <text x="145" y="380" font-size="9" text-anchor="middle" fill="#666">Timeline generation</text>
+    
+    <rect x="230" y="350" width="150" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="305" y="368" font-size="11" text-anchor="middle">Messaging Service</text>
+    <text x="305" y="380" font-size="9" text-anchor="middle" fill="#666">Chat &amp; InMail</text>
+  </g>
+  
+  <!-- Job Marketplace -->
+  <g id="job-marketplace">
+    <rect x="450" y="260" width="350" height="180" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+    <text x="625" y="285" font-size="14" font-weight="bold" text-anchor="middle" fill="#2196f3">Job Marketplace</text>
+    
+    <rect x="470" y="300" width="150" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="545" y="318" font-size="11" text-anchor="middle">Job Service</text>
+    <text x="545" y="330" font-size="9" text-anchor="middle" fill="#666">Posting &amp; search</text>
+    
+    <rect x="630" y="300" width="150" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="705" y="318" font-size="11" text-anchor="middle">Application Service</text>
+    <text x="705" y="330" font-size="9" text-anchor="middle" fill="#666">ATS integration</text>
+    
+    <rect x="470" y="350" width="150" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="545" y="368" font-size="11" text-anchor="middle">Matching Engine</text>
+    <text x="545" y="380" font-size="9" text-anchor="middle" fill="#666">Job recommendations</text>
+    
+    <rect x="630" y="350" width="150" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="705" y="368" font-size="11" text-anchor="middle">Recruiter Platform</text>
+    <text x="705" y="380" font-size="9" text-anchor="middle" fill="#666">Talent search</text>
+  </g>
+  
+  <!-- Search Services -->
+  <g id="search-services">
+    <rect x="850" y="260" width="350" height="180" fill="#fff9c4" stroke="#ffeb3b" stroke-width="2" rx="5"/>
+    <text x="1025" y="285" font-size="14" font-weight="bold" text-anchor="middle" fill="#f9a825">Search Services</text>
+    
+    <rect x="870" y="300" width="150" height="40" fill="#fff59d" stroke="#f9a825" rx="3"/>
+    <text x="945" y="318" font-size="11" text-anchor="middle">People Search</text>
+    <text x="945" y="330" font-size="9" text-anchor="middle" fill="#666">Profile indexing</text>
+    
+    <rect x="1030" y="300" width="150" height="40" fill="#fff59d" stroke="#f9a825" rx="3"/>
+    <text x="1105" y="318" font-size="11" text-anchor="middle">Job Search</text>
+    <text x="1105" y="330" font-size="9" text-anchor="middle" fill="#666">Faceted search</text>
+    
+    <rect x="870" y="350" width="150" height="40" fill="#fff59d" stroke="#f9a825" rx="3"/>
+    <text x="945" y="368" font-size="11" text-anchor="middle">Content Search</text>
+    <text x="945" y="380" font-size="9" text-anchor="middle" fill="#666">Posts &amp; articles</text>
+    
+    <rect x="1030" y="350" width="150" height="40" fill="#fff59d" stroke="#f9a825" rx="3"/>
+    <text x="1105" y="368" font-size="11" text-anchor="middle">Company Search</text>
+    <text x="1105" y="380" font-size="9" text-anchor="middle" fill="#666">Organization data</text>
+  </g>
+  
+  <!-- ML Platform -->
+  <g id="ml-platform">
+    <rect x="1250" y="260" width="300" height="180" fill="#efebe9" stroke="#795548" stroke-width="2" rx="5"/>
+    <text x="1400" y="285" font-size="14" font-weight="bold" text-anchor="middle" fill="#795548">ML Platform</text>
+    
+    <rect x="1270" y="300" width="120" height="40" fill="#d7ccc8" stroke="#795548" rx="3"/>
+    <text x="1330" y="318" font-size="11" text-anchor="middle">PYMK</text>
+    <text x="1330" y="330" font-size="9" text-anchor="middle" fill="#666">Connection suggest</text>
+    
+    <rect x="1410" y="300" width="120" height="40" fill="#d7ccc8" stroke="#795548" rx="3"/>
+    <text x="1470" y="318" font-size="11" text-anchor="middle">Feed Ranking</text>
+    <text x="1470" y="330" font-size="9" text-anchor="middle" fill="#666">Content scoring</text>
+    
+    <rect x="1270" y="350" width="120" height="40" fill="#d7ccc8" stroke="#795548" rx="3"/>
+    <text x="1330" y="368" font-size="11" text-anchor="middle">Job Matching</text>
+    <text x="1330" y="380" font-size="9" text-anchor="middle" fill="#666">Candidate scoring</text>
+    
+    <rect x="1410" y="350" width="120" height="40" fill="#d7ccc8" stroke="#795548" rx="3"/>
+    <text x="1470" y="368" font-size="11" text-anchor="middle">Skill Inference</text>
+    <text x="1470" y="380" font-size="9" text-anchor="middle" fill="#666">Profile enrichment</text>
+  </g>
+  
+  <!-- Data Layer -->
+  <g id="graph-database">
+    <rect x="50" y="490" width="280" height="180" fill="#e0f2f1" stroke="#009688" stroke-width="2" rx="5"/>
+    <text x="190" y="515" font-size="14" font-weight="bold" text-anchor="middle" fill="#009688">Graph Database</text>
+    
+    <rect x="70" y="530" width="120" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="130" y="548" font-size="11" text-anchor="middle">Neo4j Cluster</text>
+    <text x="130" y="560" font-size="9" text-anchor="middle" fill="#666">Core graph</text>
+    
+    <rect x="200" y="530" width="120" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="260" y="548" font-size="11" text-anchor="middle">Graph Cache</text>
+    <text x="260" y="560" font-size="9" text-anchor="middle" fill="#666">Redis graph</text>
+    
+    <rect x="70" y="580" width="120" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="130" y="598" font-size="11" text-anchor="middle">Graph Analytics</text>
+    <text x="130" y="610" font-size="9" text-anchor="middle" fill="#666">Spark GraphX</text>
+    
+    <rect x="200" y="580" width="120" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="260" y="598" font-size="11" text-anchor="middle">Graph Traversal</text>
+    <text x="260" y="610" font-size="9" text-anchor="middle" fill="#666">Gremlin engine</text>
+  </g>
+  
+  <!-- Primary Storage -->
+  <g id="primary-storage">
+    <rect x="380" y="490" width="280" height="180" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+    <text x="520" y="515" font-size="14" font-weight="bold" text-anchor="middle" fill="#c2185b">Primary Storage</text>
+    
+    <rect x="400" y="530" width="120" height="40" fill="#f8bbd0" stroke="#c2185b" rx="3"/>
+    <text x="460" y="548" font-size="11" text-anchor="middle">PostgreSQL</text>
+    <text x="460" y="560" font-size="9" text-anchor="middle" fill="#666">User profiles</text>
+    
+    <rect x="530" y="530" width="120" height="40" fill="#f8bbd0" stroke="#c2185b" rx="3"/>
+    <text x="590" y="548" font-size="11" text-anchor="middle">MongoDB</text>
+    <text x="590" y="560" font-size="9" text-anchor="middle" fill="#666">Posts &amp; feeds</text>
+    
+    <rect x="400" y="580" width="120" height="40" fill="#f8bbd0" stroke="#c2185b" rx="3"/>
+    <text x="460" y="598" font-size="11" text-anchor="middle">MySQL Shards</text>
+    <text x="460" y="610" font-size="9" text-anchor="middle" fill="#666">Job data</text>
+    
+    <rect x="530" y="580" width="120" height="40" fill="#f8bbd0" stroke="#c2185b" rx="3"/>
+    <text x="590" y="598" font-size="11" text-anchor="middle">DynamoDB</text>
+    <text x="590" y="610" font-size="9" text-anchor="middle" fill="#666">Session store</text>
+  </g>
+  
+  <!-- Search Infrastructure -->
+  <g id="search-infra">
+    <rect x="710" y="490" width="280" height="180" fill="#fff8e1" stroke="#ff6f00" stroke-width="2" rx="5"/>
+    <text x="850" y="515" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff6f00">Search Infrastructure</text>
+    
+    <rect x="730" y="530" width="120" height="40" fill="#ffe0b2" stroke="#ff6f00" rx="3"/>
+    <text x="790" y="548" font-size="11" text-anchor="middle">Elasticsearch</text>
+    <text x="790" y="560" font-size="9" text-anchor="middle" fill="#666">Main clusters</text>
+    
+    <rect x="860" y="530" width="120" height="40" fill="#ffe0b2" stroke="#ff6f00" rx="3"/>
+    <text x="920" y="548" font-size="11" text-anchor="middle">Index Builder</text>
+    <text x="920" y="560" font-size="9" text-anchor="middle" fill="#666">ETL pipeline</text>
+    
+    <rect x="730" y="580" width="120" height="40" fill="#ffe0b2" stroke="#ff6f00" rx="3"/>
+    <text x="790" y="598" font-size="11" text-anchor="middle">Query Parser</text>
+    <text x="790" y="610" font-size="9" text-anchor="middle" fill="#666">NLP processing</text>
+    
+    <rect x="860" y="580" width="120" height="40" fill="#ffe0b2" stroke="#ff6f00" rx="3"/>
+    <text x="920" y="598" font-size="11" text-anchor="middle">Ranking Service</text>
+    <text x="920" y="610" font-size="9" text-anchor="middle" fill="#666">Personalization</text>
+  </g>
+  
+  <!-- Cache Layer -->
+  <g id="cache-layer">
+    <rect x="1040" y="490" width="280" height="180" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+    <text x="1180" y="515" font-size="14" font-weight="bold" text-anchor="middle" fill="#7b1fa2">Cache Layer</text>
+    
+    <rect x="1060" y="530" width="120" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="1120" y="548" font-size="11" text-anchor="middle">Redis Cluster</text>
+    <text x="1120" y="560" font-size="9" text-anchor="middle" fill="#666">Hot data</text>
+    
+    <rect x="1190" y="530" width="120" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="1250" y="548" font-size="11" text-anchor="middle">Memcached</text>
+    <text x="1250" y="560" font-size="9" text-anchor="middle" fill="#666">Feed cache</text>
+    
+    <rect x="1060" y="580" width="120" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="1120" y="598" font-size="11" text-anchor="middle">CDN Cache</text>
+    <text x="1120" y="610" font-size="9" text-anchor="middle" fill="#666">Static content</text>
+    
+    <rect x="1190" y="580" width="120" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="1250" y="598" font-size="11" text-anchor="middle">Feature Store</text>
+    <text x="1250" y="610" font-size="9" text-anchor="middle" fill="#666">ML features</text>
+  </g>
+  
+  <!-- Message Queue -->
+  <g id="message-queue">
+    <rect x="1370" y="490" width="180" height="180" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" rx="5"/>
+    <text x="1460" y="515" font-size="14" font-weight="bold" text-anchor="middle" fill="#3f51b5">Message Queue</text>
+    
+    <rect x="1390" y="530" width="140" height="40" fill="#c5cae9" stroke="#3f51b5" rx="3"/>
+    <text x="1460" y="548" font-size="11" text-anchor="middle">Kafka Clusters</text>
+    <text x="1460" y="560" font-size="9" text-anchor="middle" fill="#666">Event streaming</text>
+    
+    <rect x="1390" y="580" width="140" height="40" fill="#c5cae9" stroke="#3f51b5" rx="3"/>
+    <text x="1460" y="598" font-size="11" text-anchor="middle">RabbitMQ</text>
+    <text x="1460" y="610" font-size="9" text-anchor="middle" fill="#666">Task queue</text>
+  </g>
+  
+  <!-- Data Flow Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Connection lines -->
+  <path d="M 300 135 L 350 135" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 600 135 L 650 135" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 900 135 L 950 135" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1200 135 L 1250 135" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <path d="M 475 210 L 225 260" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 475 210 L 625 260" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 475 210 L 1025 260" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <path d="M 225 440 L 190 490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 225 440 L 520 490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 625 440 L 520 490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1025 440 L 850 490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1400 440 L 1180 490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Info Boxes -->
+  <g id="info-boxes">
+    <rect x="50" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="60" y="738" font-size="12" font-weight="bold" fill="#333">Scale Metrics:</text>
+    <text x="60" y="755" font-size="10" fill="#555">• 800M total members</text>
+    <text x="60" y="770" font-size="10" fill="#555">• 310M MAU</text>
+    <text x="60" y="785" font-size="10" fill="#555">• 20M job postings</text>
+    <text x="60" y="800" font-size="10" fill="#555">• 50B connections</text>
+    <text x="60" y="815" font-size="10" fill="#555">• 100M job apps/month</text>
+    <text x="60" y="830" font-size="10" fill="#555">• 3M company pages</text>
+    
+    <rect x="270" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="280" y="738" font-size="12" font-weight="bold" fill="#333">Graph Complexity:</text>
+    <text x="280" y="755" font-size="10" fill="#555">• 803M nodes</text>
+    <text x="280" y="770" font-size="10" fill="#555">• 50B edges</text>
+    <text x="280" y="785" font-size="10" fill="#555">• Avg 500 connections</text>
+    <text x="280" y="800" font-size="10" fill="#555">• 2nd degree: ~250K</text>
+    <text x="280" y="815" font-size="10" fill="#555">• 3rd degree: ~10M</text>
+    <text x="280" y="830" font-size="10" fill="#555">• 6 degrees separation</text>
+    
+    <rect x="490" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="500" y="738" font-size="12" font-weight="bold" fill="#333">Performance Targets:</text>
+    <text x="500" y="755" font-size="10" fill="#555">• Feed load: 200ms</text>
+    <text x="500" y="770" font-size="10" fill="#555">• Search: 100ms</text>
+    <text x="500" y="785" font-size="10" fill="#555">• Message: 500ms</text>
+    <text x="500" y="800" font-size="10" fill="#555">• Profile load: 300ms</text>
+    <text x="500" y="815" font-size="10" fill="#555">• Job match: 2s</text>
+    <text x="500" y="830" font-size="10" fill="#555">• 99.95% uptime</text>
+    
+    <rect x="710" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="720" y="738" font-size="12" font-weight="bold" fill="#333">Key Features:</text>
+    <text x="720" y="755" font-size="10" fill="#555">• Professional profiles</text>
+    <text x="720" y="770" font-size="10" fill="#555">• 1st/2nd/3rd connections</text>
+    <text x="720" y="785" font-size="10" fill="#555">• Job marketplace</text>
+    <text x="720" y="800" font-size="10" fill="#555">• InMail messaging</text>
+    <text x="720" y="815" font-size="10" fill="#555">• Content publishing</text>
+    <text x="720" y="830" font-size="10" fill="#555">• Skill endorsements</text>
+    
+    <rect x="930" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="940" y="738" font-size="12" font-weight="bold" fill="#333">ML Models:</text>
+    <text x="940" y="755" font-size="10" fill="#555">• PYMK (connections)</text>
+    <text x="940" y="770" font-size="10" fill="#555">• Job recommendations</text>
+    <text x="940" y="785" font-size="10" fill="#555">• Feed ranking</text>
+    <text x="940" y="800" font-size="10" fill="#555">• Skill inference</text>
+    <text x="940" y="815" font-size="10" fill="#555">• Search ranking</text>
+    <text x="940" y="830" font-size="10" fill="#555">• Content quality</text>
+    
+    <rect x="1150" y="720" width="200" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="1160" y="738" font-size="12" font-weight="bold" fill="#333">Infrastructure:</text>
+    <text x="1160" y="755" font-size="10" fill="#555">• 50K app servers</text>
+    <text x="1160" y="770" font-size="10" fill="#555">• 20K cache servers</text>
+    <text x="1160" y="785" font-size="10" fill="#555">• 5K DB nodes</text>
+    <text x="1160" y="800" font-size="10" fill="#555">• 1K search nodes</text>
+    <text x="1160" y="815" font-size="10" fill="#555">• 500 GPU for ML</text>
+    <text x="1160" y="830" font-size="10" fill="#555">• Multi-region deploy</text>
+    
+    <rect x="1370" y="720" width="180" height="130" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="1380" y="738" font-size="12" font-weight="bold" fill="#333">Storage:</text>
+    <text x="1380" y="755" font-size="10" fill="#555">• Profiles: 40TB</text>
+    <text x="1380" y="770" font-size="10" fill="#555">• Photos: 400TB</text>
+    <text x="1380" y="785" font-size="10" fill="#555">• Graph: 5TB</text>
+    <text x="1380" y="800" font-size="10" fill="#555">• Content: 10TB/year</text>
+    <text x="1380" y="815" font-size="10" fill="#555">• Messages: 20TB/year</text>
+    <text x="1380" y="830" font-size="10" fill="#555">• Total: 2PB+</text>
+  </g>
+</svg>

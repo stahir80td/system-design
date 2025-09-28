@@ -1,0 +1,296 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Web Crawler Architecture - Distributed Crawling System
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="320" height="200" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <rect x="350" y="60" width="400" height="200" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="5"/>
+  <rect x="770" y="60" width="300" height="200" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="5"/>
+  <rect x="1090" y="60" width="300" height="200" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="280" width="450" height="180" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="5"/>
+  <rect x="480" y="280" width="450" height="180" fill="#E0F2F1" stroke="#009688" stroke-width="2" rx="5"/>
+  <rect x="950" y="280" width="440" height="180" fill="#FFF9C4" stroke="#FFEB3B" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="480" width="680" height="160" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <rect x="710" y="480" width="680" height="160" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="170" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">URL Frontier</text>
+  <text x="550" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Crawler Workers</text>
+  <text x="920" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Content Processing</text>
+  <text x="1240" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Deduplication</text>
+  
+  <text x="235" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Network Services</text>
+  <text x="705" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Politeness &amp; Control</text>
+  <text x="1170" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Special Processing</text>
+  
+  <text x="350" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Storage Layer</text>
+  <text x="1050" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Analytics &amp; Monitoring</text>
+  
+  <!-- URL Frontier -->
+  <rect x="30" y="100" width="280" height="50" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="170" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Priority Queue Manager</text>
+  <text x="170" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• High/Medium/Low priority</text>
+  <text x="170" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• 10 billion URLs queued</text>
+  
+  <rect x="30" y="160" width="130" height="40" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="95" y="180" font-family="Arial" font-size="10" text-anchor="middle">Back Queues</text>
+  <text x="95" y="193" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Per-worker)</text>
+  
+  <rect x="180" y="160" width="130" height="40" fill="#81C784" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="245" y="180" font-family="Arial" font-size="10" text-anchor="middle">Domain Queues</text>
+  <text x="245" y="193" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Politeness)</text>
+  
+  <rect x="30" y="210" width="280" height="40" fill="#66BB6A" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="170" y="230" font-family="Arial" font-size="11" text-anchor="middle">Bloom Filter (100B capacity)</text>
+  <text x="170" y="243" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">URL Seen Check</text>
+  
+  <!-- Crawler Workers -->
+  <rect x="370" y="100" width="180" height="45" fill="#FFE0B2" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="460" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Distributed Workers</text>
+  <text x="460" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10,000 crawlers</text>
+  
+  <rect x="570" y="100" width="160" height="45" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="650" y="120" font-family="Arial" font-size="11" text-anchor="middle">HTTP Fetcher</text>
+  <text x="650" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Timeout: 10s</text>
+  
+  <rect x="370" y="155" width="180" height="45" fill="#FFB74D" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="460" y="175" font-family="Arial" font-size="11" text-anchor="middle">Multi-threading</text>
+  <text x="460" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">100 threads/worker</text>
+  
+  <rect x="570" y="155" width="160" height="45" fill="#FFA726" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="650" y="175" font-family="Arial" font-size="11" text-anchor="middle">Connection Pool</text>
+  <text x="650" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Keep-alive</text>
+  
+  <rect x="370" y="210" width="360" height="40" fill="#FF9800" stroke="#F57C00" stroke-width="2" rx="3"/>
+  <text x="550" y="230" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Worker Coordinator</text>
+  <text x="550" y="243" font-family="Arial" font-size="10" fill="#FFE0B2" text-anchor="middle">Load Balancing &amp; Health Monitoring</text>
+  
+  <!-- Content Processing -->
+  <rect x="790" y="100" width="120" height="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="850" y="120" font-family="Arial" font-size="10" text-anchor="middle">HTML Parser</text>
+  <text x="850" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(BeautifulSoup)</text>
+  
+  <rect x="930" y="100" width="120" height="40" fill="#90CAF9" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="990" y="120" font-family="Arial" font-size="10" text-anchor="middle">Link Extractor</text>
+  <text x="990" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(URL Discovery)</text>
+  
+  <rect x="790" y="150" width="120" height="40" fill="#64B5F6" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="850" y="170" font-family="Arial" font-size="10" text-anchor="middle">Text Extractor</text>
+  <text x="850" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Content)</text>
+  
+  <rect x="930" y="150" width="120" height="40" fill="#42A5F5" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="990" y="170" font-family="Arial" font-size="10" text-anchor="middle">Metadata</text>
+  <text x="990" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Title, Keywords)</text>
+  
+  <rect x="790" y="200" width="260" height="50" fill="#2196F3" stroke="#1565C0" stroke-width="2" rx="3"/>
+  <text x="920" y="220" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Content Pipeline</text>
+  <text x="920" y="235" font-family="Arial" font-size="10" fill="#BBDEFB" text-anchor="middle">Parse → Extract → Normalize</text>
+  
+  <!-- Deduplication -->
+  <rect x="1110" y="100" width="260" height="45" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1240" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">URL Deduplication</text>
+  <text x="1240" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Normalize &amp; Canonicalize</text>
+  
+  <rect x="1110" y="155" width="260" height="45" fill="#CE93D8" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1240" y="175" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Content Fingerprinting</text>
+  <text x="1240" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">SimHash for Near-duplicates</text>
+  
+  <rect x="1110" y="210" width="260" height="40" fill="#BA68C8" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="1240" y="230" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Duplicate Detection Service</text>
+  <text x="1240" y="243" font-family="Arial" font-size="10" fill="#E1BEE7" text-anchor="middle">99.9% Accuracy</text>
+  
+  <!-- Network Services -->
+  <rect x="30" y="320" width="180" height="50" fill="#FFCDD2" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="120" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">DNS Resolver</text>
+  <text x="120" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Distributed Cache</text>
+  
+  <rect x="230" y="320" width="210" height="50" fill="#EF9A9A" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="335" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">HTTP Client</text>
+  <text x="335" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Compression, Keep-Alive</text>
+  
+  <rect x="30" y="380" width="180" height="60" fill="#E57373" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="120" y="400" font-family="Arial" font-size="11" text-anchor="middle">Redirect Handler</text>
+  <text x="120" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Max 5 redirects</text>
+  <text x="120" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Loop detection</text>
+  
+  <rect x="230" y="380" width="210" height="60" fill="#EF5350" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="335" y="400" font-family="Arial" font-size="11" text-anchor="middle">Error Handler</text>
+  <text x="335" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Retry Logic</text>
+  <text x="335" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Exponential Backoff</text>
+  
+  <!-- Politeness & Control -->
+  <rect x="500" y="320" width="200" height="50" fill="#B2DFDB" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Robots.txt Parser</text>
+  <text x="600" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Cache 24 hours</text>
+  
+  <rect x="720" y="320" width="190" height="50" fill="#80CBC4" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Rate Limiter</text>
+  <text x="815" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">1 req/domain/sec</text>
+  
+  <rect x="500" y="380" width="200" height="60" fill="#4DB6AC" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="400" font-family="Arial" font-size="11" text-anchor="middle">Sitemap Parser</text>
+  <text x="600" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Priority URLs</text>
+  <text x="600" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Change frequency</text>
+  
+  <rect x="720" y="380" width="190" height="60" fill="#26A69A" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="400" font-family="Arial" font-size="11" text-anchor="middle">Spider Trap Detector</text>
+  <text x="815" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Pattern Detection</text>
+  <text x="815" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Depth Limiting</text>
+  
+  <!-- Special Processing -->
+  <rect x="970" y="320" width="180" height="50" fill="#FFF59D" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">JS Renderer</text>
+  <text x="1060" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Headless Chrome</text>
+  
+  <rect x="1170" y="320" width="200" height="50" fill="#FFEE58" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="340" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PDF/Doc Parser</text>
+  <text x="1270" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Text Extraction</text>
+  
+  <rect x="970" y="380" width="180" height="60" fill="#FFD600" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="400" font-family="Arial" font-size="11" text-anchor="middle">Image Processor</text>
+  <text x="1060" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Alt Text</text>
+  <text x="1060" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">OCR (if needed)</text>
+  
+  <rect x="1170" y="380" width="200" height="60" fill="#FFC400" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="400" font-family="Arial" font-size="11" text-anchor="middle">Video Metadata</text>
+  <text x="1270" y="415" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Transcript</text>
+  <text x="1270" y="428" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Thumbnail</text>
+  
+  <!-- Storage Layer -->
+  <rect x="30" y="520" width="200" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Raw HTML Store</text>
+  <text x="130" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Compressed (S3)</text>
+  
+  <rect x="250" y="520" width="200" height="45" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Processed Content</text>
+  <text x="350" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Extracted Text</text>
+  
+  <rect x="470" y="520" width="200" height="45" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">URL Database</text>
+  <text x="570" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">PostgreSQL</text>
+  
+  <rect x="30" y="575" width="200" height="45" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Link Graph</text>
+  <text x="130" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Neo4j/GraphDB</text>
+  
+  <rect x="250" y="575" width="200" height="45" fill="#9C27B0" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Metadata Store</text>
+  <text x="350" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">MongoDB</text>
+  
+  <rect x="470" y="575" width="200" height="45" fill="#8E24AA" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Search Index</text>
+  <text x="570" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">ElasticSearch</text>
+  
+  <!-- Analytics & Monitoring -->
+  <rect x="730" y="520" width="200" height="45" fill="#C5CAE9" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Crawl Analytics</text>
+  <text x="830" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Coverage, Quality</text>
+  
+  <rect x="950" y="520" width="200" height="45" fill="#9FA8DA" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Performance Metrics</text>
+  <text x="1050" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Speed, Success Rate</text>
+  
+  <rect x="1170" y="520" width="200" height="45" fill="#7986CB" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Health Monitor</text>
+  <text x="1270" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Worker Status</text>
+  
+  <rect x="730" y="575" width="200" height="45" fill="#5C6BC0" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Error Tracking</text>
+  <text x="830" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Failures, Timeouts</text>
+  
+  <rect x="950" y="575" width="200" height="45" fill="#3F51B5" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Domain Stats</text>
+  <text x="1050" y="610" font-family="Arial" font-size="10" fill="#C5CAE9" text-anchor="middle">Crawl Frequency</text>
+  
+  <rect x="1170" y="575" width="200" height="45" fill="#303F9F" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Alerting System</text>
+  <text x="1270" y="610" font-family="Arial" font-size="10" fill="#9FA8DA" text-anchor="middle">Anomaly Detection</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Flow arrows -->
+  <path d="M 330 150 L 370 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 730 150 L 790 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1050 150 L 1110 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 170 260 L 170 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 550 260 L 550 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 920 260 L 1060 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 350 440 L 350 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 705 440 L 830 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1170 440 L 1170 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="20" y="670" font-family="Arial" font-size="12" font-weight="bold">Crawling Flow:</text>
+  <text x="20" y="685" font-family="Arial" font-size="10">1. Seed URLs → URL Frontier</text>
+  <text x="20" y="698" font-family="Arial" font-size="10">2. Check robots.txt &amp; politeness</text>
+  <text x="20" y="711" font-family="Arial" font-size="10">3. Fetch content (10s timeout)</text>
+  <text x="20" y="724" font-family="Arial" font-size="10">4. Parse HTML &amp; extract links</text>
+  <text x="20" y="737" font-family="Arial" font-size="10">5. Check for duplicates (SimHash)</text>
+  <text x="20" y="750" font-family="Arial" font-size="10">6. Store content &amp; metadata</text>
+  <text x="20" y="763" font-family="Arial" font-size="10">7. Add new URLs to frontier</text>
+  
+  <rect x="360" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="370" y="670" font-family="Arial" font-size="12" font-weight="bold">System Scale:</text>
+  <text x="370" y="685" font-family="Arial" font-size="10">• 1 billion pages/day crawled</text>
+  <text x="370" y="698" font-family="Arial" font-size="10">• 100 billion pages stored</text>
+  <text x="370" y="711" font-family="Arial" font-size="10">• 10,000 crawler workers</text>
+  <text x="370" y="724" font-family="Arial" font-size="10">• 100K requests/second</text>
+  <text x="370" y="737" font-family="Arial" font-size="10">• 10 billion URLs in frontier</text>
+  <text x="370" y="750" font-family="Arial" font-size="10">• 100+ million unique domains</text>
+  <text x="370" y="763" font-family="Arial" font-size="10">• 100TB daily data volume</text>
+  
+  <rect x="710" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="720" y="670" font-family="Arial" font-size="12" font-weight="bold">Politeness Rules:</text>
+  <text x="720" y="685" font-family="Arial" font-size="10">• Respect robots.txt directives</text>
+  <text x="720" y="698" font-family="Arial" font-size="10">• Max 1 request/domain/second</text>
+  <text x="720" y="711" font-family="Arial" font-size="10">• Parse sitemap.xml for priority</text>
+  <text x="720" y="724" font-family="Arial" font-size="10">• Handle crawl-delay directive</text>
+  <text x="720" y="737" font-family="Arial" font-size="10">• Max 2 concurrent connections</text>
+  <text x="720" y="750" font-family="Arial" font-size="10">• Exponential backoff on errors</text>
+  <text x="720" y="763" font-family="Arial" font-size="10">• User-Agent identification</text>
+  
+  <rect x="1060" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="1070" y="670" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="1070" y="685" font-family="Arial" font-size="10">• Distributed crawling architecture</text>
+  <text x="1070" y="698" font-family="Arial" font-size="10">• JavaScript rendering support</text>
+  <text x="1070" y="711" font-family="Arial" font-size="10">• Near-duplicate detection (SimHash)</text>
+  <text x="1070" y="724" font-family="Arial" font-size="10">• Spider trap detection</text>
+  <text x="1070" y="737" font-family="Arial" font-size="10">• Adaptive recrawl scheduling</text>
+  <text x="1070" y="750" font-family="Arial" font-size="10">• Multiple content type support</text>
+  <text x="1070" y="763" font-family="Arial" font-size="10">• Priority-based URL scheduling</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="10" y="780" width="450" height="100" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="20" y="800" font-family="Arial" font-size="12" font-weight="bold">Performance Requirements:</text>
+  <text x="20" y="818" font-family="Arial" font-size="10">• Crawl latency: &lt;10 seconds per page</text>
+  <text x="20" y="834" font-family="Arial" font-size="10">• Deduplication accuracy: &gt;99.9%</text>
+  <text x="20" y="850" font-family="Arial" font-size="10">• DNS cache hit rate: &gt;90%</text>
+  <text x="20" y="866" font-family="Arial" font-size="10">• JavaScript rendering: 1-5 seconds when needed</text>
+  
+  <rect x="480" y="780" width="450" height="100" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="3"/>
+  <text x="490" y="800" font-family="Arial" font-size="12" font-weight="bold">Storage Strategy:</text>
+  <text x="490" y="818" font-family="Arial" font-size="10">• Raw HTML: Compressed 4:1 ratio</text>
+  <text x="490" y="834" font-family="Arial" font-size="10">• Extracted text: 10% of original size</text>
+  <text x="490" y="850" font-family="Arial" font-size="10">• Total storage: 30PB with redundancy</text>
+  <text x="490" y="866" font-family="Arial" font-size="10">• Tiered storage: Hot (SSD) → Cold (HDD) → Archive</text>
+  
+  <rect x="950" y="780" width="440" height="100" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="960" y="800" font-family="Arial" font-size="12" font-weight="bold">Deduplication Strategy:</text>
+  <text x="960" y="818" font-family="Arial" font-size="10">• URL normalization and canonicalization</text>
+  <text x="960" y="834" font-family="Arial" font-size="10">• Bloom filter for fast membership testing</text>
+  <text x="960" y="850" font-family="Arial" font-size="10">• SimHash for near-duplicate content (Hamming distance ≤ 3)</text>
+  <text x="960" y="866" font-family="Arial" font-size="10">• Content fingerprinting with MD5/SHA256</text>
+  
+</svg>

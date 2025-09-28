@@ -1,0 +1,310 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Rate Limiter Architecture - Distributed Rate Limiting System
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="280" height="180" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="5"/>
+  <rect x="310" y="60" width="450" height="180" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <rect x="780" y="60" width="300" height="180" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="5"/>
+  <rect x="1100" y="60" width="290" height="180" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="260" width="450" height="200" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="5"/>
+  <rect x="480" y="260" width="450" height="200" fill="#E0F2F1" stroke="#009688" stroke-width="2" rx="5"/>
+  <rect x="950" y="260" width="440" height="200" fill="#FFF9C4" stroke="#FFEB3B" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="480" width="680" height="160" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <rect x="710" y="480" width="680" height="160" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="150" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Request Entry</text>
+  <text x="535" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Rate Limit Service</text>
+  <text x="930" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Algorithms</text>
+  <text x="1245" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Cache Layer</text>
+  
+  <text x="235" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Storage Backend</text>
+  <text x="705" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Configuration</text>
+  <text x="1170" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Monitoring</text>
+  
+  <text x="350" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Rule Management</text>
+  <text x="1050" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Analytics &amp; Reporting</text>
+  
+  <!-- Request Entry -->
+  <rect x="30" y="100" width="240" height="50" fill="#BBDEFB" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="150" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="150" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Request Interceptor</text>
+  <text x="150" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10M requests/sec</text>
+  
+  <rect x="30" y="160" width="110" height="60" fill="#90CAF9" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="85" y="180" font-family="Arial" font-size="10" text-anchor="middle">Identifier</text>
+  <text x="85" y="193" font-family="Arial" font-size="10" text-anchor="middle">Extractor</text>
+  <text x="85" y="206" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">User/IP/API Key</text>
+  
+  <rect x="160" y="160" width="110" height="60" fill="#64B5F6" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="215" y="180" font-family="Arial" font-size="10" text-anchor="middle">Request</text>
+  <text x="215" y="193" font-family="Arial" font-size="10" text-anchor="middle">Metadata</text>
+  <text x="215" y="206" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Endpoint/Method</text>
+  
+  <!-- Rate Limit Service -->
+  <rect x="330" y="100" width="180" height="50" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="420" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Rule Evaluator</text>
+  <text x="420" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Hierarchical Rules</text>
+  <text x="420" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Priority-based</text>
+  
+  <rect x="530" y="100" width="210" height="50" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="635" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Limit Checker</text>
+  <text x="635" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Multi-algorithm Support</text>
+  <text x="635" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">&lt; 1ms latency</text>
+  
+  <rect x="330" y="160" width="180" height="60" fill="#81C784" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="420" y="180" font-family="Arial" font-size="11" text-anchor="middle">Counter Manager</text>
+  <text x="420" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Atomic Operations</text>
+  <text x="420" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Distributed Sync</text>
+  
+  <rect x="530" y="160" width="210" height="60" fill="#66BB6A" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="635" y="180" font-family="Arial" font-size="11" text-anchor="middle">Response Builder</text>
+  <text x="635" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Rate Limit Headers</text>
+  <text x="635" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">429 on Exceeded</text>
+  
+  <!-- Algorithms -->
+  <rect x="800" y="100" width="120" height="35" fill="#FFE0B2" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="860" y="120" font-family="Arial" font-size="10" text-anchor="middle">Token Bucket</text>
+  <text x="860" y="132" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Burst Support</text>
+  
+  <rect x="940" y="100" width="120" height="35" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="1000" y="120" font-family="Arial" font-size="10" text-anchor="middle">Sliding Window</text>
+  <text x="1000" y="132" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Most Accurate</text>
+  
+  <rect x="800" y="145" width="120" height="35" fill="#FFB74D" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="860" y="165" font-family="Arial" font-size="10" text-anchor="middle">Fixed Window</text>
+  <text x="860" y="177" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Simple/Fast</text>
+  
+  <rect x="940" y="145" width="120" height="35" fill="#FFA726" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="1000" y="165" font-family="Arial" font-size="10" text-anchor="middle">Leaky Bucket</text>
+  <text x="1000" y="177" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Smooth Rate</text>
+  
+  <rect x="800" y="190" width="260" height="40" fill="#FF9800" stroke="#F57C00" stroke-width="2" rx="3"/>
+  <text x="930" y="210" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Algorithm Engine</text>
+  <text x="930" y="223" font-family="Arial" font-size="10" fill="#FFE0B2" text-anchor="middle">Pluggable Implementations</text>
+  
+  <!-- Cache Layer -->
+  <rect x="1120" y="100" width="250" height="50" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1245" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Local Cache</text>
+  <text x="1245" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Process Memory</text>
+  <text x="1245" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">1 sec TTL</text>
+  
+  <rect x="1120" y="160" width="250" height="60" fill="#CE93D8" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1245" y="180" font-family="Arial" font-size="11" text-anchor="middle">L2 Cache</text>
+  <text x="1245" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Shared Memory</text>
+  <text x="1245" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Node-level</text>
+  
+  <!-- Storage Backend -->
+  <rect x="30" y="300" width="200" height="60" fill="#FFCDD2" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="130" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Redis Cluster</text>
+  <text x="130" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Counter Storage</text>
+  <text x="130" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10 clusters</text>
+  <text x="130" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Consistent Hashing</text>
+  
+  <rect x="250" y="300" width="190" height="60" fill="#EF9A9A" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="345" y="320" font-family="Arial" font-size="11" text-anchor="middle">Redis Sentinel</text>
+  <text x="345" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">HA/Failover</text>
+  <text x="345" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Read Replicas</text>
+  <text x="345" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Auto-recovery</text>
+  
+  <rect x="30" y="370" width="200" height="70" fill="#E57373" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="130" y="390" font-family="Arial" font-size="11" text-anchor="middle">Sync Service</text>
+  <text x="130" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Batch Updates</text>
+  <text x="130" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">100ms intervals</text>
+  <text x="130" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Pipelining</text>
+  
+  <rect x="250" y="370" width="190" height="70" fill="#EF5350" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="345" y="390" font-family="Arial" font-size="11" text-anchor="middle">Degraded Mode</text>
+  <text x="345" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Local Limits</text>
+  <text x="345" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">If Redis Down</text>
+  <text x="345" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Circuit Breaker</text>
+  
+  <!-- Configuration -->
+  <rect x="500" y="300" width="200" height="60" fill="#B2DFDB" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Config Store</text>
+  <text x="600" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">PostgreSQL</text>
+  <text x="600" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10,000 rules</text>
+  <text x="600" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Tier configs</text>
+  
+  <rect x="720" y="300" width="190" height="60" fill="#80CBC4" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="320" font-family="Arial" font-size="11" text-anchor="middle">Admin API</text>
+  <text x="815" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Rule CRUD</text>
+  <text x="815" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Override Support</text>
+  <text x="815" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Whitelist/Blacklist</text>
+  
+  <rect x="500" y="370" width="200" height="70" fill="#4DB6AC" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="390" font-family="Arial" font-size="11" text-anchor="middle">Config Cache</text>
+  <text x="600" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Local Copy</text>
+  <text x="600" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">1 min refresh</text>
+  <text x="600" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Pub/Sub updates</text>
+  
+  <rect x="720" y="370" width="190" height="70" fill="#26A69A" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="390" font-family="Arial" font-size="11" text-anchor="middle">Tier Manager</text>
+  <text x="815" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Free: 100/hour</text>
+  <text x="815" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Premium: 10K/hour</text>
+  <text x="815" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Enterprise: Custom</text>
+  
+  <!-- Monitoring -->
+  <rect x="970" y="300" width="180" height="60" fill="#FFF59D" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Metrics Collector</text>
+  <text x="1060" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Prometheus</text>
+  <text x="1060" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Request counts</text>
+  <text x="1060" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Latency tracking</text>
+  
+  <rect x="1170" y="300" width="200" height="60" fill="#FFEE58" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="320" font-family="Arial" font-size="11" text-anchor="middle">Alert Manager</text>
+  <text x="1270" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Threshold alerts</text>
+  <text x="1270" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Anomaly detection</text>
+  <text x="1270" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">PagerDuty/Slack</text>
+  
+  <rect x="970" y="370" width="180" height="70" fill="#FFD600" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="390" font-family="Arial" font-size="11" text-anchor="middle">Health Monitor</text>
+  <text x="1060" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Component status</text>
+  <text x="1060" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Redis health</text>
+  <text x="1060" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Cache hit rate</text>
+  
+  <rect x="1170" y="370" width="200" height="70" fill="#FFC400" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="390" font-family="Arial" font-size="11" text-anchor="middle">Dashboard</text>
+  <text x="1270" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Real-time stats</text>
+  <text x="1270" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Top limited users</text>
+  <text x="1270" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Grafana</text>
+  
+  <!-- Rule Management -->
+  <rect x="30" y="520" width="200" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Rule Engine</text>
+  <text x="130" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Priority evaluation</text>
+  
+  <rect x="250" y="520" width="200" height="45" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="540" font-family="Arial" font-size="11" text-anchor="middle">Rule Validator</text>
+  <text x="350" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Syntax checking</text>
+  
+  <rect x="470" y="520" width="200" height="45" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="540" font-family="Arial" font-size="11" text-anchor="middle">Rule Compiler</text>
+  <text x="570" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Optimization</text>
+  
+  <rect x="30" y="575" width="200" height="45" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="595" font-family="Arial" font-size="11" text-anchor="middle">Whitelist/Blacklist</text>
+  <text x="130" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Override logic</text>
+  
+  <rect x="250" y="575" width="200" height="45" fill="#9C27B0" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="595" font-family="Arial" font-size="11" text-anchor="middle">Dynamic Rules</text>
+  <text x="350" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Time-based limits</text>
+  
+  <rect x="470" y="575" width="200" height="45" fill="#8E24AA" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="595" font-family="Arial" font-size="11" text-anchor="middle">Emergency Controls</text>
+  <text x="570" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Global throttle</text>
+  
+  <!-- Analytics & Reporting -->
+  <rect x="730" y="520" width="200" height="45" fill="#C5CAE9" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Usage Analytics</text>
+  <text x="830" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">MongoDB aggregation</text>
+  
+  <rect x="950" y="520" width="200" height="45" fill="#9FA8DA" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="540" font-family="Arial" font-size="11" text-anchor="middle">Report Generator</text>
+  <text x="1050" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Daily/Monthly reports</text>
+  
+  <rect x="1170" y="520" width="200" height="45" fill="#7986CB" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="540" font-family="Arial" font-size="11" text-anchor="middle">Audit Log</text>
+  <text x="1270" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">All limit events</text>
+  
+  <rect x="730" y="575" width="200" height="45" fill="#5C6BC0" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="595" font-family="Arial" font-size="11" text-anchor="middle">Cost Analysis</text>
+  <text x="830" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Per-user costs</text>
+  
+  <rect x="950" y="575" width="200" height="45" fill="#3F51B5" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Trend Analysis</text>
+  <text x="1050" y="610" font-family="Arial" font-size="10" fill="#C5CAE9" text-anchor="middle">Usage patterns</text>
+  
+  <rect x="1170" y="575" width="200" height="45" fill="#303F9F" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Capacity Planning</text>
+  <text x="1270" y="610" font-family="Arial" font-size="10" fill="#9FA8DA" text-anchor="middle">Growth forecasting</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Flow arrows -->
+  <path d="M 290 150 L 330 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 740 150 L 800 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1060 150 L 1120 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 150 240 L 150 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 535 240 L 600 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 930 240 L 1060 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 350 460 L 350 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 705 400 L 830 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1170 440 L 1170 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="20" y="670" font-family="Arial" font-size="12" font-weight="bold">Request Flow:</text>
+  <text x="20" y="685" font-family="Arial" font-size="10">1. API Gateway intercepts request</text>
+  <text x="20" y="698" font-family="Arial" font-size="10">2. Extract identifier (user/IP/API key)</text>
+  <text x="20" y="711" font-family="Arial" font-size="10">3. Check local cache first (1ms)</text>
+  <text x="20" y="724" font-family="Arial" font-size="10">4. If miss, check Redis (5ms)</text>
+  <text x="20" y="737" font-family="Arial" font-size="10">5. Apply rate limit algorithm</text>
+  <text x="20" y="750" font-family="Arial" font-size="10">6. Update counters if allowed</text>
+  <text x="20" y="763" font-family="Arial" font-size="10">7. Return with headers or 429</text>
+  
+  <rect x="360" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="370" y="670" font-family="Arial" font-size="12" font-weight="bold">System Scale:</text>
+  <text x="370" y="685" font-family="Arial" font-size="10">• 10 million requests/second</text>
+  <text x="370" y="698" font-family="Arial" font-size="10">• 100 million unique users</text>
+  <text x="370" y="711" font-family="Arial" font-size="10">• 10,000 rate limit rules</text>
+  <text x="370" y="724" font-family="Arial" font-size="10">• &lt;1ms latency requirement</text>
+  <text x="370" y="737" font-family="Arial" font-size="10">• 99.99% availability</text>
+  <text x="370" y="750" font-family="Arial" font-size="10">• 100 rate limiter nodes</text>
+  <text x="370" y="763" font-family="Arial" font-size="10">• 10 Redis clusters</text>
+  
+  <rect x="710" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="720" y="670" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="720" y="685" font-family="Arial" font-size="10">• Multiple algorithms (Token/Sliding/Fixed)</text>
+  <text x="720" y="698" font-family="Arial" font-size="10">• Hierarchical rate limits</text>
+  <text x="720" y="711" font-family="Arial" font-size="10">• User tier support</text>
+  <text x="720" y="724" font-family="Arial" font-size="10">• Distributed synchronization</text>
+  <text x="720" y="737" font-family="Arial" font-size="10">• Graceful degradation</text>
+  <text x="720" y="750" font-family="Arial" font-size="10">• Real-time configuration updates</text>
+  <text x="720" y="763" font-family="Arial" font-size="10">• Whitelist/Blacklist support</text>
+  
+  <rect x="1060" y="650" width="330" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="1070" y="670" font-family="Arial" font-size="12" font-weight="bold">Rate Limit Headers:</text>
+  <text x="1070" y="685" font-family="Arial" font-size="10">• X-RateLimit-Limit: 1000</text>
+  <text x="1070" y="698" font-family="Arial" font-size="10">• X-RateLimit-Remaining: 874</text>
+  <text x="1070" y="711" font-family="Arial" font-size="10">• X-RateLimit-Reset: 1705761600</text>
+  <text x="1070" y="724" font-family="Arial" font-size="10">• Retry-After: 47 (on 429)</text>
+  <text x="1070" y="737" font-family="Arial" font-size="10">• X-RateLimit-Reset-After: 3247</text>
+  <text x="1070" y="750" font-family="Arial" font-size="10">• Standard HTTP 429 status</text>
+  <text x="1070" y="763" font-family="Arial" font-size="10">• JSON error body with details</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="10" y="780" width="450" height="100" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="20" y="800" font-family="Arial" font-size="12" font-weight="bold">Algorithm Comparison:</text>
+  <text x="20" y="818" font-family="Arial" font-size="10">• Token Bucket: Allows bursts, smooth rate, O(1) complexity</text>
+  <text x="20" y="834" font-family="Arial" font-size="10">• Sliding Window Log: Most accurate, O(n) space, memory intensive</text>
+  <text x="20" y="850" font-family="Arial" font-size="10">• Fixed Window: Simple, efficient, boundary spike issue</text>
+  <text x="20" y="866" font-family="Arial" font-size="10">• Sliding Window Counter: Good balance, approximate at boundaries</text>
+  
+  <rect x="480" y="780" width="450" height="100" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="3"/>
+  <text x="490" y="800" font-family="Arial" font-size="12" font-weight="bold">Storage Strategy:</text>
+  <text x="490" y="818" font-family="Arial" font-size="10">• L1 Cache: Local memory, 1 second TTL, ~90% hit rate</text>
+  <text x="490" y="834" font-family="Arial" font-size="10">• L2 Cache: Shared memory per node, 10 second TTL</text>
+  <text x="490" y="850" font-family="Arial" font-size="10">• Redis: Distributed counters, atomic operations, persistence</text>
+  <text x="490" y="866" font-family="Arial" font-size="10">• PostgreSQL: Configuration and rules, audit logs</text>
+  
+  <rect x="950" y="780" width="440" height="100" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="960" y="800" font-family="Arial" font-size="12" font-weight="bold">Optimization Techniques:</text>
+  <text x="960" y="818" font-family="Arial" font-size="10">• Lua scripts for atomic Redis operations</text>
+  <text x="960" y="834" font-family="Arial" font-size="10">• Batch counter updates every 100ms</text>
+  <text x="960" y="850" font-family="Arial" font-size="10">• Connection pooling and pipelining</text>
+  <text x="960" y="866" font-family="Arial" font-size="10">• Hot key splitting across multiple Redis keys</text>
+  
+</svg>

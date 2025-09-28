@@ -1,0 +1,285 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Instagram Architecture - Photo Sharing &amp; Social Network
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="220" height="280" fill="#E8F4FD" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <rect x="250" y="60" width="450" height="280" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <rect x="720" y="60" width="240" height="280" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <rect x="980" y="60" width="400" height="280" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="360" width="450" height="180" fill="#FFEBEE" stroke="#C62828" stroke-width="2" rx="5"/>
+  <rect x="480" y="360" width="420" height="180" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="5"/>
+  <rect x="920" y="360" width="460" height="180" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="120" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Client Layer</text>
+  <text x="475" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Core Services</text>
+  <text x="840" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Real-time</text>
+  <text x="1180" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Media Processing</text>
+  <text x="235" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Storage Layer</text>
+  <text x="690" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Data Stores</text>
+  <text x="1150" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">ML/Analytics</text>
+  
+  <!-- Client Layer -->
+  <rect x="30" y="100" width="180" height="40" fill="#BBDEFB" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="120" y="125" font-family="Arial" font-size="12" text-anchor="middle">Mobile Apps</text>
+  <text x="120" y="137" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(iOS/Android)</text>
+  
+  <rect x="30" y="150" width="180" height="40" fill="#90CAF9" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="120" y="175" font-family="Arial" font-size="12" text-anchor="middle">Web Application</text>
+  
+  <rect x="30" y="200" width="180" height="40" fill="#64B5F6" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="120" y="225" font-family="Arial" font-size="12" text-anchor="middle">Desktop Client</text>
+  
+  <rect x="30" y="250" width="180" height="70" fill="#FFA726" stroke="#F57C00" stroke-width="2" rx="3"/>
+  <text x="120" y="275" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="120" y="290" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Auth/Rate Limiting</text>
+  <text x="120" y="303" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Load Balancing</text>
+  <text x="120" y="316" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Request Routing</text>
+  
+  <!-- Core Services -->
+  <rect x="270" y="100" width="130" height="45" fill="#FFE0B2" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="335" y="120" font-family="Arial" font-size="11" text-anchor="middle">Media Upload</text>
+  <text x="335" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Resumable)</text>
+  
+  <rect x="410" y="100" width="130" height="45" fill="#FFCC80" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="475" y="120" font-family="Arial" font-size="11" text-anchor="middle">Feed Generator</text>
+  <text x="475" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(ML Ranking)</text>
+  
+  <rect x="550" y="100" width="130" height="45" fill="#FFB74D" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="615" y="120" font-family="Arial" font-size="11" text-anchor="middle">Timeline Service</text>
+  <text x="615" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Push/Pull)</text>
+  
+  <rect x="270" y="155" width="130" height="45" fill="#FFA726" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="335" y="175" font-family="Arial" font-size="11" text-anchor="middle">Story Service</text>
+  <text x="335" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(24hr TTL)</text>
+  
+  <rect x="410" y="155" width="130" height="45" fill="#FF9800" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="475" y="175" font-family="Arial" font-size="11" text-anchor="middle">Search Service</text>
+  <text x="475" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(ElasticSearch)</text>
+  
+  <rect x="550" y="155" width="130" height="45" fill="#FB8C00" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="615" y="175" font-family="Arial" font-size="11" text-anchor="middle">DM Service</text>
+  <text x="615" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Messaging)</text>
+  
+  <rect x="270" y="210" width="130" height="45" fill="#F57C00" stroke="#E65100" stroke-width="1" rx="3"/>
+  <text x="335" y="230" font-family="Arial" font-size="11" text-anchor="middle">Explore Service</text>
+  <text x="335" y="245" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Discovery)</text>
+  
+  <rect x="410" y="210" width="130" height="45" fill="#FF6F00" stroke="#E65100" stroke-width="1" rx="3"/>
+  <text x="475" y="230" font-family="Arial" font-size="11" text-anchor="middle">Reels Service</text>
+  <text x="475" y="245" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Short Videos)</text>
+  
+  <rect x="550" y="210" width="130" height="45" fill="#FFB300" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="615" y="230" font-family="Arial" font-size="11" text-anchor="middle">Shopping Service</text>
+  <text x="615" y="245" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(E-commerce)</text>
+  
+  <rect x="340" y="270" width="270" height="50" fill="#4CAF50" stroke="#388E3C" stroke-width="2" rx="3"/>
+  <text x="475" y="290" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Cache Layer</text>
+  <text x="475" y="305" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Redis (Timelines, Stories, Sessions)</text>
+  
+  <!-- Real-time Services -->
+  <rect x="740" y="100" width="200" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="840" y="120" font-family="Arial" font-size="11" text-anchor="middle">Notification Service</text>
+  <text x="840" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Push/WebSocket)</text>
+  
+  <rect x="740" y="155" width="200" height="45" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="840" y="175" font-family="Arial" font-size="11" text-anchor="middle">Live Streaming</text>
+  <text x="840" y="190" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(RTMP → HLS)</text>
+  
+  <rect x="740" y="210" width="200" height="45" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="840" y="230" font-family="Arial" font-size="11" text-anchor="middle">Presence Service</text>
+  <text x="840" y="245" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Online Status)</text>
+  
+  <rect x="740" y="270" width="200" height="50" fill="#9C27B0" stroke="#6A1B9A" stroke-width="2" rx="3"/>
+  <text x="840" y="290" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Message Queue</text>
+  <text x="840" y="305" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Kafka (Events/Fanout)</text>
+  
+  <!-- Media Processing -->
+  <rect x="1000" y="100" width="160" height="40" fill="#C8E6C9" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1080" y="120" font-family="Arial" font-size="11" text-anchor="middle">Image Processor</text>
+  <text x="1080" y="133" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Resize/Filter)</text>
+  
+  <rect x="1180" y="100" width="180" height="40" fill="#A5D6A7" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1270" y="120" font-family="Arial" font-size="11" text-anchor="middle">Video Transcoder</text>
+  <text x="1270" y="133" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Multiple Bitrates)</text>
+  
+  <rect x="1000" y="150" width="160" height="40" fill="#81C784" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1080" y="170" font-family="Arial" font-size="11" text-anchor="middle">Thumbnail Generator</text>
+  <text x="1080" y="183" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Preview)</text>
+  
+  <rect x="1180" y="150" width="180" height="40" fill="#66BB6A" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1270" y="170" font-family="Arial" font-size="11" text-anchor="middle">Content Moderation</text>
+  <text x="1270" y="183" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(AI/ML)</text>
+  
+  <rect x="1000" y="200" width="160" height="40" fill="#4CAF50" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1080" y="220" font-family="Arial" font-size="11" text-anchor="middle">Face Detection</text>
+  <text x="1080" y="233" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Tagging)</text>
+  
+  <rect x="1180" y="200" width="180" height="40" fill="#43A047" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="1270" y="220" font-family="Arial" font-size="11" text-anchor="middle">Filter Engine</text>
+  <text x="1270" y="233" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Effects/AR)</text>
+  
+  <rect x="1050" y="260" width="260" height="60" fill="#FF9800" stroke="#E65100" stroke-width="2" rx="3"/>
+  <text x="1180" y="280" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">CDN</text>
+  <text x="1180" y="295" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">CloudFront (Global Distribution)</text>
+  <text x="1180" y="308" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Edge Locations Worldwide</text>
+  
+  <!-- Storage Layer -->
+  <rect x="30" y="400" width="180" height="50" fill="#FFCDD2" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="120" y="420" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Object Storage (S3)</text>
+  <text x="120" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Photos/Videos</text>
+  <text x="120" y="448" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Multi-resolution)</text>
+  
+  <rect x="230" y="400" width="210" height="50" fill="#EF9A9A" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="335" y="420" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Story Storage</text>
+  <text x="335" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">TTL-based (24hr expiry)</text>
+  <text x="335" y="448" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Separate Infrastructure</text>
+  
+  <rect x="30" y="470" width="180" height="50" fill="#E57373" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="120" y="490" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Archive Storage</text>
+  <text x="120" y="505" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Glacier (Cold Storage)</text>
+  <text x="120" y="518" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Old/Inactive Content</text>
+  
+  <rect x="230" y="470" width="210" height="50" fill="#EF5350" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="335" y="490" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Backup Storage</text>
+  <text x="335" y="505" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Cross-region Replication</text>
+  <text x="335" y="518" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Disaster Recovery</text>
+  
+  <!-- Data Stores -->
+  <rect x="500" y="400" width="180" height="50" fill="#BBDEFB" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="590" y="420" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PostgreSQL</text>
+  <text x="590" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">User Data/Metadata</text>
+  <text x="590" y="448" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Sharded by user_id</text>
+  
+  <rect x="700" y="400" width="180" height="50" fill="#90CAF9" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="790" y="420" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Cassandra</text>
+  <text x="790" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Timelines/Feeds</text>
+  <text x="790" y="448" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Wide Column Store</text>
+  
+  <rect x="500" y="470" width="180" height="50" fill="#64B5F6" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="590" y="490" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Neo4j</text>
+  <text x="590" y="505" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Social Graph</text>
+  <text x="590" y="518" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Follow Relations</text>
+  
+  <rect x="700" y="470" width="180" height="50" fill="#42A5F5" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="790" y="490" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">DynamoDB</text>
+  <text x="790" y="505" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Session Store</text>
+  <text x="790" y="518" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">User Preferences</text>
+  
+  <!-- ML/Analytics -->
+  <rect x="940" y="400" width="200" height="45" fill="#E1BEE7" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="1040" y="420" font-family="Arial" font-size="11" text-anchor="middle">Recommendation Engine</text>
+  <text x="1040" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Personalized Explore)</text>
+  
+  <rect x="1160" y="400" width="200" height="45" fill="#CE93D8" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="1260" y="420" font-family="Arial" font-size="11" text-anchor="middle">Feed Ranking ML</text>
+  <text x="1260" y="435" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Engagement Prediction)</text>
+  
+  <rect x="940" y="455" width="200" height="45" fill="#BA68C8" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="1040" y="475" font-family="Arial" font-size="11" text-anchor="middle">Trending Analysis</text>
+  <text x="1040" y="490" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(Hashtags/Content)</text>
+  
+  <rect x="1160" y="455" width="200" height="45" fill="#AB47BC" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="1260" y="475" font-family="Arial" font-size="11" text-anchor="middle">Ad Targeting</text>
+  <text x="1260" y="490" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(User Interests)</text>
+  
+  <rect x="1000" y="510" width="300" height="25" fill="#9C27B0" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="1150" y="527" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">Analytics Pipeline (Spark/Hadoop)</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Client to API Gateway -->
+  <path d="M 120 240 L 120 250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- API Gateway to Services -->
+  <path d="M 210 285 L 270 285" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Services to Cache -->
+  <path d="M 475 255 L 475 270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Services to Real-time -->
+  <path d="M 680 180 L 740 180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Services to Media Processing -->
+  <path d="M 680 120 L 1000 120" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Cache to Storage -->
+  <path d="M 475 320 L 475 400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Media Processing to CDN -->
+  <path d="M 1180 240 L 1180 260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Storage to ML -->
+  <path d="M 880 450 L 940 450" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="560" width="430" height="100" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="20" y="580" font-family="Arial" font-size="12" font-weight="bold">Feed Generation Strategy:</text>
+  <text x="20" y="595" font-family="Arial" font-size="10">• Push model for users with &lt;10K followers</text>
+  <text x="20" y="608" font-family="Arial" font-size="10">• Pull model for celebrities (on-demand generation)</text>
+  <text x="20" y="621" font-family="Arial" font-size="10">• ML-based ranking for personalization</text>
+  <text x="20" y="634" font-family="Arial" font-size="10">• Pre-computed timelines cached in Redis</text>
+  <text x="20" y="647" font-family="Arial" font-size="10">• Hybrid approach optimizes for scale</text>
+  
+  <rect x="460" y="560" width="440" height="100" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="470" y="580" font-family="Arial" font-size="12" font-weight="bold">System Scale:</text>
+  <text x="470" y="595" font-family="Arial" font-size="10">• 2 billion users, 500M daily active</text>
+  <text x="470" y="608" font-family="Arial" font-size="10">• 100M photos/videos uploaded daily (5PB storage)</text>
+  <text x="470" y="621" font-family="Arial" font-size="10">• 8M likes/second, 200K comments/second</text>
+  <text x="470" y="634" font-family="Arial" font-size="10">• 50B image requests daily</text>
+  <text x="470" y="647" font-family="Arial" font-size="10">• 10M feed refreshes/second at peak</text>
+  
+  <rect x="920" y="560" width="460" height="100" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="930" y="580" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="930" y="595" font-family="Arial" font-size="10">• Multiple image resolutions (150px to 1080px)</text>
+  <text x="930" y="608" font-family="Arial" font-size="10">• Stories with 24-hour TTL (Redis expiry)</text>
+  <text x="930" y="621" font-family="Arial" font-size="10">• Live streaming (RTMP ingestion → HLS delivery)</text>
+  <text x="930" y="634" font-family="Arial" font-size="10">• Real-time notifications via WebSocket</text>
+  <text x="930" y="647" font-family="Arial" font-size="10">• Content moderation using AI/ML</text>
+  
+  <!-- Performance Metrics Box -->
+  <rect x="10" y="670" width="300" height="110" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="20" y="690" font-family="Arial" font-size="12" font-weight="bold">Performance Requirements:</text>
+  <text x="20" y="708" font-family="Arial" font-size="10">• Feed generation: &lt;200ms latency</text>
+  <text x="20" y="724" font-family="Arial" font-size="10">• Image upload: &lt;3 seconds</text>
+  <text x="20" y="740" font-family="Arial" font-size="10">• Story upload: &lt;2 seconds</text>
+  <text x="20" y="756" font-family="Arial" font-size="10">• Live stream latency: &lt;3 seconds</text>
+  <text x="20" y="772" font-family="Arial" font-size="10">• 99.9% availability</text>
+  
+  <!-- Storage Strategy Box -->
+  <rect x="330" y="670" width="340" height="110" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="3"/>
+  <text x="340" y="690" font-family="Arial" font-size="12" font-weight="bold">Storage Strategy:</text>
+  <text x="340" y="708" font-family="Arial" font-size="10">• S3 for media files (multi-resolution)</text>
+  <text x="340" y="724" font-family="Arial" font-size="10">• PostgreSQL for user data (sharded)</text>
+  <text x="340" y="740" font-family="Arial" font-size="10">• Cassandra for timeline data</text>
+  <text x="340" y="756" font-family="Arial" font-size="10">• Neo4j for social graph</text>
+  <text x="340" y="772" font-family="Arial" font-size="10">• Redis for caching and stories</text>
+  
+  <!-- ML/Ranking Box -->
+  <rect x="690" y="670" width="340" height="110" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="700" y="690" font-family="Arial" font-size="12" font-weight="bold">ML-Powered Features:</text>
+  <text x="700" y="708" font-family="Arial" font-size="10">• Feed ranking (engagement prediction)</text>
+  <text x="700" y="724" font-family="Arial" font-size="10">• Explore recommendations</text>
+  <text x="700" y="740" font-family="Arial" font-size="10">• Content moderation</text>
+  <text x="700" y="756" font-family="Arial" font-size="10">• Face detection and tagging</text>
+  <text x="700" y="772" font-family="Arial" font-size="10">• Hashtag trending analysis</text>
+  
+  <!-- Optimization Box -->
+  <rect x="1050" y="670" width="330" height="110" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="3"/>
+  <text x="1060" y="690" font-family="Arial" font-size="12" font-weight="bold">Optimizations:</text>
+  <text x="1060" y="708" font-family="Arial" font-size="10">• CDN for global media delivery</text>
+  <text x="1060" y="724" font-family="Arial" font-size="10">• Progressive JPEG for faster loading</text>
+  <text x="1060" y="740" font-family="Arial" font-size="10">• Adaptive bitrate for videos</text>
+  <text x="1060" y="756" font-family="Arial" font-size="10">• Edge computing for uploads</text>
+  <text x="1060" y="772" font-family="Arial" font-size="10">• Connection pooling for database</text>
+  
+</svg>

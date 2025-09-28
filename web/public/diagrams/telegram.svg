@@ -1,0 +1,356 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="800" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#0088cc">
+    Telegram Architecture - Cloud Messaging Platform
+  </text>
+  
+  <!-- Client Layer -->
+  <g id="client-layer">
+    <rect x="50" y="60" width="280" height="140" fill="#e6f3ff" stroke="#0088cc" stroke-width="2" rx="5"/>
+    <text x="190" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#0088cc">Client Applications</text>
+    
+    <rect x="70" y="100" width="110" height="35" fill="#cce6ff" stroke="#0088cc" rx="3"/>
+    <text x="125" y="122" font-size="11" text-anchor="middle">Mobile Apps</text>
+    
+    <rect x="200" y="100" width="110" height="35" fill="#cce6ff" stroke="#0088cc" rx="3"/>
+    <text x="255" y="122" font-size="11" text-anchor="middle">Desktop Apps</text>
+    
+    <rect x="70" y="145" width="110" height="35" fill="#cce6ff" stroke="#0088cc" rx="3"/>
+    <text x="125" y="167" font-size="11" text-anchor="middle">Web Client</text>
+    
+    <rect x="200" y="145" width="110" height="35" fill="#cce6ff" stroke="#0088cc" rx="3"/>
+    <text x="255" y="167" font-size="11" text-anchor="middle">Bot Clients</text>
+  </g>
+  
+  <!-- MTProto Gateway -->
+  <g id="mtproto-gateway">
+    <rect x="380" y="60" width="280" height="140" fill="#fff0e6" stroke="#ff6600" stroke-width="2" rx="5"/>
+    <text x="520" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff6600">MTProto Gateway</text>
+    
+    <rect x="400" y="100" width="110" height="35" fill="#ffe0cc" stroke="#ff6600" rx="3"/>
+    <text x="455" y="122" font-size="11" text-anchor="middle">Protocol Handler</text>
+    
+    <rect x="530" y="100" width="110" height="35" fill="#ffe0cc" stroke="#ff6600" rx="3"/>
+    <text x="585" y="122" font-size="11" text-anchor="middle">Encryption</text>
+    
+    <rect x="400" y="145" width="110" height="35" fill="#ffe0cc" stroke="#ff6600" rx="3"/>
+    <text x="455" y="167" font-size="11" text-anchor="middle">Auth Service</text>
+    
+    <rect x="530" y="145" width="110" height="35" fill="#ffe0cc" stroke="#ff6600" rx="3"/>
+    <text x="585" y="167" font-size="11" text-anchor="middle">Rate Limiter</text>
+  </g>
+  
+  <!-- Load Balancer -->
+  <g id="load-balancer">
+    <rect x="710" y="60" width="280" height="140" fill="#f0f4f8" stroke="#607d8b" stroke-width="2" rx="5"/>
+    <text x="850" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#607d8b">Load Balancing</text>
+    
+    <rect x="730" y="100" width="110" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="785" y="122" font-size="11" text-anchor="middle">GeoDNS</text>
+    
+    <rect x="860" y="100" width="110" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="915" y="122" font-size="11" text-anchor="middle">Regional LB</text>
+    
+    <rect x="730" y="145" width="110" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="785" y="167" font-size="11" text-anchor="middle">DDoS Protection</text>
+    
+    <rect x="860" y="145" width="110" height="35" fill="#cfd8dc" stroke="#607d8b" rx="3"/>
+    <text x="915" y="167" font-size="11" text-anchor="middle">SSL Termination</text>
+  </g>
+  
+  <!-- Bot Platform -->
+  <g id="bot-platform">
+    <rect x="1040" y="60" width="280" height="140" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+    <text x="1180" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#4caf50">Bot Platform</text>
+    
+    <rect x="1060" y="100" width="110" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1115" y="122" font-size="11" text-anchor="middle">Bot API</text>
+    
+    <rect x="1190" y="100" width="110" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1245" y="122" font-size="11" text-anchor="middle">Webhook Handler</text>
+    
+    <rect x="1060" y="145" width="110" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1115" y="167" font-size="11" text-anchor="middle">Inline Queries</text>
+    
+    <rect x="1190" y="145" width="110" height="35" fill="#c8e6c9" stroke="#4caf50" rx="3"/>
+    <text x="1245" y="167" font-size="11" text-anchor="middle">Payment API</text>
+  </g>
+  
+  <!-- CDN -->
+  <g id="cdn">
+    <rect x="1370" y="60" width="180" height="140" fill="#ffeeff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+    <text x="1460" y="85" font-size="14" font-weight="bold" text-anchor="middle" fill="#9c27b0">CDN</text>
+    
+    <rect x="1390" y="100" width="140" height="35" fill="#f3e5f5" stroke="#9c27b0" rx="3"/>
+    <text x="1460" y="122" font-size="11" text-anchor="middle">Media Cache</text>
+    
+    <rect x="1390" y="145" width="140" height="35" fill="#f3e5f5" stroke="#9c27b0" rx="3"/>
+    <text x="1460" y="167" font-size="11" text-anchor="middle">Edge Servers</text>
+  </g>
+  
+  <!-- Core Services -->
+  <g id="core-services">
+    <rect x="50" y="250" width="400" height="180" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+    <text x="250" y="275" font-size="14" font-weight="bold" text-anchor="middle" fill="#2196f3">Core Messaging Services</text>
+    
+    <rect x="70" y="290" width="170" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="155" y="308" font-size="11" text-anchor="middle">Message Service</text>
+    <text x="155" y="320" font-size="9" text-anchor="middle" fill="#666">Send/receive/store</text>
+    
+    <rect x="260" y="290" width="170" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="345" y="308" font-size="11" text-anchor="middle">Delivery Service</text>
+    <text x="345" y="320" font-size="9" text-anchor="middle" fill="#666">Queue &amp; fanout</text>
+    
+    <rect x="70" y="340" width="170" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="155" y="358" font-size="11" text-anchor="middle">Sync Service</text>
+    <text x="155" y="370" font-size="9" text-anchor="middle" fill="#666">Multi-device sync</text>
+    
+    <rect x="260" y="340" width="170" height="40" fill="#bbdefb" stroke="#2196f3" rx="3"/>
+    <text x="345" y="358" font-size="11" text-anchor="middle">Presence Service</text>
+    <text x="345" y="370" font-size="9" text-anchor="middle" fill="#666">Online status &amp; typing</text>
+  </g>
+  
+  <!-- Group & Channel Services -->
+  <g id="group-channel">
+    <rect x="500" y="250" width="400" height="180" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+    <text x="700" y="275" font-size="14" font-weight="bold" text-anchor="middle" fill="#9c27b0">Group &amp; Channel Services</text>
+    
+    <rect x="520" y="290" width="170" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="605" y="308" font-size="11" text-anchor="middle">Group Management</text>
+    <text x="605" y="320" font-size="9" text-anchor="middle" fill="#666">Up to 200K members</text>
+    
+    <rect x="710" y="290" width="170" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="795" y="308" font-size="11" text-anchor="middle">Channel Broadcast</text>
+    <text x="795" y="320" font-size="9" text-anchor="middle" fill="#666">Unlimited subscribers</text>
+    
+    <rect x="520" y="340" width="170" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="605" y="358" font-size="11" text-anchor="middle">Permission Service</text>
+    <text x="605" y="370" font-size="9" text-anchor="middle" fill="#666">Admin controls</text>
+    
+    <rect x="710" y="340" width="170" height="40" fill="#e1bee7" stroke="#9c27b0" rx="3"/>
+    <text x="795" y="358" font-size="11" text-anchor="middle">Anti-Spam Service</text>
+    <text x="795" y="370" font-size="9" text-anchor="middle" fill="#666">Content moderation</text>
+  </g>
+  
+  <!-- Media Services -->
+  <g id="media-services">
+    <rect x="950" y="250" width="400" height="180" fill="#fff9c4" stroke="#ffc107" stroke-width="2" rx="5"/>
+    <text x="1150" y="275" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff8f00">Media Services</text>
+    
+    <rect x="970" y="290" width="170" height="40" fill="#fff59d" stroke="#ff8f00" rx="3"/>
+    <text x="1055" y="308" font-size="11" text-anchor="middle">Upload Service</text>
+    <text x="1055" y="320" font-size="9" text-anchor="middle" fill="#666">Chunked upload 2GB</text>
+    
+    <rect x="1160" y="290" width="170" height="40" fill="#fff59d" stroke="#ff8f00" rx="3"/>
+    <text x="1245" y="308" font-size="11" text-anchor="middle">Processing Service</text>
+    <text x="1245" y="320" font-size="9" text-anchor="middle" fill="#666">Transcode &amp; thumbnails</text>
+    
+    <rect x="970" y="340" width="170" height="40" fill="#fff59d" stroke="#ff8f00" rx="3"/>
+    <text x="1055" y="358" font-size="11" text-anchor="middle">Download Service</text>
+    <text x="1055" y="370" font-size="9" text-anchor="middle" fill="#666">Multi-part &amp; resume</text>
+    
+    <rect x="1160" y="340" width="170" height="40" fill="#fff59d" stroke="#ff8f00" rx="3"/>
+    <text x="1245" y="358" font-size="11" text-anchor="middle">Deduplication</text>
+    <text x="1245" y="370" font-size="9" text-anchor="middle" fill="#666">Hash-based storage</text>
+  </g>
+  
+  <!-- Security Services -->
+  <g id="security">
+    <rect x="1400" y="250" width="150" height="180" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="5"/>
+    <text x="1475" y="275" font-size="14" font-weight="bold" text-anchor="middle" fill="#f44336">Security</text>
+    
+    <rect x="1415" y="290" width="120" height="40" fill="#ffcdd2" stroke="#f44336" rx="3"/>
+    <text x="1475" y="308" font-size="11" text-anchor="middle">Secret Chat</text>
+    <text x="1475" y="320" font-size="9" text-anchor="middle" fill="#666">E2E encryption</text>
+    
+    <rect x="1415" y="340" width="120" height="40" fill="#ffcdd2" stroke="#f44336" rx="3"/>
+    <text x="1475" y="358" font-size="11" text-anchor="middle">2FA Service</text>
+    <text x="1475" y="370" font-size="9" text-anchor="middle" fill="#666">Two-factor auth</text>
+  </g>
+  
+  <!-- Data Storage Layer -->
+  <g id="message-storage">
+    <rect x="50" y="480" width="300" height="180" fill="#e0f2f1" stroke="#009688" stroke-width="2" rx="5"/>
+    <text x="200" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#009688">Message Storage</text>
+    
+    <rect x="70" y="520" width="130" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="135" y="538" font-size="11" text-anchor="middle">Cassandra</text>
+    <text x="135" y="550" font-size="9" text-anchor="middle" fill="#666">Messages &amp; history</text>
+    
+    <rect x="210" y="520" width="130" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="275" y="538" font-size="11" text-anchor="middle">Time-series DB</text>
+    <text x="275" y="550" font-size="9" text-anchor="middle" fill="#666">Message ordering</text>
+    
+    <rect x="70" y="570" width="130" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="135" y="588" font-size="11" text-anchor="middle">Sharding</text>
+    <text x="135" y="600" font-size="9" text-anchor="middle" fill="#666">By user_id/chat_id</text>
+    
+    <rect x="210" y="570" width="130" height="40" fill="#b2dfdb" stroke="#009688" rx="3"/>
+    <text x="275" y="588" font-size="11" text-anchor="middle">Replication</text>
+    <text x="275" y="600" font-size="9" text-anchor="middle" fill="#666">3x across regions</text>
+  </g>
+  
+  <!-- User Data Storage -->
+  <g id="user-storage">
+    <rect x="400" y="480" width="300" height="180" fill="#fce4ec" stroke="#e91e63" stroke-width="2" rx="5"/>
+    <text x="550" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#e91e63">User Data Storage</text>
+    
+    <rect x="420" y="520" width="130" height="40" fill="#f8bbd0" stroke="#e91e63" rx="3"/>
+    <text x="485" y="538" font-size="11" text-anchor="middle">PostgreSQL</text>
+    <text x="485" y="550" font-size="9" text-anchor="middle" fill="#666">User profiles</text>
+    
+    <rect x="560" y="520" width="130" height="40" fill="#f8bbd0" stroke="#e91e63" rx="3"/>
+    <text x="625" y="538" font-size="11" text-anchor="middle">MongoDB</text>
+    <text x="625" y="550" font-size="9" text-anchor="middle" fill="#666">Chat metadata</text>
+    
+    <rect x="420" y="570" width="130" height="40" fill="#f8bbd0" stroke="#e91e63" rx="3"/>
+    <text x="485" y="588" font-size="11" text-anchor="middle">Contact Graph</text>
+    <text x="485" y="600" font-size="9" text-anchor="middle" fill="#666">User connections</text>
+    
+    <rect x="560" y="570" width="130" height="40" fill="#f8bbd0" stroke="#e91e63" rx="3"/>
+    <text x="625" y="588" font-size="11" text-anchor="middle">Settings Store</text>
+    <text x="625" y="600" font-size="9" text-anchor="middle" fill="#666">Preferences</text>
+  </g>
+  
+  <!-- Media Storage -->
+  <g id="media-storage">
+    <rect x="750" y="480" width="300" height="180" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+    <text x="900" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#7b1fa2">Media Storage</text>
+    
+    <rect x="770" y="520" width="130" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="835" y="538" font-size="11" text-anchor="middle">Distributed FS</text>
+    <text x="835" y="550" font-size="9" text-anchor="middle" fill="#666">Large files</text>
+    
+    <rect x="910" y="520" width="130" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="975" y="538" font-size="11" text-anchor="middle">Object Storage</text>
+    <text x="975" y="550" font-size="9" text-anchor="middle" fill="#666">S3-compatible</text>
+    
+    <rect x="770" y="570" width="130" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="835" y="588" font-size="11" text-anchor="middle">Erasure Coding</text>
+    <text x="835" y="600" font-size="9" text-anchor="middle" fill="#666">Reed-Solomon</text>
+    
+    <rect x="910" y="570" width="130" height="40" fill="#e1bee7" stroke="#7b1fa2" rx="3"/>
+    <text x="975" y="588" font-size="11" text-anchor="middle">Hot/Cold Tiers</text>
+    <text x="975" y="600" font-size="9" text-anchor="middle" fill="#666">Storage optimization</text>
+  </g>
+  
+  <!-- Cache Layer -->
+  <g id="cache">
+    <rect x="1100" y="480" width="250" height="180" fill="#fff8e1" stroke="#ff9800" stroke-width="2" rx="5"/>
+    <text x="1225" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff9800">Cache Layer</text>
+    
+    <rect x="1120" y="520" width="100" height="40" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="1170" y="538" font-size="11" text-anchor="middle">Redis</text>
+    <text x="1170" y="550" font-size="9" text-anchor="middle" fill="#666">Hot data</text>
+    
+    <rect x="1230" y="520" width="100" height="40" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="1280" y="538" font-size="11" text-anchor="middle">Memcached</text>
+    <text x="1280" y="550" font-size="9" text-anchor="middle" fill="#666">Sessions</text>
+    
+    <rect x="1120" y="570" width="100" height="40" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="1170" y="588" font-size="11" text-anchor="middle">Regional</text>
+    <text x="1170" y="600" font-size="9" text-anchor="middle" fill="#666">Geo-cache</text>
+    
+    <rect x="1230" y="570" width="100" height="40" fill="#ffe0b2" stroke="#ff9800" rx="3"/>
+    <text x="1280" y="588" font-size="11" text-anchor="middle">Client Cache</text>
+    <text x="1280" y="600" font-size="9" text-anchor="middle" fill="#666">Local storage</text>
+  </g>
+  
+  <!-- Queue -->
+  <g id="queue">
+    <rect x="1400" y="480" width="150" height="180" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" rx="5"/>
+    <text x="1475" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#3f51b5">Queue</text>
+    
+    <rect x="1415" y="520" width="120" height="40" fill="#c5cae9" stroke="#3f51b5" rx="3"/>
+    <text x="1475" y="538" font-size="11" text-anchor="middle">Kafka</text>
+    <text x="1475" y="550" font-size="9" text-anchor="middle" fill="#666">Message queue</text>
+    
+    <rect x="1415" y="570" width="120" height="40" fill="#c5cae9" stroke="#3f51b5" rx="3"/>
+    <text x="1475" y="588" font-size="11" text-anchor="middle">Priority Queue</text>
+    <text x="1475" y="600" font-size="9" text-anchor="middle" fill="#666">Delivery order</text>
+  </g>
+  
+  <!-- Connection arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <path d="M 330 130 L 380 130" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 660 130 L 710 130" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 990 130 L 1040 130" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <path d="M 520 200 L 250 250" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 520 200 L 700 250" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 850 200 L 1150 250" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <path d="M 250 430 L 200 480" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 250 430 L 550 480" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 700 430 L 550 480" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1150 430 L 900 480" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1150 430 L 1225 480" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Info Boxes -->
+  <g id="info-boxes">
+    <rect x="50" y="710" width="220" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="60" y="728" font-size="12" font-weight="bold" fill="#333">Scale Metrics:</text>
+    <text x="60" y="745" font-size="10" fill="#555">• 700M monthly active users</text>
+    <text x="60" y="760" font-size="10" fill="#555">• 100B messages/day</text>
+    <text x="60" y="775" font-size="10" fill="#555">• 3M messages/sec peak</text>
+    <text x="60" y="790" font-size="10" fill="#555">• Groups: 200K members</text>
+    <text x="60" y="805" font-size="10" fill="#555">• Channels: Unlimited subs</text>
+    <text x="60" y="820" font-size="10" fill="#555">• File size: up to 2GB</text>
+    <text x="60" y="835" font-size="10" fill="#555">• 100K concurrent calls</text>
+    
+    <rect x="290" y="710" width="220" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="300" y="728" font-size="12" font-weight="bold" fill="#333">MTProto Features:</text>
+    <text x="300" y="745" font-size="10" fill="#555">• Custom binary protocol</text>
+    <text x="300" y="760" font-size="10" fill="#555">• Built-in encryption</text>
+    <text x="300" y="775" font-size="10" fill="#555">• Message acknowledgment</text>
+    <text x="300" y="790" font-size="10" fill="#555">• Auto-reconnection</text>
+    <text x="300" y="805" font-size="10" fill="#555">• Mobile optimized</text>
+    <text x="300" y="820" font-size="10" fill="#555">• Efficient serialization</text>
+    <text x="300" y="835" font-size="10" fill="#555">• DH key exchange</text>
+    
+    <rect x="530" y="710" width="220" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="540" y="728" font-size="12" font-weight="bold" fill="#333">Performance Targets:</text>
+    <text x="540" y="745" font-size="10" fill="#555">• Message delivery: 100ms</text>
+    <text x="540" y="760" font-size="10" fill="#555">• File upload: 100MB/s</text>
+    <text x="540" y="775" font-size="10" fill="#555">• Global sync: 500ms</text>
+    <text x="540" y="790" font-size="10" fill="#555">• Search: 200ms</text>
+    <text x="540" y="805" font-size="10" fill="#555">• Bot response: 50ms</text>
+    <text x="540" y="820" font-size="10" fill="#555">• 99.99% availability</text>
+    <text x="540" y="835" font-size="10" fill="#555">• 5+ data centers</text>
+    
+    <rect x="770" y="710" width="220" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="780" y="728" font-size="12" font-weight="bold" fill="#333">Storage Strategy:</text>
+    <text x="780" y="745" font-size="10" fill="#555">• Messages: Cassandra</text>
+    <text x="780" y="760" font-size="10" fill="#555">• Users: PostgreSQL</text>
+    <text x="780" y="775" font-size="10" fill="#555">• Media: Distributed FS</text>
+    <text x="780" y="790" font-size="10" fill="#555">• Cache: Redis cluster</text>
+    <text x="780" y="805" font-size="10" fill="#555">• Total: 100PB+ active</text>
+    <text x="780" y="820" font-size="10" fill="#555">• Backup: 300PB total</text>
+    <text x="780" y="835" font-size="10" fill="#555">• Growth: 50PB/year</text>
+    
+    <rect x="1010" y="710" width="220" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="1020" y="728" font-size="12" font-weight="bold" fill="#333">Key Features:</text>
+    <text x="1020" y="745" font-size="10" fill="#555">• Cloud-based storage</text>
+    <text x="1020" y="760" font-size="10" fill="#555">• Multi-device sync</text>
+    <text x="1020" y="775" font-size="10" fill="#555">• Secret chats (E2E)</text>
+    <text x="1020" y="790" font-size="10" fill="#555">• Self-destruct messages</text>
+    <text x="1020" y="805" font-size="10" fill="#555">• Bot platform</text>
+    <text x="1020" y="820" font-size="10" fill="#555">• Voice/video calls</text>
+    <text x="1020" y="835" font-size="10" fill="#555">• Message editing</text>
+    
+    <rect x="1250" y="710" width="300" height="140" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="1260" y="728" font-size="12" font-weight="bold" fill="#333">Infrastructure:</text>
+    <text x="1260" y="745" font-size="10" fill="#555">• 20K API servers</text>
+    <text x="1260" y="760" font-size="10" fill="#555">• 5K media servers</text>
+    <text x="1260" y="775" font-size="10" fill="#555">• 2K database nodes</text>
+    <text x="1260" y="790" font-size="10" fill="#555">• 10K cache servers</text>
+    <text x="1260" y="805" font-size="10" fill="#555">• 500 CDN edge nodes</text>
+    <text x="1260" y="820" font-size="10" fill="#555">• 100GB/s peak bandwidth</text>
+    <text x="1260" y="835" font-size="10" fill="#555">• Multi-region deployment</text>
+  </g>
+</svg>

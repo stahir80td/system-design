@@ -1,0 +1,30 @@
+# Everything we already ignore for git
+.git
+.gitignore
+**/.DS_Store
+**/Thumbs.db
+
+# Node deps and lockfiles (we copy only package*.json and run npm ci in Dockerfile)
+node_modules
+**/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs (we build inside the container)
+web/dist
+coverage
+reports
+.nyc_output
+.vite
+.parcel-cache
+**/*.tsbuildinfo
+
+# Env (never bake secrets into images accidentally)
+.env
+.env.*
+
+# Local/editor
+.vscode
+.idea

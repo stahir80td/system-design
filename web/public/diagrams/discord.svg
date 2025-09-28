@@ -1,0 +1,291 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Discord Architecture - Real-time Communication Platform
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="280" height="180" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="5"/>
+  <rect x="310" y="60" width="450" height="180" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <rect x="780" y="60" width="300" height="180" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="5"/>
+  <rect x="1100" y="60" width="290" height="180" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="260" width="450" height="200" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="5"/>
+  <rect x="480" y="260" width="450" height="200" fill="#E0F2F1" stroke="#009688" stroke-width="2" rx="5"/>
+  <rect x="950" y="260" width="440" height="200" fill="#FFF9C4" stroke="#FFEB3B" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="480" width="680" height="160" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  <rect x="710" y="480" width="680" height="160" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="150" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Client Layer</text>
+  <text x="535" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Gateway and Real-time</text>
+  <text x="930" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Core Services</text>
+  <text x="1245" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Voice/Video</text>
+  
+  <text x="235" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Storage Layer</text>
+  <text x="705" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Permissions and State</text>
+  <text x="1170" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Bot and API</text>
+  
+  <text x="350" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Infrastructure</text>
+  <text x="1050" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Analytics and Monitoring</text>
+  
+  <!-- Client Layer -->
+  <rect x="30" y="100" width="110" height="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="85" y="120" font-family="Arial" font-size="11" text-anchor="middle">Desktop App</text>
+  <text x="85" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Electron)</text>
+  
+  <rect x="160" y="100" width="110" height="40" fill="#90CAF9" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="215" y="120" font-family="Arial" font-size="11" text-anchor="middle">Mobile Apps</text>
+  <text x="215" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(React Native)</text>
+  
+  <rect x="30" y="150" width="110" height="40" fill="#64B5F6" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="85" y="170" font-family="Arial" font-size="11" text-anchor="middle">Web App</text>
+  <text x="85" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(React)</text>
+  
+  <rect x="160" y="150" width="110" height="40" fill="#42A5F5" stroke="#2196F3" stroke-width="1" rx="3"/>
+  <text x="215" y="170" font-family="Arial" font-size="11" text-anchor="middle">Console</text>
+  <text x="215" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(PS/Xbox)</text>
+  
+  <rect x="30" y="200" width="240" height="30" fill="#2196F3" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="150" y="220" font-family="Arial" font-size="11" fill="white" text-anchor="middle">14M Concurrent Users</text>
+  
+  <!-- Gateway Real-time -->
+  <rect x="330" y="100" width="200" height="50" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="430" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Gateway Servers</text>
+  <text x="430" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">WebSocket connections</text>
+  <text x="430" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">1,000 servers</text>
+  
+  <rect x="550" y="100" width="190" height="50" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="645" y="120" font-family="Arial" font-size="11" text-anchor="middle">Sharding System</text>
+  <text x="645" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Guild-based sharding</text>
+  <text x="645" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">~2,500 guilds/shard</text>
+  
+  <rect x="330" y="160" width="200" height="60" fill="#81C784" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="430" y="180" font-family="Arial" font-size="11" text-anchor="middle">Event Stream</text>
+  <text x="430" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10M events/sec</text>
+  <text x="430" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">MESSAGE_CREATE</text>
+  <text x="430" y="221" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">PRESENCE_UPDATE</text>
+  
+  <rect x="550" y="160" width="190" height="60" fill="#66BB6A" stroke="#4CAF50" stroke-width="1" rx="3"/>
+  <text x="645" y="180" font-family="Arial" font-size="11" text-anchor="middle">Presence Service</text>
+  <text x="645" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Game detection</text>
+  <text x="645" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Status updates</text>
+  <text x="645" y="221" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Rich activities</text>
+  
+  <!-- Core Services -->
+  <rect x="800" y="100" width="120" height="40" fill="#FFE0B2" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="860" y="120" font-family="Arial" font-size="11" text-anchor="middle">Message Service</text>
+  <text x="860" y="133" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">4B msg/day</text>
+  
+  <rect x="940" y="100" width="120" height="40" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="1000" y="120" font-family="Arial" font-size="11" text-anchor="middle">Guild Service</text>
+  <text x="1000" y="133" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">20M servers</text>
+  
+  <rect x="800" y="150" width="120" height="40" fill="#FFB74D" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="860" y="170" font-family="Arial" font-size="11" text-anchor="middle">Channel Service</text>
+  <text x="860" y="183" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Text/Voice/Stage</text>
+  
+  <rect x="940" y="150" width="120" height="40" fill="#FFA726" stroke="#FF9800" stroke-width="1" rx="3"/>
+  <text x="1000" y="170" font-family="Arial" font-size="11" text-anchor="middle">User Service</text>
+  <text x="1000" y="183" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">150M MAU</text>
+  
+  <rect x="800" y="200" width="260" height="30" fill="#FF9800" stroke="#F57C00" stroke-width="2" rx="3"/>
+  <text x="930" y="220" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Microservices (Elixir/Rust)</text>
+  
+  <!-- Voice Video -->
+  <rect x="1120" y="100" width="250" height="50" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1245" y="120" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Voice Servers</text>
+  <text x="1245" y="135" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">30,000 servers globally</text>
+  <text x="1245" y="148" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">UDP protocol, Opus codec</text>
+  
+  <rect x="1120" y="160" width="120" height="60" fill="#CE93D8" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1180" y="180" font-family="Arial" font-size="11" text-anchor="middle">WebRTC</text>
+  <text x="1180" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Video calls</text>
+  <text x="1180" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Screen share</text>
+  <text x="1180" y="221" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Go Live</text>
+  
+  <rect x="1250" y="160" width="120" height="60" fill="#BA68C8" stroke="#9C27B0" stroke-width="1" rx="3"/>
+  <text x="1310" y="180" font-family="Arial" font-size="11" text-anchor="middle">Processing</text>
+  <text x="1310" y="195" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Noise suppress</text>
+  <text x="1310" y="208" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Echo cancel</text>
+  <text x="1310" y="221" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">60ms latency</text>
+  
+  <!-- Storage Layer -->
+  <rect x="30" y="300" width="180" height="60" fill="#FFCDD2" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="120" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Cassandra</text>
+  <text x="120" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Message storage</text>
+  <text x="120" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">10T messages</text>
+  <text x="120" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Time-bucketed</text>
+  
+  <rect x="230" y="300" width="210" height="60" fill="#EF9A9A" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="335" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PostgreSQL</text>
+  <text x="335" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Guild metadata</text>
+  <text x="335" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Users, channels, roles</text>
+  <text x="335" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Read replicas</text>
+  
+  <rect x="30" y="370" width="180" height="70" fill="#E57373" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="120" y="390" font-family="Arial" font-size="11" text-anchor="middle">Redis Cluster</text>
+  <text x="120" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Sessions/Presence</text>
+  <text x="120" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Voice states</text>
+  <text x="120" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Message cache</text>
+  
+  <rect x="230" y="370" width="210" height="70" fill="#EF5350" stroke="#F44336" stroke-width="1" rx="3"/>
+  <text x="335" y="390" font-family="Arial" font-size="11" text-anchor="middle">S3 Storage</text>
+  <text x="335" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Media files</text>
+  <text x="335" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">500PB total</text>
+  <text x="335" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">CDN backed</text>
+  
+  <!-- Permissions State -->
+  <rect x="500" y="300" width="200" height="60" fill="#B2DFDB" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Permission Engine</text>
+  <text x="600" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Role hierarchy</text>
+  <text x="600" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Channel overwrites</text>
+  <text x="600" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Bitfield operations</text>
+  
+  <rect x="720" y="300" width="190" height="60" fill="#80CBC4" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="320" font-family="Arial" font-size="11" text-anchor="middle">Snowflake IDs</text>
+  <text x="815" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Distributed generation</text>
+  <text x="815" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Time-sortable</text>
+  <text x="815" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">64-bit integers</text>
+  
+  <rect x="500" y="370" width="200" height="70" fill="#4DB6AC" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="600" y="390" font-family="Arial" font-size="11" text-anchor="middle">State Management</text>
+  <text x="600" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Guild state</text>
+  <text x="600" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Member cache</text>
+  <text x="600" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Channel cache</text>
+  
+  <rect x="720" y="370" width="190" height="70" fill="#26A69A" stroke="#009688" stroke-width="1" rx="3"/>
+  <text x="815" y="390" font-family="Arial" font-size="11" text-anchor="middle">Session Store</text>
+  <text x="815" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Gateway sessions</text>
+  <text x="815" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Resume capability</text>
+  <text x="815" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Heartbeat tracking</text>
+  
+  <!-- Bot API -->
+  <rect x="970" y="300" width="180" height="60" fill="#FFF59D" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Bot Gateway</text>
+  <text x="1060" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Higher limits</text>
+  <text x="1060" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Intent system</text>
+  <text x="1060" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Sharding support</text>
+  
+  <rect x="1170" y="300" width="200" height="60" fill="#FFEE58" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="320" font-family="Arial" font-size="11" text-anchor="middle">REST API</text>
+  <text x="1270" y="335" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Rate limited</text>
+  <text x="1270" y="348" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">v10 endpoints</text>
+  <text x="1270" y="361" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">CRUD operations</text>
+  
+  <rect x="970" y="370" width="180" height="70" fill="#FFD600" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1060" y="390" font-family="Arial" font-size="11" text-anchor="middle">Slash Commands</text>
+  <text x="1060" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Interactions API</text>
+  <text x="1060" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Autocomplete</text>
+  <text x="1060" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">3s response time</text>
+  
+  <rect x="1170" y="370" width="200" height="70" fill="#FFC400" stroke="#FFEB3B" stroke-width="1" rx="3"/>
+  <text x="1270" y="390" font-family="Arial" font-size="11" text-anchor="middle">OAuth2</text>
+  <text x="1270" y="405" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Bot authorization</text>
+  <text x="1270" y="418" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Scopes and perms</text>
+  <text x="1270" y="431" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Token management</text>
+  
+  <!-- Infrastructure -->
+  <rect x="30" y="520" width="200" height="45" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">CloudFlare CDN</text>
+  <text x="130" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Media delivery</text>
+  
+  <rect x="250" y="520" width="200" height="45" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="540" font-family="Arial" font-size="11" text-anchor="middle">Load Balancers</text>
+  <text x="350" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Anycast routing</text>
+  
+  <rect x="470" y="520" width="200" height="45" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="540" font-family="Arial" font-size="11" text-anchor="middle">Service Mesh</text>
+  <text x="570" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">gRPC internal</text>
+  
+  <rect x="30" y="575" width="200" height="45" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="130" y="595" font-family="Arial" font-size="11" text-anchor="middle">Regional Clusters</text>
+  <text x="130" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Global presence</text>
+  
+  <rect x="250" y="575" width="200" height="45" fill="#9C27B0" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="350" y="595" font-family="Arial" font-size="11" text-anchor="middle">Auto Scaling</text>
+  <text x="350" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Kubernetes</text>
+  
+  <rect x="470" y="575" width="200" height="45" fill="#8E24AA" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="570" y="595" font-family="Arial" font-size="11" text-anchor="middle">DDoS Protection</text>
+  <text x="570" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">CloudFlare Shield</text>
+  
+  <!-- Analytics Monitoring -->
+  <rect x="730" y="520" width="200" height="45" fill="#C5CAE9" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Metrics Pipeline</text>
+  <text x="830" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Prometheus/Grafana</text>
+  
+  <rect x="950" y="520" width="200" height="45" fill="#9FA8DA" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="540" font-family="Arial" font-size="11" text-anchor="middle">Event Logging</text>
+  <text x="1050" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Audit trails</text>
+  
+  <rect x="1170" y="520" width="200" height="45" fill="#7986CB" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="540" font-family="Arial" font-size="11" text-anchor="middle">Error Tracking</text>
+  <text x="1270" y="555" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Sentry</text>
+  
+  <rect x="730" y="575" width="200" height="45" fill="#5C6BC0" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="830" y="595" font-family="Arial" font-size="11" text-anchor="middle">Analytics DB</text>
+  <text x="830" y="610" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">MongoDB</text>
+  
+  <rect x="950" y="575" width="200" height="45" fill="#3F51B5" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1050" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Health Checks</text>
+  <text x="1050" y="610" font-family="Arial" font-size="10" fill="#C5CAE9" text-anchor="middle">Service status</text>
+  
+  <rect x="1170" y="575" width="200" height="45" fill="#303F9F" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="595" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Alerting</text>
+  <text x="1270" y="610" font-family="Arial" font-size="10" fill="#9FA8DA" text-anchor="middle">PagerDuty</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Flow arrows -->
+  <path d="M 290 150 L 330 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 740 150 L 800 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1060 150 L 1120 150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 150 240 L 150 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 535 240 L 600 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 930 240 L 1060 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <path d="M 350 460 L 350 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 705 440 L 830 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="650" width="1380" height="230" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  
+  <text x="30" y="680" font-family="Arial" font-size="14" font-weight="bold">Discord Architecture Overview</text>
+  
+  <text x="30" y="710" font-family="Arial" font-size="12" font-weight="bold">Scale:</text>
+  <text x="30" y="730" font-family="Arial" font-size="11">• 150M monthly active users, 14M concurrent</text>
+  <text x="30" y="750" font-family="Arial" font-size="11">• 4B messages/day, 10T total stored</text>
+  <text x="30" y="770" font-family="Arial" font-size="11">• 20M servers, up to 1M members each</text>
+  <text x="30" y="790" font-family="Arial" font-size="11">• 3M concurrent voice users</text>
+  
+  <text x="400" y="710" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="400" y="730" font-family="Arial" font-size="11">• Voice latency under 60ms for gaming</text>
+  <text x="400" y="750" font-family="Arial" font-size="11">• Complex hierarchical permissions</text>
+  <text x="400" y="770" font-family="Arial" font-size="11">• Rich presence and game detection</text>
+  <text x="400" y="790" font-family="Arial" font-size="11">• Slash commands and bot ecosystem</text>
+  
+  <text x="750" y="710" font-family="Arial" font-size="12" font-weight="bold">Technology Stack:</text>
+  <text x="750" y="730" font-family="Arial" font-size="11">• Elixir/Rust microservices</text>
+  <text x="750" y="750" font-family="Arial" font-size="11">• Cassandra for message storage</text>
+  <text x="750" y="770" font-family="Arial" font-size="11">• WebSocket gateway for real-time</text>
+  <text x="750" y="790" font-family="Arial" font-size="11">• Snowflake IDs for distributed generation</text>
+  
+  <text x="1100" y="710" font-family="Arial" font-size="12" font-weight="bold">Performance:</text>
+  <text x="1100" y="730" font-family="Arial" font-size="11">• 99.99% uptime SLA</text>
+  <text x="1100" y="750" font-family="Arial" font-size="11">• Message delivery under 100ms</text>
+  <text x="1100" y="770" font-family="Arial" font-size="11">• 10M events/second throughput</text>
+  <text x="1100" y="790" font-family="Arial" font-size="11">• 192 Gbps voice bandwidth</text>
+  
+  <text x="30" y="820" font-family="Arial" font-size="11">Message Flow: Client → Gateway → Permission Check → Snowflake ID → Cassandra → Event Broadcast → Recipients</text>
+  <text x="30" y="840" font-family="Arial" font-size="11">Voice Flow: Client → Voice Server Selection → UDP Connection → Opus Audio → Mixing → Distribution</text>
+  <text x="30" y="860" font-family="Arial" font-size="11">Storage: Cassandra (messages) • PostgreSQL (metadata) • Redis (cache/presence) • S3 (media files)</text>
+  
+</svg>

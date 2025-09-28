@@ -1,0 +1,320 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    Zoom Architecture - Video Conferencing Platform
+  </text>
+  
+  <!-- Background sections -->
+  <rect x="10" y="60" width="260" height="200" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <rect x="290" y="60" width="400" height="200" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <rect x="710" y="60" width="340" height="200" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <rect x="1070" y="60" width="320" height="200" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="280" width="680" height="180" fill="#FFEBEE" stroke="#C62828" stroke-width="2" rx="5"/>
+  <rect x="710" y="280" width="680" height="180" fill="#E0F2F1" stroke="#00796B" stroke-width="2" rx="5"/>
+  
+  <rect x="10" y="480" width="450" height="160" fill="#FFF9C4" stroke="#F57F17" stroke-width="2" rx="5"/>
+  <rect x="480" y="480" width="450" height="160" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2" rx="5"/>
+  <rect x="950" y="480" width="440" height="160" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" rx="5"/>
+  
+  <!-- Section Labels -->
+  <text x="140" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Client Layer</text>
+  <text x="490" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Network Infrastructure</text>
+  <text x="880" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Signaling &amp; Control</text>
+  <text x="1230" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Application Services</text>
+  <text x="350" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Media Processing Layer</text>
+  <text x="1050" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Recording &amp; Storage</text>
+  <text x="235" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Data Storage</text>
+  <text x="705" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Real-time Data</text>
+  <text x="1170" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Analytics</text>
+  
+  <!-- Client Layer -->
+  <rect x="30" y="100" width="100" height="40" fill="#BBDEFB" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="80" y="125" font-family="Arial" font-size="11" text-anchor="middle">Desktop Client</text>
+  
+  <rect x="150" y="100" width="100" height="40" fill="#90CAF9" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="200" y="125" font-family="Arial" font-size="11" text-anchor="middle">Mobile Apps</text>
+  
+  <rect x="30" y="150" width="100" height="40" fill="#64B5F6" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="80" y="170" font-family="Arial" font-size="11" text-anchor="middle">Web Browser</text>
+  <text x="80" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(WebRTC)</text>
+  
+  <rect x="150" y="150" width="100" height="40" fill="#42A5F5" stroke="#1976D2" stroke-width="1" rx="3"/>
+  <text x="200" y="170" font-family="Arial" font-size="11" text-anchor="middle">Room Systems</text>
+  <text x="200" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(H.323/SIP)</text>
+  
+  <rect x="30" y="200" width="220" height="45" fill="#1976D2" stroke="#0D47A1" stroke-width="2" rx="3"/>
+  <text x="140" y="220" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Zoom SDK/API</text>
+  <text x="140" y="235" font-family="Arial" font-size="10" fill="#E3F2FD" text-anchor="middle">Custom Integrations</text>
+  
+  <!-- Network Infrastructure -->
+  <rect x="310" y="100" width="160" height="45" fill="#FFE0B2" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="390" y="120" font-family="Arial" font-size="11" text-anchor="middle">STUN Servers</text>
+  <text x="390" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(NAT Discovery)</text>
+  
+  <rect x="490" y="100" width="180" height="45" fill="#FFCC80" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="580" y="120" font-family="Arial" font-size="11" text-anchor="middle">TURN Servers</text>
+  <text x="580" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Relay for Firewalls)</text>
+  
+  <rect x="310" y="155" width="160" height="45" fill="#FFB74D" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="390" y="175" font-family="Arial" font-size="11" text-anchor="middle">Load Balancers</text>
+  <text x="390" y="190" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Geo-distributed)</text>
+  
+  <rect x="490" y="155" width="180" height="45" fill="#FFA726" stroke="#F57C00" stroke-width="1" rx="3"/>
+  <text x="580" y="175" font-family="Arial" font-size="11" text-anchor="middle">Edge Servers</text>
+  <text x="580" y="190" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(17+ Regions)</text>
+  
+  <rect x="350" y="210" width="280" height="40" fill="#FF6F00" stroke="#E65100" stroke-width="2" rx="3"/>
+  <text x="490" y="230" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Global Private Network</text>
+  <text x="490" y="243" font-family="Arial" font-size="10" fill="#FFE0B2" text-anchor="middle">Optimized Routing &amp; Peering</text>
+  
+  <!-- Signaling & Control -->
+  <rect x="730" y="100" width="140" height="45" fill="#C8E6C9" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="800" y="120" font-family="Arial" font-size="11" text-anchor="middle">WebSocket Servers</text>
+  <text x="800" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Signaling)</text>
+  
+  <rect x="890" y="100" width="140" height="45" fill="#A5D6A7" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="960" y="120" font-family="Arial" font-size="11" text-anchor="middle">SIP Gateway</text>
+  <text x="960" y="135" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Phone Dial-in)</text>
+  
+  <rect x="730" y="155" width="140" height="45" fill="#81C784" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="800" y="175" font-family="Arial" font-size="11" text-anchor="middle">Meeting Controller</text>
+  <text x="800" y="190" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Orchestration)</text>
+  
+  <rect x="890" y="155" width="140" height="45" fill="#66BB6A" stroke="#388E3C" stroke-width="1" rx="3"/>
+  <text x="960" y="175" font-family="Arial" font-size="11" text-anchor="middle">Presence Service</text>
+  <text x="960" y="190" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(User Status)</text>
+  
+  <rect x="770" y="210" width="220" height="40" fill="#388E3C" stroke="#1B5E20" stroke-width="2" rx="3"/>
+  <text x="880" y="230" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Meeting State Manager</text>
+  <text x="880" y="243" font-family="Arial" font-size="10" fill="#C8E6C9" text-anchor="middle">Participant Control &amp; Permissions</text>
+  
+  <!-- Application Services -->
+  <rect x="1090" y="100" width="130" height="40" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="1155" y="120" font-family="Arial" font-size="11" text-anchor="middle">User Service</text>
+  <text x="1155" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Auth/Profile)</text>
+  
+  <rect x="1240" y="100" width="130" height="40" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="1305" y="120" font-family="Arial" font-size="11" text-anchor="middle">Calendar Service</text>
+  <text x="1305" y="133" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Scheduling)</text>
+  
+  <rect x="1090" y="150" width="130" height="40" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="1155" y="170" font-family="Arial" font-size="11" text-anchor="middle">Notification Service</text>
+  <text x="1155" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(Email/Push)</text>
+  
+  <rect x="1240" y="150" width="130" height="40" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1" rx="3"/>
+  <text x="1305" y="170" font-family="Arial" font-size="11" text-anchor="middle">Chat Service</text>
+  <text x="1305" y="183" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">(In-meeting)</text>
+  
+  <rect x="1110" y="200" width="240" height="50" fill="#7B1FA2" stroke="#4A148C" stroke-width="2" rx="3"/>
+  <text x="1230" y="220" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="1230" y="235" font-family="Arial" font-size="10" fill="#E1BEE7" text-anchor="middle">REST APIs &amp; Webhooks</text>
+  
+  <!-- Media Processing Layer -->
+  <rect x="30" y="320" width="200" height="50" fill="#FFCDD2" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="130" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Media Servers (SFU)</text>
+  <text x="130" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Selective Forwarding Units</text>
+  
+  <rect x="250" y="320" width="200" height="50" fill="#EF9A9A" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="350" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Cascade Servers</text>
+  <text x="350" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">For 500+ Participants</text>
+  
+  <rect x="470" y="320" width="200" height="50" fill="#E57373" stroke="#C62828" stroke-width="1" rx="3"/>
+  <text x="570" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Audio Mixer</text>
+  <text x="570" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Active Speaker Detection</text>
+  
+  <rect x="30" y="380" width="150" height="60" fill="#FFAB91" stroke="#D84315" stroke-width="1" rx="3"/>
+  <text x="105" y="400" font-family="Arial" font-size="11" text-anchor="middle">Video Processor</text>
+  <text x="105" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Virtual Backgrounds</text>
+  <text x="105" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Filters &amp; Effects</text>
+  
+  <rect x="200" y="380" width="150" height="60" fill="#FF8A65" stroke="#D84315" stroke-width="1" rx="3"/>
+  <text x="275" y="400" font-family="Arial" font-size="11" text-anchor="middle">Audio Processor</text>
+  <text x="275" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Noise Suppression</text>
+  <text x="275" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Echo Cancellation</text>
+  
+  <rect x="370" y="380" width="150" height="60" fill="#FF7043" stroke="#D84315" stroke-width="1" rx="3"/>
+  <text x="445" y="400" font-family="Arial" font-size="11" text-anchor="middle">Screen Share</text>
+  <text x="445" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Optimization</text>
+  <text x="445" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Annotation</text>
+  
+  <rect x="540" y="380" width="130" height="60" fill="#FF5722" stroke="#BF360C" stroke-width="1" rx="3"/>
+  <text x="605" y="400" font-family="Arial" font-size="11" text-anchor="middle">Adaptive Bitrate</text>
+  <text x="605" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Simulcast</text>
+  <text x="605" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• 240p-1080p</text>
+  
+  <!-- Recording & Storage -->
+  <rect x="730" y="320" width="200" height="50" fill="#B2DFDB" stroke="#00796B" stroke-width="1" rx="3"/>
+  <text x="830" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Recording Servers</text>
+  <text x="830" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Real-time Capture</text>
+  
+  <rect x="950" y="320" width="200" height="50" fill="#80CBC4" stroke="#00796B" stroke-width="1" rx="3"/>
+  <text x="1050" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Transcoding Service</text>
+  <text x="1050" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Multiple Formats</text>
+  
+  <rect x="1170" y="320" width="200" height="50" fill="#4DB6AC" stroke="#00796B" stroke-width="1" rx="3"/>
+  <text x="1270" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Object Storage (S3)</text>
+  <text x="1270" y="355" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Recording Files</text>
+  
+  <rect x="730" y="380" width="150" height="60" fill="#26A69A" stroke="#00695C" stroke-width="1" rx="3"/>
+  <text x="805" y="400" font-family="Arial" font-size="11" text-anchor="middle">Composition Engine</text>
+  <text x="805" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Gallery View</text>
+  <text x="805" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Speaker View</text>
+  
+  <rect x="900" y="380" width="150" height="60" fill="#00897B" stroke="#00695C" stroke-width="1" rx="3"/>
+  <text x="975" y="400" font-family="Arial" font-size="11" text-anchor="middle">Transcript Service</text>
+  <text x="975" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Speech-to-Text</text>
+  <text x="975" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Multi-language</text>
+  
+  <rect x="1070" y="380" width="150" height="60" fill="#00796B" stroke="#004D40" stroke-width="1" rx="3"/>
+  <text x="1145" y="400" font-family="Arial" font-size="11" text-anchor="middle">CDN Distribution</text>
+  <text x="1145" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• CloudFront</text>
+  <text x="1145" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Global Delivery</text>
+  
+  <rect x="1240" y="380" width="130" height="60" fill="#00695C" stroke="#004D40" stroke-width="1" rx="3"/>
+  <text x="1305" y="400" font-family="Arial" font-size="11" text-anchor="middle">Backup Service</text>
+  <text x="1305" y="415" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Redundancy</text>
+  <text x="1305" y="428" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">• Compliance</text>
+  
+  <!-- Data Storage -->
+  <rect x="30" y="520" width="180" height="45" fill="#FFF59D" stroke="#F57F17" stroke-width="1" rx="3"/>
+  <text x="120" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">PostgreSQL</text>
+  <text x="120" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Users, Meetings, Settings</text>
+  
+  <rect x="230" y="520" width="210" height="45" fill="#FFEB3B" stroke="#F57F17" stroke-width="1" rx="3"/>
+  <text x="335" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">DynamoDB</text>
+  <text x="335" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Session State, Preferences</text>
+  
+  <rect x="30" y="575" width="180" height="45" fill="#FFD600" stroke="#F57F17" stroke-width="1" rx="3"/>
+  <text x="120" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">MongoDB</text>
+  <text x="120" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Analytics, Logs</text>
+  
+  <rect x="230" y="575" width="210" height="45" fill="#FFC107" stroke="#F57F17" stroke-width="1" rx="3"/>
+  <text x="335" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Cassandra</text>
+  <text x="335" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Chat History, Events</text>
+  
+  <!-- Real-time Data -->
+  <rect x="500" y="520" width="200" height="45" fill="#E1BEE7" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="600" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Redis Cluster</text>
+  <text x="600" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Active Meetings, Participants</text>
+  
+  <rect x="720" y="520" width="190" height="45" fill="#CE93D8" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="815" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Kafka</text>
+  <text x="815" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Event Streaming</text>
+  
+  <rect x="500" y="575" width="200" height="45" fill="#BA68C8" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="600" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Time Series DB</text>
+  <text x="600" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Quality Metrics, Stats</text>
+  
+  <rect x="720" y="575" width="190" height="45" fill="#AB47BC" stroke="#6A1B9A" stroke-width="1" rx="3"/>
+  <text x="815" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">ElasticSearch</text>
+  <text x="815" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Meeting Search, Logs</text>
+  
+  <!-- Analytics -->
+  <rect x="970" y="520" width="180" height="45" fill="#C5CAE9" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1060" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Quality Analytics</text>
+  <text x="1060" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Network Performance</text>
+  
+  <rect x="1170" y="520" width="200" height="45" fill="#9FA8DA" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="540" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Usage Analytics</text>
+  <text x="1270" y="555" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Meeting Stats, Features</text>
+  
+  <rect x="970" y="575" width="180" height="45" fill="#7986CB" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1060" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">ML Pipeline</text>
+  <text x="1060" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Background Blur, AI</text>
+  
+  <rect x="1170" y="575" width="200" height="45" fill="#5C6BC0" stroke="#3F51B5" stroke-width="1" rx="3"/>
+  <text x="1270" y="595" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Billing Service</text>
+  <text x="1270" y="610" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Usage Tracking</text>
+  
+  <!-- Arrows and Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Client to Network -->
+  <path d="M 250 180 L 310 180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Network to Signaling -->
+  <path d="M 630 180 L 730 180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Signaling to Services -->
+  <path d="M 1030 180 L 1090 180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- To Media Processing -->
+  <path d="M 350 260 L 350 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- To Recording -->
+  <path d="M 830 260 L 830 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- To Storage -->
+  <path d="M 350 440 L 350 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 700 400 L 700 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 1050 440 L 1050 520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Info Boxes -->
+  <rect x="10" y="650" width="340" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="20" y="670" font-family="Arial" font-size="12" font-weight="bold">Connection Flow:</text>
+  <text x="20" y="685" font-family="Arial" font-size="10">1. Client connects to edge server</text>
+  <text x="20" y="698" font-family="Arial" font-size="10">2. STUN/TURN for NAT traversal</text>
+  <text x="20" y="711" font-family="Arial" font-size="10">3. WebSocket for signaling (SDP exchange)</text>
+  <text x="20" y="724" font-family="Arial" font-size="10">4. Media server assignment (geo-based)</text>
+  <text x="20" y="737" font-family="Arial" font-size="10">5. WebRTC peer connections established</text>
+  <text x="20" y="750" font-family="Arial" font-size="10">6. SFU routes media streams</text>
+  <text x="20" y="763" font-family="Arial" font-size="10">7. Adaptive bitrate based on conditions</text>
+  
+  <rect x="370" y="650" width="340" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="380" y="670" font-family="Arial" font-size="12" font-weight="bold">System Scale:</text>
+  <text x="380" y="685" font-family="Arial" font-size="10">• 300M daily meeting participants</text>
+  <text x="380" y="698" font-family="Arial" font-size="10">• 5M concurrent meetings (peak)</text>
+  <text x="380" y="711" font-family="Arial" font-size="10">• 40M peak concurrent users</text>
+  <text x="380" y="724" font-family="Arial" font-size="10">• 100,000 media servers globally</text>
+  <text x="380" y="737" font-family="Arial" font-size="10">• 60 Tbps global bandwidth</text>
+  <text x="380" y="750" font-family="Arial" font-size="10">• 30 PB daily recording storage</text>
+  <text x="380" y="763" font-family="Arial" font-size="10">• 17+ data center regions</text>
+  
+  <rect x="730" y="650" width="320" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="740" y="670" font-family="Arial" font-size="12" font-weight="bold">Key Features:</text>
+  <text x="740" y="685" font-family="Arial" font-size="10">• Up to 1000 participants per meeting</text>
+  <text x="740" y="698" font-family="Arial" font-size="10">• Audio latency &lt; 150ms</text>
+  <text x="740" y="711" font-family="Arial" font-size="10">• Video latency &lt; 200ms</text>
+  <text x="740" y="724" font-family="Arial" font-size="10">• Adaptive quality (240p to 1080p)</text>
+  <text x="740" y="737" font-family="Arial" font-size="10">• Virtual backgrounds (AI-powered)</text>
+  <text x="740" y="750" font-family="Arial" font-size="10">• Breakout rooms for sub-meetings</text>
+  <text x="740" y="763" font-family="Arial" font-size="10">• End-to-end encryption option</text>
+  
+  <rect x="1070" y="650" width="320" height="120" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="3"/>
+  <text x="1080" y="670" font-family="Arial" font-size="12" font-weight="bold">Optimizations:</text>
+  <text x="1080" y="685" font-family="Arial" font-size="10">• SFU architecture (no transcoding)</text>
+  <text x="1080" y="698" font-family="Arial" font-size="10">• Simulcast for bandwidth efficiency</text>
+  <text x="1080" y="711" font-family="Arial" font-size="10">• Cascade servers for large meetings</text>
+  <text x="1080" y="724" font-family="Arial" font-size="10">• Hardware acceleration (GPU)</text>
+  <text x="1080" y="737" font-family="Arial" font-size="10">• Packet loss recovery (FEC)</text>
+  <text x="1080" y="750" font-family="Arial" font-size="10">• Regional media servers</text>
+  <text x="1080" y="763" font-family="Arial" font-size="10">• Optimized codec selection</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="10" y="780" width="450" height="100" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="20" y="800" font-family="Arial" font-size="12" font-weight="bold">Performance Requirements:</text>
+  <text x="20" y="818" font-family="Arial" font-size="10">• 99.99% uptime for enterprise customers</text>
+  <text x="20" y="834" font-family="Arial" font-size="10">• Support 20% packet loss with acceptable quality</text>
+  <text x="20" y="850" font-family="Arial" font-size="10">• Bandwidth: 600kbps (low) to 3.8Mbps (HD) per stream</text>
+  <text x="20" y="866" font-family="Arial" font-size="10">• Join meeting in &lt; 3 seconds</text>
+  
+  <rect x="480" y="780" width="450" height="100" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="3"/>
+  <text x="490" y="800" font-family="Arial" font-size="12" font-weight="bold">Media Architecture Choices:</text>
+  <text x="490" y="818" font-family="Arial" font-size="10">• SFU (Selective Forwarding) vs MCU - chose SFU for scalability</text>
+  <text x="490" y="834" font-family="Arial" font-size="10">• H.264 primary codec with VP8/VP9 fallback</text>
+  <text x="490" y="850" font-family="Arial" font-size="10">• Opus audio codec for superior quality</text>
+  <text x="490" y="866" font-family="Arial" font-size="10">• WebRTC for web clients, custom protocol for native apps</text>
+  
+  <rect x="950" y="780" width="440" height="100" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="960" y="800" font-family="Arial" font-size="12" font-weight="bold">Security Features:</text>
+  <text x="960" y="818" font-family="Arial" font-size="10">• AES 256-bit GCM encryption for meetings</text>
+  <text x="960" y="834" font-family="Arial" font-size="10">• Optional end-to-end encryption (E2EE)</text>
+  <text x="960" y="850" font-family="Arial" font-size="10">• Waiting room and password protection</text>
+  <text x="960" y="866" font-family="Arial" font-size="10">• GDPR and HIPAA compliance</text>
+  
+</svg>

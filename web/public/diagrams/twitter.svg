@@ -1,0 +1,215 @@
+<svg viewBox="0 0 1500 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1500" height="900" fill="#f7f9fa"/>
+  
+  <!-- Title -->
+  <text x="750" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Twitter/X Architecture - Timeline Generation</text>
+  
+  <!-- Client Apps -->
+  <g id="clients">
+    <text x="100" y="75" font-size="14" font-weight="bold" fill="#666">Clients</text>
+    
+    <rect x="50" y="90" width="110" height="50" rx="5" fill="#1DA1F2" />
+    <text x="105" y="115" text-anchor="middle" fill="white" font-size="12">Web App</text>
+    <text x="105" y="130" text-anchor="middle" fill="white" font-size="10">(React)</text>
+    
+    <rect x="50" y="150" width="110" height="50" rx="5" fill="#1DA1F2" />
+    <text x="105" y="175" text-anchor="middle" fill="white" font-size="12">Mobile App</text>
+    <text x="105" y="190" text-anchor="middle" fill="white" font-size="10">(iOS/Android)</text>
+    
+    <rect x="50" y="210" width="110" height="50" rx="5" fill="#1DA1F2" />
+    <text x="105" y="235" text-anchor="middle" fill="white" font-size="12">API Client</text>
+    <text x="105" y="250" text-anchor="middle" fill="white" font-size="10">(Third Party)</text>
+  </g>
+  
+  <!-- API Layer -->
+  <g id="api">
+    <rect x="220" y="140" width="130" height="60" rx="5" fill="#14171A" />
+    <text x="285" y="165" text-anchor="middle" fill="white" font-size="12">API Gateway</text>
+    <text x="285" y="185" text-anchor="middle" fill="white" font-size="10">(Rate Limiting)</text>
+    
+    <rect x="380" y="140" width="130" height="60" rx="5" fill="#657786" />
+    <text x="445" y="165" text-anchor="middle" fill="white" font-size="12">Load Balancer</text>
+    <text x="445" y="185" text-anchor="middle" fill="white" font-size="10">(HAProxy)</text>
+  </g>
+  
+  <!-- Application Services -->
+  <g id="services">
+    <text x="600" y="75" font-size="14" font-weight="bold" fill="#666">Application Services</text>
+    
+    <!-- Tweet Service -->
+    <rect x="550" y="90" width="120" height="50" rx="5" fill="#2AA3F6" />
+    <text x="610" y="110" text-anchor="middle" fill="white" font-size="11">Tweet Service</text>
+    <text x="610" y="125" text-anchor="middle" fill="white" font-size="9">(Create/Delete)</text>
+    
+    <!-- Timeline Service -->
+    <rect x="690" y="90" width="120" height="50" rx="5" fill="#1B95E0" />
+    <text x="750" y="110" text-anchor="middle" fill="white" font-size="11">Timeline Service</text>
+    <text x="750" y="125" text-anchor="middle" fill="white" font-size="9">(Home/User)</text>
+    
+    <!-- Graph Service -->
+    <rect x="830" y="90" width="120" height="50" rx="5" fill="#0084B4" />
+    <text x="890" y="110" text-anchor="middle" fill="white" font-size="11">Graph Service</text>
+    <text x="890" y="125" text-anchor="middle" fill="white" font-size="9">(Follow/Unfollow)</text>
+    
+    <!-- Fan-out Service -->
+    <rect x="550" y="150" width="120" height="50" rx="5" fill="#00A0DC" />
+    <text x="610" y="170" text-anchor="middle" fill="white" font-size="11">Fan-out Service</text>
+    <text x="610" y="185" text-anchor="middle" fill="white" font-size="9">(Push Timeline)</text>
+    
+    <!-- Search Service -->
+    <rect x="690" y="150" width="120" height="50" rx="5" fill="#5EB8FF" />
+    <text x="750" y="170" text-anchor="middle" fill="white" font-size="11">Search Service</text>
+    <text x="750" y="185" text-anchor="middle" fill="white" font-size="9">(ElasticSearch)</text>
+    
+    <!-- Trending Service -->
+    <rect x="830" y="150" width="120" height="50" rx="5" fill="#89CFF0" />
+    <text x="890" y="170" text-anchor="middle" fill="white" font-size="11">Trending Service</text>
+    <text x="890" y="185" text-anchor="middle" fill="white" font-size="9">(Real-time)</text>
+  </g>
+  
+  <!-- Message Queue -->
+  <rect x="1000" y="120" width="140" height="60" rx="5" fill="#6441A4" />
+  <text x="1070" y="145" text-anchor="middle" fill="white" font-size="12">Kafka</text>
+  <text x="1070" y="165" text-anchor="middle" fill="white" font-size="10">(Event Stream)</text>
+  
+  <!-- WebSocket Server -->
+  <rect x="1170" y="120" width="140" height="60" rx="5" fill="#FF6B6B" />
+  <text x="1240" y="145" text-anchor="middle" fill="white" font-size="12">WebSocket</text>
+  <text x="1240" y="165" text-anchor="middle" fill="white" font-size="10">(Real-time)</text>
+  
+  <!-- Cache Layer -->
+  <g id="cache">
+    <text x="400" y="250" font-size="14" font-weight="bold" fill="#666">Cache Layer</text>
+    
+    <rect x="350" y="270" width="140" height="60" rx="5" fill="#DC382D" />
+    <text x="420" y="295" text-anchor="middle" fill="white" font-size="12">Timeline Cache</text>
+    <text x="420" y="315" text-anchor="middle" fill="white" font-size="10">(Redis Cluster)</text>
+    
+    <rect x="510" y="270" width="140" height="60" rx="5" fill="#FF6347" />
+    <text x="580" y="295" text-anchor="middle" fill="white" font-size="12">Tweet Cache</text>
+    <text x="580" y="315" text-anchor="middle" fill="white" font-size="10">(Memcached)</text>
+    
+    <rect x="670" y="270" width="140" height="60" rx="5" fill="#CD5C5C" />
+    <text x="740" y="295" text-anchor="middle" fill="white" font-size="12">Trending Cache</text>
+    <text x="740" y="315" text-anchor="middle" fill="white" font-size="10">(Redis)</text>
+  </g>
+  
+  <!-- Data Storage -->
+  <g id="storage">
+    <text x="400" y="380" font-size="14" font-weight="bold" fill="#666">Data Storage</text>
+    
+    <!-- Cassandra -->
+    <rect x="350" y="400" width="140" height="60" rx="5" fill="#1287B0" />
+    <text x="420" y="425" text-anchor="middle" fill="white" font-size="12">Cassandra</text>
+    <text x="420" y="445" text-anchor="middle" fill="white" font-size="10">(Tweets)</text>
+    
+    <!-- MySQL -->
+    <rect x="510" y="400" width="140" height="60" rx="5" fill="#00758F" />
+    <text x="580" y="425" text-anchor="middle" fill="white" font-size="12">MySQL</text>
+    <text x="580" y="445" text-anchor="middle" fill="white" font-size="10">(Users)</text>
+    
+    <!-- Graph DB -->
+    <rect x="670" y="400" width="140" height="60" rx="5" fill="#4B8BBE" />
+    <text x="740" y="425" text-anchor="middle" fill="white" font-size="12">Graph DB</text>
+    <text x="740" y="445" text-anchor="middle" fill="white" font-size="10">(Social Graph)</text>
+    
+    <!-- S3 -->
+    <rect x="830" y="400" width="140" height="60" rx="5" fill="#FF9900" />
+    <text x="900" y="425" text-anchor="middle" fill="white" font-size="12">S3</text>
+    <text x="900" y="445" text-anchor="middle" fill="white" font-size="10">(Media)</text>
+  </g>
+  
+  <!-- Analytics Pipeline -->
+  <g id="analytics">
+    <text x="1050" y="250" font-size="14" font-weight="bold" fill="#666">Analytics</text>
+    
+    <rect x="1000" y="270" width="120" height="50" rx="5" fill="#E25A1C" />
+    <text x="1060" y="290" text-anchor="middle" fill="white" font-size="11">Flink</text>
+    <text x="1060" y="305" text-anchor="middle" fill="white" font-size="9">(Stream Process)</text>
+    
+    <rect x="1140" y="270" width="120" height="50" rx="5" fill="#FFA116" />
+    <text x="1200" y="290" text-anchor="middle" fill="white" font-size="11">Spark</text>
+    <text x="1200" y="305" text-anchor="middle" fill="white" font-size="9">(Batch)</text>
+    
+    <rect x="1070" y="340" width="120" height="50" rx="5" fill="#4CAF50" />
+    <text x="1130" y="360" text-anchor="middle" fill="white" font-size="11">Data Lake</text>
+    <text x="1130" y="375" text-anchor="middle" fill="white" font-size="9">(Historical)</text>
+  </g>
+  
+  <!-- Timeline Generation Flow -->
+  <g id="timeline-flow">
+    <rect x="50" y="520" width="1300" height="180" rx="5" fill="#f0f4f7" stroke="#ccc" />
+    <text x="60" y="540" font-size="14" font-weight="bold" fill="#333">Timeline Generation Strategy (Hybrid Approach)</text>
+    
+    <!-- Regular User Flow -->
+    <rect x="70" y="560" width="400" height="120" rx="5" fill="#e8f4f8" stroke="#1DA1F2" />
+    <text x="80" y="580" font-size="12" font-weight="bold" fill="#1DA1F2">Regular Users (Push Model)</text>
+    <text x="80" y="600" font-size="10" fill="#333">1. User posts tweet</text>
+    <text x="80" y="618" font-size="10" fill="#333">2. Get follower list (up to 10K)</text>
+    <text x="80" y="636" font-size="10" fill="#333">3. Fan-out to Redis timeline cache</text>
+    <text x="80" y="654" font-size="10" fill="#333">4. Pre-computed timeline ready</text>
+    <text x="80" y="672" font-size="10" fill="#666">Latency: ~100ms read</text>
+    
+    <!-- Celebrity User Flow -->
+    <rect x="490" y="560" width="400" height="120" rx="5" fill="#fff3e0" stroke="#ff9800" />
+    <text x="500" y="580" font-size="12" font-weight="bold" fill="#ff9800">Celebrity Users (Pull Model)</text>
+    <text x="500" y="600" font-size="10" fill="#333">1. Celebrity posts tweet</text>
+    <text x="500" y="618" font-size="10" fill="#333">2. Store tweet, no fan-out</text>
+    <text x="500" y="636" font-size="10" fill="#333">3. On timeline request: fetch recent tweets</text>
+    <text x="500" y="654" font-size="10" fill="#333">4. Merge and rank in real-time</text>
+    <text x="500" y="672" font-size="10" fill="#666">Threshold: 10K+ followers</text>
+    
+    <!-- Mixed Timeline -->
+    <rect x="910" y="560" width="420" height="120" rx="5" fill="#f3e5f5" stroke="#9c27b0" />
+    <text x="920" y="580" font-size="12" font-weight="bold" fill="#9c27b0">Mixed Timeline (Hybrid)</text>
+    <text x="920" y="600" font-size="10" fill="#333">1. Fetch pre-computed timeline from cache</text>
+    <text x="920" y="618" font-size="10" fill="#333">2. Get celebrity follows list</text>
+    <text x="920" y="636" font-size="10" fill="#333">3. Pull recent celebrity tweets</text>
+    <text x="920" y="654" font-size="10" fill="#333">4. Merge, dedupe, rank by time</text>
+    <text x="920" y="672" font-size="10" fill="#666">Best of both: Fast + Scalable</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Client to API -->
+  <line x1="160" y1="170" x2="220" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- API to Load Balancer -->
+  <line x1="350" y1="170" x2="380" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Load Balancer to Services -->
+  <line x1="510" y1="170" x2="550" y2="115" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="510" y1="170" x2="690" y2="115" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Services to Kafka -->
+  <line x1="610" y1="200" x2="1000" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Services to Cache -->
+  <line x1="750" y1="140" x2="420" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="610" y1="140" x2="580" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Cache to Storage -->
+  <line x1="420" y1="330" x2="420" y2="400" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <line x1="580" y1="330" x2="580" y2="400" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  
+  <!-- Kafka to Analytics -->
+  <line x1="1070" y1="180" x2="1060" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Key Metrics -->
+  <g id="metrics">
+    <rect x="50" y="740" width="600" height="100" rx="5" fill="#f9f9f9" stroke="#ddd" />
+    <text x="60" y="760" font-size="13" font-weight="bold" fill="#333">System Scale:</text>
+    <text x="60" y="780" font-size="11" fill="#666">• 400M users, 150M daily active</text>
+    <text x="60" y="798" font-size="11" fill="#666">• 500M tweets/day (6K/sec average, 15K/sec peak)</text>
+    <text x="60" y="816" font-size="11" fill="#666">• Read/Write ratio: 1000:1</text>
+    <text x="320" y="780" font-size="11" fill="#666">• Celebrity accounts: 100M+ followers</text>
+    <text x="320" y="798" font-size="11" fill="#666">• Timeline generation: &lt;500ms</text>
+    <text x="320" y="816" font-size="11" fill="#666">• Storage: 2.7PB for 5 years</text>
+  </g>
+</svg>

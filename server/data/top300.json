@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "leetcode_url": "https://leetcode.com/problems/two-sum/",
+    "companies": ["Apple", "Google", "Microsoft", "Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice."
+  },
+  {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "leetcode_url": "https://leetcode.com/problems/add-two-numbers/",
+    "companies": ["Google", "Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list."
+  },
+  {
+    "id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "companies": ["Google", "Microsoft", "Meta", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a string s, find the length of the longest substring without repeating characters."
+  },
+  {
+    "id": 4,
+    "title": "Median of Two Sorted Arrays",
+    "leetcode_url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Hard",
+    "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays."
+  },
+  {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a string s, return the longest palindromic substring in s."
+  },
+  {
+    "id": 6,
+    "title": "Zigzag Conversion",
+    "leetcode_url": "https://leetcode.com/problems/zigzag-conversion/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "The string 'PAYPALISHIRING' is written in a zigzag pattern on a given number of rows. Write the code that will take a string and make this conversion given a number of rows."
+  },
+  {
+    "id": 7,
+    "title": "Reverse Integer",
+    "leetcode_url": "https://leetcode.com/problems/reverse-integer/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range, then return 0."
+  },
+  {
+    "id": 8,
+    "title": "String to Integer (atoi)",
+    "leetcode_url": "https://leetcode.com/problems/string-to-integer-atoi/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function)."
+  },
+  {
+    "id": 9,
+    "title": "Palindrome Number",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-number/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward."
+  },
+  {
+    "id": 10,
+    "title": "Regular Expression Matching",
+    "leetcode_url": "https://leetcode.com/problems/regular-expression-matching/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*'."
+  },
+  {
+    "id": 11,
+    "title": "Container With Most Water",
+    "leetcode_url": "https://leetcode.com/problems/container-with-most-water/",
+    "companies": ["Meta", "Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "You are given an integer array height of length n. Find two lines that together with the x-axis form a container, such that the container contains the most water."
+  },
+  {
+    "id": 12,
+    "title": "Integer to Roman",
+    "leetcode_url": "https://leetcode.com/problems/integer-to-roman/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an integer, convert it to a roman numeral."
+  },
+  {
+    "id": 13,
+    "title": "Roman to Integer",
+    "leetcode_url": "https://leetcode.com/problems/roman-to-integer/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given a roman numeral, convert it to an integer."
+  },
+  {
+    "id": 14,
+    "title": "Longest Common Prefix",
+    "leetcode_url": "https://leetcode.com/problems/longest-common-prefix/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Easy",
+    "description": "Write a function to find the longest common prefix string amongst an array of strings."
+  },
+  {
+    "id": 15,
+    "title": "3Sum",
+    "leetcode_url": "https://leetcode.com/problems/3sum/",
+    "companies": ["Microsoft", "Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0."
+  },
+  {
+    "id": 16,
+    "title": "3Sum Closest",
+    "leetcode_url": "https://leetcode.com/problems/3sum-closest/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target."
+  },
+  {
+    "id": 17,
+    "title": "Letter Combinations of a Phone Number",
+    "leetcode_url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent."
+  },
+  {
+    "id": 18,
+    "title": "4Sum",
+    "leetcode_url": "https://leetcode.com/problems/4sum/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that nums[a] + nums[b] + nums[c] + nums[d] == target."
+  },
+  {
+    "id": 19,
+    "title": "Remove Nth Node From End of List",
+    "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head."
+  },
+  {
+    "id": 20,
+    "title": "Valid Parentheses",
+    "leetcode_url": "https://leetcode.com/problems/valid-parentheses/",
+    "companies": ["Apple", "Google", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid."
+  },
+  {
+    "id": 21,
+    "title": "Merge Two Sorted Lists",
+    "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "You are given the heads of two sorted linked lists list1 and list2. Merge the two lists in a one sorted list."
+  },
+  {
+    "id": 22,
+    "title": "Generate Parentheses",
+    "leetcode_url": "https://leetcode.com/problems/generate-parentheses/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses."
+  },
+  {
+    "id": 23,
+    "title": "Merge k Sorted Lists",
+    "leetcode_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list."
+  },
+  {
+    "id": 24,
+    "title": "Swap Nodes in Pairs",
+    "leetcode_url": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a linked list, swap every two adjacent nodes and return its head."
+  },
+  {
+    "id": 25,
+    "title": "Reverse Nodes in k-Group",
+    "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given a linked list, reverse the nodes of the list k at a time and return its modified list."
+  },
+  {
+    "id": 26,
+    "title": "Remove Duplicates from Sorted Array",
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once."
+  },
+  {
+    "id": 27,
+    "title": "Remove Element",
+    "leetcode_url": "https://leetcode.com/problems/remove-element/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums and an integer val, remove all occurrences of val in nums in-place."
+  },
+  {
+    "id": 28,
+    "title": "Find the Index of the First Occurrence in a String",
+    "leetcode_url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Easy",
+    "description": "Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack."
+  },
+  {
+    "id": 29,
+    "title": "Divide Two Integers",
+    "leetcode_url": "https://leetcode.com/problems/divide-two-integers/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator."
+  },
+  {
+    "id": 30,
+    "title": "Substring with Concatenation of All Words",
+    "leetcode_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Hard",
+    "description": "You are given a string s and an array of strings words of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once."
+  },
+  {
+    "id": 31,
+    "title": "Next Permutation",
+    "leetcode_url": "https://leetcode.com/problems/next-permutation/",
+    "companies": ["Oracle", "Meta"],
+    "difficulty": "Medium",
+    "description": "Implement nextPermutation, which rearranges numbers into the lexicographically next greater permutation of numbers."
+  },
+  {
+    "id": 32,
+    "title": "Longest Valid Parentheses",
+    "leetcode_url": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Hard",
+    "description": "Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring."
+  },
+  {
+    "id": 33,
+    "title": "Search in Rotated Sorted Array",
+    "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "There is an integer array nums sorted in ascending order (with distinct values). You are given an integer target. Search for target in nums."
+  },
+  {
+    "id": 34,
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "leetcode_url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value."
+  },
+  {
+    "id": 35,
+    "title": "Search Insert Position",
+    "leetcode_url": "https://leetcode.com/problems/search-insert-position/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Easy",
+    "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order."
+  },
+  {
+    "id": 36,
+    "title": "Valid Sudoku",
+    "leetcode_url": "https://leetcode.com/problems/valid-sudoku/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Determine if a 9x9 Sudoku board is valid."
+  },
+  {
+    "id": 37,
+    "title": "Sudoku Solver",
+    "leetcode_url": "https://leetcode.com/problems/sudoku-solver/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Hard",
+    "description": "Write a program to solve a Sudoku puzzle by filling the empty cells."
+  },
+  {
+    "id": 38,
+    "title": "Count and Say",
+    "leetcode_url": "https://leetcode.com/problems/count-and-say/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "The count-and-say sequence is a sequence of digit strings defined by the recursive formula."
+  },
+  {
+    "id": 39,
+    "title": "Combination Sum",
+    "leetcode_url": "https://leetcode.com/problems/combination-sum/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target."
+  },
+  {
+    "id": 40,
+    "title": "Combination Sum II",
+    "leetcode_url": "https://leetcode.com/problems/combination-sum-ii/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a collection of candidate numbers candidates and a target number target, find all unique combinations in candidates where the candidate numbers sum to target."
+  },
+  {
+    "id": 41,
+    "title": "First Missing Positive",
+    "leetcode_url": "https://leetcode.com/problems/first-missing-positive/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given an unsorted integer array nums, return the smallest missing positive integer."
+  },
+  {
+    "id": 42,
+    "title": "Trapping Rain Water",
+    "leetcode_url": "https://leetcode.com/problems/trapping-rain-water/",
+    "companies": ["Google", "Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining."
+  },
+  {
+    "id": 43,
+    "title": "Multiply Strings",
+    "leetcode_url": "https://leetcode.com/problems/multiply-strings/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string."
+  },
+  {
+    "id": 44,
+    "title": "Wildcard Matching",
+    "leetcode_url": "https://leetcode.com/problems/wildcard-matching/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*'."
+  },
+  {
+    "id": 45,
+    "title": "Jump Game II",
+    "leetcode_url": "https://leetcode.com/problems/jump-game-ii/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Your goal is to reach the last index in the minimum number of jumps."
+  },
+  {
+    "id": 46,
+    "title": "Permutations",
+    "leetcode_url": "https://leetcode.com/problems/permutations/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array nums of distinct integers, return all the possible permutations."
+  },
+  {
+    "id": 47,
+    "title": "Permutations II",
+    "leetcode_url": "https://leetcode.com/problems/permutations-ii/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order."
+  },
+  {
+    "id": 48,
+    "title": "Rotate Image",
+    "leetcode_url": "https://leetcode.com/problems/rotate-image/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise)."
+  },
+  {
+    "id": 49,
+    "title": "Group Anagrams",
+    "leetcode_url": "https://leetcode.com/problems/group-anagrams/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an array of strings strs, group the anagrams together."
+  },
+  {
+    "id": 50,
+    "title": "Pow(x, n)",
+    "leetcode_url": "https://leetcode.com/problems/powx-n/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Implement pow(x, n), which calculates x raised to the power n (i.e., x^n)."
+  },
+  {
+    "id": 51,
+    "title": "N-Queens",
+    "leetcode_url": "https://leetcode.com/problems/n-queens/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Hard",
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens threaten each other."
+  },
+  {
+    "id": 52,
+    "title": "N-Queens II",
+    "leetcode_url": "https://leetcode.com/problems/n-queens-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens threaten each other. Return the number of distinct solutions."
+  },
+  {
+    "id": 53,
+    "title": "Maximum Subarray",
+    "leetcode_url": "https://leetcode.com/problems/maximum-subarray/",
+    "companies": ["Apple", "Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, find the subarray with the largest sum, and return its sum."
+  },
+  {
+    "id": 54,
+    "title": "Spiral Matrix",
+    "leetcode_url": "https://leetcode.com/problems/spiral-matrix/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an m x n matrix, return all elements of the matrix in spiral order."
+  },
+  {
+    "id": 55,
+    "title": "Jump Game",
+    "leetcode_url": "https://leetcode.com/problems/jump-game/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "You are given an integer array nums. Determine if you are able to reach the last index."
+  },
+  {
+    "id": 56,
+    "title": "Merge Intervals",
+    "leetcode_url": "https://leetcode.com/problems/merge-intervals/",
+    "companies": ["Apple", "Google", "Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals."
+  },
+  {
+    "id": 57,
+    "title": "Insert Interval",
+    "leetcode_url": "https://leetcode.com/problems/insert-interval/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "You are given an array of non-overlapping intervals intervals. Insert newInterval into intervals such that intervals is still sorted in ascending order."
+  },
+  {
+    "id": 58,
+    "title": "Length of Last Word",
+    "leetcode_url": "https://leetcode.com/problems/length-of-last-word/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given a string s consisting of words and spaces, return the length of the last word in the string."
+  },
+  {
+    "id": 59,
+    "title": "Spiral Matrix II",
+    "leetcode_url": "https://leetcode.com/problems/spiral-matrix-ii/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a positive integer n, generate an n x n matrix filled with elements from 1 to n^2 in spiral order."
+  },
+  {
+    "id": 60,
+    "title": "Permutation Sequence",
+    "leetcode_url": "https://leetcode.com/problems/permutation-sequence/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "The set [1, 2, 3, ..., n] contains a total of n! unique permutations. Given n and k, return the kth permutation sequence."
+  },
+  {
+    "id": 61,
+    "title": "Rotate List",
+    "leetcode_url": "https://leetcode.com/problems/rotate-list/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given the head of a linked list, rotate the list to the right by k places."
+  },
+  {
+    "id": 62,
+    "title": "Unique Paths",
+    "leetcode_url": "https://leetcode.com/problems/unique-paths/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "A robot is located at the top-left corner of a m x n grid. How many possible unique paths are there?"
+  },
+  {
+    "id": 63,
+    "title": "Unique Paths II",
+    "leetcode_url": "https://leetcode.com/problems/unique-paths-ii/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Medium",
+    "description": "A robot is located at the top-left corner of a m x n grid. Now consider if some obstacles are added to the grids. How many unique paths would there be?"
+  },
+  {
+    "id": 64,
+    "title": "Minimum Path Sum",
+    "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path."
+  },
+  {
+    "id": 65,
+    "title": "Valid Number",
+    "leetcode_url": "https://leetcode.com/problems/valid-number/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "A valid number can be split up into these components: A decimal number or an integer. (Optional) An 'e' or 'E', followed by an integer."
+  },
+  {
+    "id": 66,
+    "title": "Plus One",
+    "leetcode_url": "https://leetcode.com/problems/plus-one/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer."
+  },
+  {
+    "id": 67,
+    "title": "Add Binary",
+    "leetcode_url": "https://leetcode.com/problems/add-binary/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given two binary strings a and b, return their sum as a binary string."
+  },
+  {
+    "id": 68,
+    "title": "Text Justification",
+    "leetcode_url": "https://leetcode.com/problems/text-justification/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Hard",
+    "description": "Given an array of strings words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully justified."
+  },
+  {
+    "id": 69,
+    "title": "Sqrt(x)",
+    "leetcode_url": "https://leetcode.com/problems/sqrtx/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given a non-negative integer x, compute and return the square root of x."
+  },
+  {
+    "id": 70,
+    "title": "Climbing Stairs",
+    "leetcode_url": "https://leetcode.com/problems/climbing-stairs/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "You are climbing a staircase. It takes n steps to reach the top. In how many distinct ways can you climb to the top?"
+  },
+  {
+    "id": 71,
+    "title": "Simplify Path",
+    "leetcode_url": "https://leetcode.com/problems/simplify-path/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a string path, which is an absolute path to a file or directory in a Unix-style file system, convert it to the simplified canonical path."
+  },
+  {
+    "id": 72,
+    "title": "Edit Distance",
+    "leetcode_url": "https://leetcode.com/problems/edit-distance/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2."
+  },
+  {
+    "id": 73,
+    "title": "Set Matrix Zeroes",
+    "leetcode_url": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's."
+  },
+  {
+    "id": 74,
+    "title": "Search a 2D Matrix",
+    "leetcode_url": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Write an efficient algorithm that searches for a value target in an m x n integer matrix."
+  },
+  {
+    "id": 75,
+    "title": "Sort Colors",
+    "leetcode_url": "https://leetcode.com/problems/sort-colors/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent."
+  },
+  {
+    "id": 76,
+    "title": "Minimum Window Substring",
+    "leetcode_url": "https://leetcode.com/problems/minimum-window-substring/",
+    "companies": ["Oracle", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t is included in the window."
+  },
+  {
+    "id": 77,
+    "title": "Combinations",
+    "leetcode_url": "https://leetcode.com/problems/combinations/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n]."
+  },
+  {
+    "id": 78,
+    "title": "Subsets",
+    "leetcode_url": "https://leetcode.com/problems/subsets/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums of unique elements, return all possible subsets (the power set)."
+  },
+  {
+    "id": 79,
+    "title": "Word Search",
+    "leetcode_url": "https://leetcode.com/problems/word-search/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid."
+  },
+  {
+    "id": 80,
+    "title": "Remove Duplicates from Sorted Array II",
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums sorted in non-decreasing order, remove some duplicates in-place such that each unique element appears at most twice."
+  },
+  {
+    "id": 81,
+    "title": "Search in Rotated Sorted Array II",
+    "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "There is an integer array nums sorted in non-decreasing order. You are given an integer target. Search for target in nums."
+  },
+  {
+    "id": 82,
+    "title": "Remove Duplicates from Sorted List II",
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given the head of a sorted linked list, delete all nodes that have duplicate numbers."
+  },
+  {
+    "id": 83,
+    "title": "Remove Duplicates from Sorted List",
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given the head of a sorted linked list, delete all duplicates such that each element appears only once."
+  },
+  {
+    "id": 84,
+    "title": "Largest Rectangle in Histogram",
+    "leetcode_url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given an array of non-negative integers heights representing the histogram's bar height, return the area of the largest rectangle in the histogram."
+  },
+  {
+    "id": 85,
+    "title": "Maximal Rectangle",
+    "leetcode_url": "https://leetcode.com/problems/maximal-rectangle/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area."
+  },
+  {
+    "id": 86,
+    "title": "Partition List",
+    "leetcode_url": "https://leetcode.com/problems/partition-list/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x."
+  },
+  {
+    "id": 87,
+    "title": "Scramble String",
+    "leetcode_url": "https://leetcode.com/problems/scramble-string/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Hard",
+    "description": "Given two strings s1 and s2 of the same length, return true if s2 is a scrambled string of s1."
+  },
+  {
+    "id": 88,
+    "title": "Merge Sorted Array",
+    "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Easy",
+    "description": "You are given two integer arrays nums1 and nums2, sorted in non-decreasing order. Merge nums1 and nums2 into a single array sorted in non-decreasing order."
+  },
+  {
+    "id": 89,
+    "title": "Gray Code",
+    "leetcode_url": "https://leetcode.com/problems/gray-code/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "An n-bit gray code sequence is a sequence of 2^n integers where every integer is in the inclusive range [0, 2^n - 1]."
+  },
+  {
+    "id": 90,
+    "title": "Subsets II",
+    "leetcode_url": "https://leetcode.com/problems/subsets-ii/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums that may contain duplicates, return all possible subsets (the power set)."
+  },
+  {
+    "id": 91,
+    "title": "Decode Ways",
+    "leetcode_url": "https://leetcode.com/problems/decode-ways/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "A message containing letters from A-Z can be encoded into numbers. Return the number of ways to decode a given message."
+  },
+  {
+    "id": 92,
+    "title": "Reverse Linked List II",
+    "leetcode_url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given the head of a singly linked list and two integers left and right, reverse the nodes of the list from position left to position right."
+  },
+  {
+    "id": 93,
+    "title": "Restore IP Addresses",
+    "leetcode_url": "https://leetcode.com/problems/restore-ip-addresses/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a string s containing only digits, return all possible valid IP addresses that can be formed by inserting dots between digits."
+  },
+  {
+    "id": 94,
+    "title": "Binary Tree Inorder Traversal",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, return the inorder traversal of its nodes' values."
+  },
+  {
+    "id": 95,
+    "title": "Unique Binary Search Trees II",
+    "leetcode_url": "https://leetcode.com/problems/unique-binary-search-trees-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, generate all structurally unique BST's that store values 1 ... n."
+  },
+  {
+    "id": 96,
+    "title": "Unique Binary Search Trees",
+    "leetcode_url": "https://leetcode.com/problems/unique-binary-search-trees/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return the number of structurally unique BST's which has exactly n nodes of unique values from 1 to n."
+  },
+  {
+    "id": 97,
+    "title": "Interleaving String",
+    "leetcode_url": "https://leetcode.com/problems/interleaving-string/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given strings s1, s2, and s3, find whether s3 is formed by an interleaving of s1 and s2."
+  },
+  {
+    "id": 98,
+    "title": "Validate Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, determine if it is a valid binary search tree (BST)."
+  },
+  {
+    "id": 99,
+    "title": "Recover Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/recover-binary-search-tree/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are given the root of a binary search tree (BST), where two nodes in the tree were swapped. Fix the tree."
+  },
+  {
+    "id": 100,
+    "title": "Same Tree",
+    "leetcode_url": "https://leetcode.com/problems/same-tree/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given the roots of two binary trees p and q, write a function to check if they are the same or not."
+  },
+  {
+    "id": 101,
+    "title": "Symmetric Tree",
+    "leetcode_url": "https://leetcode.com/problems/symmetric-tree/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center)."
+  },
+  {
+    "id": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, return the level order traversal of its nodes' values."
+  },
+  {
+    "id": 103,
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, return the zigzag level order traversal of its nodes' values."
+  },
+  {
+    "id": 104,
+    "title": "Maximum Depth of Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, return its maximum depth."
+  },
+  {
+    "id": 105,
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given two integer arrays preorder and inorder, construct and return the binary tree."
+  },
+  {
+    "id": 106,
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given two integer arrays inorder and postorder, construct and return the binary tree."
+  },
+  {
+    "id": 107,
+    "title": "Binary Tree Level Order Traversal II",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values."
+  },
+  {
+    "id": 108,
+    "title": "Convert Sorted Array to Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree."
+  },
+  {
+    "id": 109,
+    "title": "Convert Sorted List to Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height-balanced BST."
+  },
+  {
+    "id": 110,
+    "title": "Balanced Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/balanced-binary-tree/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given a binary tree, determine if it is height-balanced."
+  },
+  {
+    "id": 111,
+    "title": "Minimum Depth of Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/minimum-depth-of-binary-tree/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Easy",
+    "description": "Given a binary tree, find its minimum depth."
+  },
+  {
+    "id": 112,
+    "title": "Path Sum",
+    "leetcode_url": "https://leetcode.com/problems/path-sum/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum."
+  },
+  {
+    "id": 113,
+    "title": "Path Sum II",
+    "leetcode_url": "https://leetcode.com/problems/path-sum-ii/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of the node values in the path equals targetSum."
+  },
+  {
+    "id": 114,
+    "title": "Flatten Binary Tree to Linked List",
+    "leetcode_url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, flatten the tree into a 'linked list'."
+  },
+  {
+    "id": 115,
+    "title": "Distinct Subsequences",
+    "leetcode_url": "https://leetcode.com/problems/distinct-subsequences/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Hard",
+    "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t."
+  },
+  {
+    "id": 116,
+    "title": "Populating Next Right Pointers in Each Node",
+    "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "You are given a perfect binary tree where all leaves are on the same level. Populate each next pointer to point to its next right node."
+  },
+  {
+    "id": 117,
+    "title": "Populating Next Right Pointers in Each Node II",
+    "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a binary tree, populate each next pointer to point to its next right node."
+  },
+  {
+    "id": 118,
+    "title": "Pascal's Triangle",
+    "leetcode_url": "https://leetcode.com/problems/pascals-triangle/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given an integer numRows, return the first numRows of Pascal's triangle."
+  },
+  {
+    "id": 119,
+    "title": "Pascal's Triangle II",
+    "leetcode_url": "https://leetcode.com/problems/pascals-triangle-ii/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle."
+  },
+  {
+    "id": 120,
+    "title": "Triangle",
+    "leetcode_url": "https://leetcode.com/problems/triangle/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a triangle array, return the minimum path sum from top to bottom."
+  },
+  {
+    "id": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "companies": ["Apple", "Microsoft", "Meta"],
+    "difficulty": "Easy",
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day. Find and return the maximum profit you can achieve."
+  },
+  {
+    "id": 122,
+    "title": "Best Time to Buy and Sell Stock II",
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are given an integer array prices where prices[i] is the price of a given stock on the ith day. Find and return the maximum profit you can achieve."
+  },
+  {
+    "id": 123,
+    "title": "Best Time to Buy and Sell Stock III",
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day. Find the maximum profit you can achieve with at most two transactions."
+  },
+  {
+    "id": 124,
+    "title": "Binary Tree Maximum Path Sum",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Hard",
+    "description": "Given the root of a binary tree, return the maximum path sum of any non-empty path."
+  },
+  {
+    "id": 125,
+    "title": "Valid Palindrome",
+    "leetcode_url": "https://leetcode.com/problems/valid-palindrome/",
+    "companies": ["Oracle", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given a string s, return true if it is a palindrome, or false otherwise."
+  },
+  {
+    "id": 126,
+    "title": "Word Ladder II",
+    "leetcode_url": "https://leetcode.com/problems/word-ladder-ii/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Hard",
+    "description": "Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from beginWord to endWord."
+  },
+  {
+    "id": 127,
+    "title": "Word Ladder",
+    "leetcode_url": "https://leetcode.com/problems/word-ladder/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given two words beginWord and endWord, and a dictionary wordList, return the length of the shortest transformation sequence from beginWord to endWord."
+  },
+  {
+    "id": 128,
+    "title": "Longest Consecutive Sequence",
+    "leetcode_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence."
+  },
+  {
+    "id": 129,
+    "title": "Sum Root to Leaf Numbers",
+    "leetcode_url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "You are given the root of a binary tree containing digits from 0 to 9 only. Return the total sum of all root-to-leaf numbers."
+  },
+  {
+    "id": 130,
+    "title": "Surrounded Regions",
+    "leetcode_url": "https://leetcode.com/problems/surrounded-regions/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'."
+  },
+  {
+    "id": 131,
+    "title": "Palindrome Partitioning",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s."
+  },
+  {
+    "id": 132,
+    "title": "Palindrome Partitioning II",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning-ii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return the minimum cuts needed for a palindrome partitioning of s."
+  },
+  {
+    "id": 133,
+    "title": "Clone Graph",
+    "leetcode_url": "https://leetcode.com/problems/clone-graph/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph."
+  },
+  {
+    "id": 134,
+    "title": "Gas Station",
+    "leetcode_url": "https://leetcode.com/problems/gas-station/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "There are n gas stations along a circular route. Return the starting gas station's index if you can travel around the circuit once in the clockwise direction."
+  },
+  {
+    "id": 135,
+    "title": "Candy",
+    "leetcode_url": "https://leetcode.com/problems/candy/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Hard",
+    "description": "There are n children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to specific requirements."
+  },
+  {
+    "id": 136,
+    "title": "Single Number",
+    "leetcode_url": "https://leetcode.com/problems/single-number/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one."
+  },
+  {
+    "id": 137,
+    "title": "Single Number II",
+    "leetcode_url": "https://leetcode.com/problems/single-number-ii/",
+    "companies": ["Microsoft", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, in which exactly one element appears only once. Find that element."
+  },
+  {
+    "id": 138,
+    "title": "Copy List with Random Pointer",
+    "leetcode_url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "A linked list of length n is given such that each node contains an additional random pointer. Return a deep copy of the list."
+  },
+  {
+    "id": 139,
+    "title": "Word Break",
+    "leetcode_url": "https://leetcode.com/problems/word-break/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words."
+  },
+  {
+    "id": 140,
+    "title": "Word Break II",
+    "leetcode_url": "https://leetcode.com/problems/word-break-ii/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given a string s and a dictionary of strings wordDict, return all possible sentences that can be formed by adding spaces in s to construct words from wordDict."
+  },
+  {
+    "id": 141,
+    "title": "Linked List Cycle",
+    "leetcode_url": "https://leetcode.com/problems/linked-list-cycle/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given head, the head of a linked list, determine if the linked list has a cycle in it."
+  },
+  {
+    "id": 142,
+    "title": "Linked List Cycle II",
+    "leetcode_url": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null."
+  },
+  {
+    "id": 143,
+    "title": "Reorder List",
+    "leetcode_url": "https://leetcode.com/problems/reorder-list/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a singly linked list L, reorder it to: L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → ..."
+  },
+  {
+    "id": 144,
+    "title": "Binary Tree Preorder Traversal",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, return the preorder traversal of its nodes' values."
+  },
+  {
+    "id": 145,
+    "title": "Binary Tree Postorder Traversal",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, return the postorder traversal of its nodes' values."
+  },
+  {
+    "id": 146,
+    "title": "LRU Cache",
+    "leetcode_url": "https://leetcode.com/problems/lru-cache/",
+    "companies": ["Google", "Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache."
+  },
+  {
+    "id": 147,
+    "title": "Insertion Sort List",
+    "leetcode_url": "https://leetcode.com/problems/insertion-sort-list/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given the head of a singly linked list, sort the list using insertion sort, and return the sorted list's head."
+  },
+  {
+    "id": 148,
+    "title": "Sort List",
+    "leetcode_url": "https://leetcode.com/problems/sort-list/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given the head of a linked list, return the list after sorting it in ascending order."
+  },
+  {
+    "id": 149,
+    "title": "Max Points on a Line",
+    "leetcode_url": "https://leetcode.com/problems/max-points-on-a-line/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Hard",
+    "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line."
+  },
+  {
+    "id": 150,
+    "title": "Evaluate Reverse Polish Notation",
+    "leetcode_url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Evaluate the value of an arithmetic expression in Reverse Polish Notation."
+  },
+  {
+    "id": 151,
+    "title": "Reverse Words in a String",
+    "leetcode_url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an input string s, reverse the order of the words."
+  },
+  {
+    "id": 152,
+    "title": "Maximum Product Subarray",
+    "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product."
+  },
+  {
+    "id": 153,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Suppose an array of length n sorted in ascending order is rotated between 1 and n times. Find the minimum element."
+  },
+  {
+    "id": 154,
+    "title": "Find Minimum in Rotated Sorted Array II",
+    "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Hard",
+    "description": "Suppose an array of length n sorted in non-decreasing order is rotated between 1 and n times. Find the minimum element."
+  },
+  {
+    "id": 155,
+    "title": "Min Stack",
+    "leetcode_url": "https://leetcode.com/problems/min-stack/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time."
+  },
+  {
+    "id": 156,
+    "title": "Binary Tree Upside Down",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-upside-down/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a binary tree where all the right nodes are either leaf nodes with a sibling or empty, flip it upside down and return the new root."
+  },
+  {
+    "id": 157,
+    "title": "Read N Characters Given Read4",
+    "leetcode_url": "https://leetcode.com/problems/read-n-characters-given-read4/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given a file and assume that you can only read the file using a given method read4, implement a method to read n characters."
+  },
+  {
+    "id": 158,
+    "title": "Read N Characters Given Read4 II - Call Multiple Times",
+    "leetcode_url": "https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given a file and assume that you can only read the file using a given method read4, implement a method read to read n characters. Method read may be called multiple times."
+  },
+  {
+    "id": 159,
+    "title": "Longest Substring with At Most Two Distinct Characters",
+    "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/",
+    "companies": ["Apple", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a string s, return the length of the longest substring that contains at most two distinct characters."
+  },
+  {
+    "id": 160,
+    "title": "Intersection of Two Linked Lists",
+    "leetcode_url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect."
+  },
+  {
+    "id": 161,
+    "title": "One Edit Distance",
+    "leetcode_url": "https://leetcode.com/problems/one-edit-distance/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given two strings s and t, return true if they are both one edit distance apart, otherwise return false."
+  },
+  {
+    "id": 162,
+    "title": "Find Peak Element",
+    "leetcode_url": "https://leetcode.com/problems/find-peak-element/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "A peak element is an element that is strictly greater than its neighbors. Given an integer array nums, find a peak element, and return its index."
+  },
+  {
+    "id": 163,
+    "title": "Missing Ranges",
+    "leetcode_url": "https://leetcode.com/problems/missing-ranges/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Easy",
+    "description": "Given a sorted integer array nums, where the range of elements are in the inclusive range [lower, upper], return its missing ranges."
+  },
+  {
+    "id": 164,
+    "title": "Maximum Gap",
+    "leetcode_url": "https://leetcode.com/problems/maximum-gap/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given an integer array nums, return the maximum difference between two successive elements in its sorted form."
+  },
+  {
+    "id": 165,
+    "title": "Compare Version Numbers",
+    "leetcode_url": "https://leetcode.com/problems/compare-version-numbers/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given two version numbers, version1 and version2, compare them."
+  },
+  {
+    "id": 166,
+    "title": "Fraction to Recurring Decimal",
+    "leetcode_url": "https://leetcode.com/problems/fraction-to-recurring-decimal/",
+    "companies": ["Meta", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given two integers representing the numerator and denominator of a fraction, return the fraction in string format."
+  },
+  {
+    "id": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "leetcode_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number."
+  },
+  {
+    "id": 168,
+    "title": "Excel Sheet Column Title",
+    "leetcode_url": "https://leetcode.com/problems/excel-sheet-column-title/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Easy",
+    "description": "Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet."
+  },
+  {
+    "id": 169,
+    "title": "Majority Element",
+    "leetcode_url": "https://leetcode.com/problems/majority-element/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given an array nums of size n, return the majority element."
+  },
+  {
+    "id": 170,
+    "title": "Two Sum III - Data structure design",
+    "leetcode_url": "https://leetcode.com/problems/two-sum-iii-data-structure-design/",
+    "companies": ["Google", "Apple"],
+    "difficulty": "Easy",
+    "description": "Design a data structure that accepts a stream of integers and checks if it has a pair of integers that sum up to a particular value."
+  },
+  {
+    "id": 171,
+    "title": "Excel Sheet Column Number",
+    "leetcode_url": "https://leetcode.com/problems/excel-sheet-column-number/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number."
+  },
+  {
+    "id": 172,
+    "title": "Factorial Trailing Zeroes",
+    "leetcode_url": "https://leetcode.com/problems/factorial-trailing-zeroes/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return the number of trailing zeroes in n!."
+  },
+  {
+    "id": 173,
+    "title": "Binary Search Tree Iterator",
+    "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST)."
+  },
+  {
+    "id": 174,
+    "title": "Dungeon Game",
+    "leetcode_url": "https://leetcode.com/problems/dungeon-game/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Hard",
+    "description": "Calculate the minimum initial health of the knight to rescue the princess in a dungeon."
+  },
+  {
+    "id": 175,
+    "title": "Combine Two Tables",
+    "leetcode_url": "https://leetcode.com/problems/combine-two-tables/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to combine two tables."
+  },
+  {
+    "id": 176,
+    "title": "Second Highest Salary",
+    "leetcode_url": "https://leetcode.com/problems/second-highest-salary/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Write a SQL query to get the second highest salary from the Employee table."
+  },
+  {
+    "id": 177,
+    "title": "Nth Highest Salary",
+    "leetcode_url": "https://leetcode.com/problems/nth-highest-salary/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Write a SQL query to get the nth highest salary from the Employee table."
+  },
+  {
+    "id": 178,
+    "title": "Rank Scores",
+    "leetcode_url": "https://leetcode.com/problems/rank-scores/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Write a SQL query to rank scores."
+  },
+  {
+    "id": 179,
+    "title": "Largest Number",
+    "leetcode_url": "https://leetcode.com/problems/largest-number/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a list of non-negative integers nums, arrange them such that they form the largest number and return it as a string."
+  },
+  {
+    "id": 180,
+    "title": "Consecutive Numbers",
+    "leetcode_url": "https://leetcode.com/problems/consecutive-numbers/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Write a SQL query to find all numbers that appear at least three times consecutively."
+  },
+  {
+    "id": 181,
+    "title": "Employees Earning More Than Their Managers",
+    "leetcode_url": "https://leetcode.com/problems/employees-earning-more-than-their-managers/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to find the employees who earn more than their managers."
+  },
+  {
+    "id": 182,
+    "title": "Duplicate Emails",
+    "leetcode_url": "https://leetcode.com/problems/duplicate-emails/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to find all duplicate emails in a table named Person."
+  },
+  {
+    "id": 183,
+    "title": "Customers Who Never Order",
+    "leetcode_url": "https://leetcode.com/problems/customers-who-never-order/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to find all customers who never order anything."
+  },
+  {
+    "id": 184,
+    "title": "Department Highest Salary",
+    "leetcode_url": "https://leetcode.com/problems/department-highest-salary/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Write a SQL query to find employees who have the highest salary in each of the departments."
+  },
+  {
+    "id": 185,
+    "title": "Department Top Three Salaries",
+    "leetcode_url": "https://leetcode.com/problems/department-top-three-salaries/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Hard",
+    "description": "Write a SQL query to find employees who earn the top three salaries in each of the departments."
+  },
+  {
+    "id": 186,
+    "title": "Reverse Words in a String II",
+    "leetcode_url": "https://leetcode.com/problems/reverse-words-in-a-string-ii/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given a character array s, reverse the order of the words in-place."
+  },
+  {
+    "id": 187,
+    "title": "Repeated DNA Sequences",
+    "leetcode_url": "https://leetcode.com/problems/repeated-dna-sequences/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given a string s that represents a DNA sequence, return all the 10-letter-long sequences that occur more than once in a DNA molecule."
+  },
+  {
+    "id": 188,
+    "title": "Best Time to Buy and Sell Stock IV",
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "You are given an integer array prices and an integer k. Find the maximum profit you can achieve with at most k transactions."
+  },
+  {
+    "id": 189,
+    "title": "Rotate Array",
+    "leetcode_url": "https://leetcode.com/problems/rotate-array/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an array, rotate the array to the right by k steps, where k is non-negative."
+  },
+  {
+    "id": 190,
+    "title": "Reverse Bits",
+    "leetcode_url": "https://leetcode.com/problems/reverse-bits/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Reverse bits of a given 32 bits unsigned integer."
+  },
+  {
+    "id": 191,
+    "title": "Number of 1 Bits",
+    "leetcode_url": "https://leetcode.com/problems/number-of-1-bits/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight)."
+  },
+  {
+    "id": 192,
+    "title": "Word Frequency",
+    "leetcode_url": "https://leetcode.com/problems/word-frequency/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Write a bash script to calculate the frequency of each word in a text file words.txt."
+  },
+  {
+    "id": 193,
+    "title": "Valid Phone Numbers",
+    "leetcode_url": "https://leetcode.com/problems/valid-phone-numbers/",
+    "companies": ["Microsoft", "Google"],
+    "difficulty": "Easy",
+    "description": "Given a text file file.txt that contains a list of phone numbers, write a bash script to print all valid phone numbers."
+  },
+  {
+    "id": 194,
+    "title": "Transpose File",
+    "leetcode_url": "https://leetcode.com/problems/transpose-file/",
+    "companies": ["Oracle", "Apple"],
+    "difficulty": "Medium",
+    "description": "Given a text file file.txt, transpose its content."
+  },
+  {
+    "id": 195,
+    "title": "Tenth Line",
+    "leetcode_url": "https://leetcode.com/problems/tenth-line/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Easy",
+    "description": "Given a text file file.txt, print just the 10th line of the file."
+  },
+  {
+    "id": 196,
+    "title": "Delete Duplicate Emails",
+    "leetcode_url": "https://leetcode.com/problems/delete-duplicate-emails/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to delete all duplicate email entries in a table named Person, keeping only one unique email with the smallest id."
+  },
+  {
+    "id": 197,
+    "title": "Rising Temperature",
+    "leetcode_url": "https://leetcode.com/problems/rising-temperature/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Write a SQL query to find all dates' id with higher temperatures compared to its previous dates (yesterday)."
+  },
+  {
+    "id": 198,
+    "title": "House Robber",
+    "leetcode_url": "https://leetcode.com/problems/house-robber/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. Return the maximum amount of money you can rob without alerting the police."
+  },
+  {
+    "id": 199,
+    "title": "Binary Tree Right Side View",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom."
+  },
+  {
+    "id": 200,
+    "title": "Number of Islands",
+    "leetcode_url": "https://leetcode.com/problems/number-of-islands/",
+    "companies": ["Apple", "Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an m x n 2D binary grid which represents a map of '1's (land) and '0's (water), return the number of islands."
+  },
+  {
+    "id": 201,
+    "title": "Bitwise AND of Numbers Range",
+    "leetcode_url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given two integers left and right that represent the range [left, right], return the bitwise AND of all numbers in this range, inclusive."
+  },
+  {
+    "id": 202,
+    "title": "Happy Number",
+    "leetcode_url": "https://leetcode.com/problems/happy-number/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Write an algorithm to determine if a number n is happy."
+  },
+  {
+    "id": 203,
+    "title": "Remove Linked List Elements",
+    "leetcode_url": "https://leetcode.com/problems/remove-linked-list-elements/",
+    "companies": ["Oracle", "Google"],
+    "difficulty": "Easy",
+    "description": "Given the head of a linked list and an integer val, remove all the nodes of the linked list that have their value equal to val."
+  },
+  {
+    "id": 204,
+    "title": "Count Primes",
+    "leetcode_url": "https://leetcode.com/problems/count-primes/",
+    "companies": ["Meta", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return the number of prime numbers that are strictly less than n."
+  },
+  {
+    "id": 205,
+    "title": "Isomorphic Strings",
+    "leetcode_url": "https://leetcode.com/problems/isomorphic-strings/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Easy",
+    "description": "Given two strings s and t, determine if they are isomorphic."
+  },
+  {
+    "id": 206,
+    "title": "Reverse Linked List",
+    "leetcode_url": "https://leetcode.com/problems/reverse-linked-list/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given the head of a singly linked list, reverse the list, and return the reversed list."
+  },
+  {
+    "id": 207,
+    "title": "Course Schedule",
+    "leetcode_url": "https://leetcode.com/problems/course-schedule/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Medium",
+    "description": "There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. Return true if you can finish all courses."
+  },
+  {
+    "id": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Implement a trie with insert, search, and startsWith methods."
+  },
+  {
+    "id": 209,
+    "title": "Minimum Size Subarray Sum",
+    "leetcode_url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "companies": ["Meta", "Google"],
+    "difficulty": "Medium",
+    "description": "Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray whose sum is greater than or equal to target."
+  },
+  {
+    "id": 210,
+    "title": "Course Schedule II",
+    "leetcode_url": "https://leetcode.com/problems/course-schedule-ii/",
+    "companies": ["Oracle", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. Return the order of courses you should take to finish all courses."
+  },
+  {
+    "id": 211,
+    "title": "Design Add and Search Words Data Structure",
+    "leetcode_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Design a data structure that supports adding new words and finding if a string matches any previously added string."
+  },
+  {
+    "id": 212,
+    "title": "Word Search II",
+    "leetcode_url": "https://leetcode.com/problems/word-search-ii/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given an m x n board of characters and a list of strings words, return all words on the board."
+  },
+  {
+    "id": 213,
+    "title": "House Robber II",
+    "leetcode_url": "https://leetcode.com/problems/house-robber-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are a professional robber planning to rob houses along a street. The houses are arranged in a circle. Return the maximum amount of money you can rob."
+  },
+  {
+    "id": 214,
+    "title": "Shortest Palindrome",
+    "leetcode_url": "https://leetcode.com/problems/shortest-palindrome/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given a string s, you can convert it to a palindrome by adding characters in front of it. Find and return the shortest palindrome you can form."
+  },
+  {
+    "id": 215,
+    "title": "Kth Largest Element in an Array",
+    "leetcode_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums and an integer k, return the kth largest element in the array."
+  },
+  {
+    "id": 216,
+    "title": "Combination Sum III",
+    "leetcode_url": "https://leetcode.com/problems/combination-sum-iii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Find all valid combinations of k numbers that sum up to n such that only numbers 1 through 9 are used and each number is used at most once."
+  },
+  {
+    "id": 217,
+    "title": "Contains Duplicate",
+    "leetcode_url": "https://leetcode.com/problems/contains-duplicate/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct."
+  },
+  {
+    "id": 218,
+    "title": "The Skyline Problem",
+    "leetcode_url": "https://leetcode.com/problems/the-skyline-problem/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given the coordinates of buildings, return the skyline formed by these buildings."
+  },
+  {
+    "id": 219,
+    "title": "Contains Duplicate II",
+    "leetcode_url": "https://leetcode.com/problems/contains-duplicate-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k."
+  },
+  {
+    "id": 220,
+    "title": "Contains Duplicate III",
+    "leetcode_url": "https://leetcode.com/problems/contains-duplicate-iii/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums and two integers k and t, return true if there are two distinct indices i and j in the array such that abs(nums[i] - nums[j]) <= t and abs(i - j) <= k."
+  },
+  {
+    "id": 221,
+    "title": "Maximal Square",
+    "leetcode_url": "https://leetcode.com/problems/maximal-square/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area."
+  },
+  {
+    "id": 222,
+    "title": "Count Complete Tree Nodes",
+    "leetcode_url": "https://leetcode.com/problems/count-complete-tree-nodes/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given the root of a complete binary tree, return the number of the nodes in the tree."
+  },
+  {
+    "id": 223,
+    "title": "Rectangle Area",
+    "leetcode_url": "https://leetcode.com/problems/rectangle-area/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given the coordinates of two rectilinear rectangles in a 2D plane, return the total area covered by the two rectangles."
+  },
+  {
+    "id": 224,
+    "title": "Basic Calculator",
+    "leetcode_url": "https://leetcode.com/problems/basic-calculator/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given a string s representing a valid expression, implement a basic calculator to evaluate it."
+  },
+  {
+    "id": 225,
+    "title": "Implement Stack using Queues",
+    "leetcode_url": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Implement a last-in-first-out (LIFO) stack using only two queues."
+  },
+  {
+    "id": 226,
+    "title": "Invert Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/invert-binary-tree/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, invert the tree, and return its root."
+  },
+  {
+    "id": 227,
+    "title": "Basic Calculator II",
+    "leetcode_url": "https://leetcode.com/problems/basic-calculator-ii/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given a string s which represents an expression, evaluate this expression and return its value."
+  },
+  {
+    "id": 228,
+    "title": "Summary Ranges",
+    "leetcode_url": "https://leetcode.com/problems/summary-ranges/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a sorted integer array nums without duplicates, return the summary of its ranges."
+  },
+  {
+    "id": 229,
+    "title": "Majority Element II",
+    "leetcode_url": "https://leetcode.com/problems/majority-element-ii/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times."
+  },
+  {
+    "id": 230,
+    "title": "Kth Smallest Element in a BST",
+    "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree."
+  },
+  {
+    "id": 231,
+    "title": "Power of Two",
+    "leetcode_url": "https://leetcode.com/problems/power-of-two/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an integer n, return true if it is a power of two. Otherwise, return false."
+  },
+  {
+    "id": 232,
+    "title": "Implement Queue using Stacks",
+    "leetcode_url": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Implement a first in first out (FIFO) queue using only two stacks."
+  },
+  {
+    "id": 233,
+    "title": "Number of Digit One",
+    "leetcode_url": "https://leetcode.com/problems/number-of-digit-one/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n."
+  },
+  {
+    "id": 234,
+    "title": "Palindrome Linked List",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-linked-list/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given the head of a singly linked list, return true if it is a palindrome."
+  },
+  {
+    "id": 235,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST."
+  },
+  {
+    "id": 236,
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree."
+  },
+  {
+    "id": 237,
+    "title": "Delete Node in a Linked List",
+    "leetcode_url": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list."
+  },
+  {
+    "id": 238,
+    "title": "Product of Array Except Self",
+    "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]."
+  },
+  {
+    "id": 239,
+    "title": "Sliding Window Maximum",
+    "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Hard",
+    "description": "Given an array nums and a window size k, return the maximum value in each sliding window as it moves from left to right."
+  },
+  {
+    "id": 240,
+    "title": "Search a 2D Matrix II",
+    "leetcode_url": "https://leetcode.com/problems/search-a-2d-matrix-ii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Write an efficient algorithm that searches for a value target in an m x n integer matrix."
+  },
+  {
+    "id": 241,
+    "title": "Different Ways to Add Parentheses",
+    "leetcode_url": "https://leetcode.com/problems/different-ways-to-add-parentheses/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given a string expression of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators."
+  },
+  {
+    "id": 242,
+    "title": "Valid Anagram",
+    "leetcode_url": "https://leetcode.com/problems/valid-anagram/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise."
+  },
+  {
+    "id": 243,
+    "title": "Shortest Word Distance",
+    "leetcode_url": "https://leetcode.com/problems/shortest-word-distance/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an array of strings words and two different strings word1 and word2, return the shortest distance between these two words in the list."
+  },
+  {
+    "id": 244,
+    "title": "Shortest Word Distance II",
+    "leetcode_url": "https://leetcode.com/problems/shortest-word-distance-ii/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Design a class that finds the shortest distance between any two words in a list of words."
+  },
+  {
+    "id": 245,
+    "title": "Shortest Word Distance III",
+    "leetcode_url": "https://leetcode.com/problems/shortest-word-distance-iii/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of strings words and two strings word1 and word2, return the shortest distance between these two words in the list, where the two words may be the same."
+  },
+  {
+    "id": 246,
+    "title": "Strobogrammatic Number",
+    "leetcode_url": "https://leetcode.com/problems/strobogrammatic-number/",
+    "companies": ["Google", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a string num, return true if the string is strobogrammatic."
+  },
+  {
+    "id": 247,
+    "title": "Strobogrammatic Number II",
+    "leetcode_url": "https://leetcode.com/problems/strobogrammatic-number-ii/",
+    "companies": ["Microsoft", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return all strobogrammatic numbers that are of length n."
+  },
+  {
+    "id": 248,
+    "title": "Strobogrammatic Number III",
+    "leetcode_url": "https://leetcode.com/problems/strobogrammatic-number-iii/",
+    "companies": ["Apple", "Google"],
+    "difficulty": "Hard",
+    "description": "Given two strings low and high, return the count of strobogrammatic numbers between low and high (inclusive)."
+  },
+  {
+    "id": 249,
+    "title": "Group Shifted Strings",
+    "leetcode_url": "https://leetcode.com/problems/group-shifted-strings/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a string array, group all strings that are shift-equivalent."
+  },
+  {
+    "id": 250,
+    "title": "Count Univalue Subtrees",
+    "leetcode_url": "https://leetcode.com/problems/count-univalue-subtrees/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given a binary tree, count the number of uni-value subtrees."
+  },
+  {
+    "id": 251,
+    "title": "Flatten 2D Vector",
+    "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Design an iterator to flatten a 2D vector."
+  },
+  {
+    "id": 252,
+    "title": "Meeting Rooms",
+    "leetcode_url": "https://leetcode.com/problems/meeting-rooms/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an array of meeting time intervals, determine if a person could attend all meetings."
+  },
+  {
+    "id": 253,
+    "title": "Meeting Rooms II",
+    "leetcode_url": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of meeting time intervals, find the minimum number of conference rooms required."
+  },
+  {
+    "id": 254,
+    "title": "Factor Combinations",
+    "leetcode_url": "https://leetcode.com/problems/factor-combinations/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return all possible combinations of its factors."
+  },
+  {
+    "id": 255,
+    "title": "Verify Preorder Sequence in Binary Search Tree",
+    "leetcode_url": "https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an array of numbers, verify whether it is the correct preorder traversal sequence of a binary search tree."
+  },
+  {
+    "id": 256,
+    "title": "Paint House",
+    "leetcode_url": "https://leetcode.com/problems/paint-house/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "There are a row of n houses, each house can be painted with one of the three colors. Find the minimum cost to paint all houses."
+  },
+  {
+    "id": 257,
+    "title": "Binary Tree Paths",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-paths/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given the root of a binary tree, return all root-to-leaf paths in any order."
+  },
+  {
+    "id": 258,
+    "title": "Add Digits",
+    "leetcode_url": "https://leetcode.com/problems/add-digits/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given an integer num, repeatedly add all its digits until the result has only one digit, and return it."
+  },
+  {
+    "id": 259,
+    "title": "3Sum Smaller",
+    "leetcode_url": "https://leetcode.com/problems/3sum-smaller/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy nums[i] + nums[j] + nums[k] < target."
+  },
+  {
+    "id": 260,
+    "title": "Single Number III",
+    "leetcode_url": "https://leetcode.com/problems/single-number-iii/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once."
+  },
+  {
+    "id": 261,
+    "title": "Graph Valid Tree",
+    "leetcode_url": "https://leetcode.com/problems/graph-valid-tree/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given n nodes labeled from 0 to n - 1 and a list of undirected edges, check whether these edges make up a valid tree."
+  },
+  {
+    "id": 262,
+    "title": "Trips and Users",
+    "leetcode_url": "https://leetcode.com/problems/trips-and-users/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Write a SQL query to find the cancellation rate of requests with unbanned users."
+  },
+  {
+    "id": 263,
+    "title": "Ugly Number",
+    "leetcode_url": "https://leetcode.com/problems/ugly-number/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "Write a program to check whether a given number is an ugly number."
+  },
+  {
+    "id": 264,
+    "title": "Ugly Number II",
+    "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Write a program to find the n-th ugly number."
+  },
+  {
+    "id": 265,
+    "title": "Paint House II",
+    "leetcode_url": "https://leetcode.com/problems/paint-house-ii/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Hard",
+    "description": "There are a row of n houses, each house can be painted with one of the k colors. Find the minimum cost to paint all houses."
+  },
+  {
+    "id": 266,
+    "title": "Palindrome Permutation",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-permutation/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given a string s, return true if a permutation of the string could form a palindrome."
+  },
+  {
+    "id": 267,
+    "title": "Palindrome Permutation II",
+    "leetcode_url": "https://leetcode.com/problems/palindrome-permutation-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a string s, return all the palindromic permutations (without duplicates) of it."
+  },
+  {
+    "id": 268,
+    "title": "Missing Number",
+    "leetcode_url": "https://leetcode.com/problems/missing-number/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array."
+  },
+  {
+    "id": 269,
+    "title": "Alien Dictionary",
+    "leetcode_url": "https://leetcode.com/problems/alien-dictionary/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Hard",
+    "description": "There is a new alien language that uses the English alphabet. Given a list of words in the alien language, return the order of the alphabet."
+  },
+  {
+    "id": 270,
+    "title": "Closest Binary Search Tree Value",
+    "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Easy",
+    "description": "Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target."
+  },
+  {
+    "id": 271,
+    "title": "Encode and Decode Strings",
+    "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Design an algorithm to encode a list of strings to a string and decode it back to the original list of strings."
+  },
+  {
+    "id": 272,
+    "title": "Closest Binary Search Tree Value II",
+    "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value-ii/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given a non-empty binary search tree and a target value, find the k values in the BST that are closest to the target."
+  },
+  {
+    "id": 273,
+    "title": "Integer to English Words",
+    "leetcode_url": "https://leetcode.com/problems/integer-to-english-words/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Convert a non-negative integer num to its English words representation."
+  },
+  {
+    "id": 274,
+    "title": "H-Index",
+    "leetcode_url": "https://leetcode.com/problems/h-index/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return the researcher's h-index."
+  },
+  {
+    "id": 275,
+    "title": "H-Index II",
+    "leetcode_url": "https://leetcode.com/problems/h-index-ii/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of integers citations sorted in ascending order, return the researcher's h-index."
+  },
+  {
+    "id": 276,
+    "title": "Paint Fence",
+    "leetcode_url": "https://leetcode.com/problems/paint-fence/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are painting a fence with n posts with k different colors. Return the number of ways you can paint the fence."
+  },
+  {
+    "id": 277,
+    "title": "Find the Celebrity",
+    "leetcode_url": "https://leetcode.com/problems/find-the-celebrity/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "Suppose you are at a party with n people labeled from 0 to n - 1, and among them, there may exist one celebrity. Find the celebrity."
+  },
+  {
+    "id": 278,
+    "title": "First Bad Version",
+    "leetcode_url": "https://leetcode.com/problems/first-bad-version/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "You are a product manager and currently leading a team to develop a new product. Given an API bool isBadVersion(version), return the first bad version."
+  },
+  {
+    "id": 279,
+    "title": "Perfect Squares",
+    "leetcode_url": "https://leetcode.com/problems/perfect-squares/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an integer n, return the least number of perfect square numbers that sum to n."
+  },
+  {
+    "id": 280,
+    "title": "Wiggle Sort",
+    "leetcode_url": "https://leetcode.com/problems/wiggle-sort/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given an unsorted array nums, reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]..."
+  },
+  {
+    "id": 281,
+    "title": "Zigzag Iterator",
+    "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given two vectors of integers v1 and v2, implement an iterator to return their elements alternately."
+  },
+  {
+    "id": 282,
+    "title": "Expression Add Operators",
+    "leetcode_url": "https://leetcode.com/problems/expression-add-operators/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given a string num that contains only digits and a target value, return all possibilities to add binary operators between the digits so they evaluate to the target value."
+  },
+  {
+    "id": 283,
+    "title": "Move Zeroes",
+    "leetcode_url": "https://leetcode.com/problems/move-zeroes/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Easy",
+    "description": "Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements."
+  },
+  {
+    "id": 284,
+    "title": "Peeking Iterator",
+    "leetcode_url": "https://leetcode.com/problems/peeking-iterator/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Design an iterator that supports the peek operation on an existing iterator in addition to the hasNext and the next operations."
+  },
+  {
+    "id": 285,
+    "title": "Inorder Successor in BST",
+    "leetcode_url": "https://leetcode.com/problems/inorder-successor-in-bst/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given a binary search tree and a node in it, find the in-order successor of that node in the BST."
+  },
+  {
+    "id": 286,
+    "title": "Walls and Gates",
+    "leetcode_url": "https://leetcode.com/problems/walls-and-gates/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "You are given a m x n 2D grid initialized with three possible values. Fill each empty room with the distance to its nearest gate."
+  },
+  {
+    "id": 287,
+    "title": "Find the Duplicate Number",
+    "leetcode_url": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive, return the only number that appears more than once."
+  },
+  {
+    "id": 288,
+    "title": "Unique Word Abbreviation",
+    "leetcode_url": "https://leetcode.com/problems/unique-word-abbreviation/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "An abbreviation of a word follows the form <first letter><number><last letter>. Implement a data structure to check if an abbreviation is unique."
+  },
+  {
+    "id": 289,
+    "title": "Game of Life",
+    "leetcode_url": "https://leetcode.com/problems/game-of-life/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Medium",
+    "description": "According to the Conway's Game of Life rules, update the board state in-place."
+  },
+  {
+    "id": 290,
+    "title": "Word Pattern",
+    "leetcode_url": "https://leetcode.com/problems/word-pattern/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "Given a pattern and a string s, find if s follows the same pattern."
+  },
+  {
+    "id": 291,
+    "title": "Word Pattern II",
+    "leetcode_url": "https://leetcode.com/problems/word-pattern-ii/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Given a pattern and a string s, return true if s matches the pattern."
+  },
+  {
+    "id": 292,
+    "title": "Nim Game",
+    "leetcode_url": "https://leetcode.com/problems/nim-game/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Easy",
+    "description": "You are playing a Nim Game with your friend. Determine if you can win the game given the number of stones n."
+  },
+  {
+    "id": 293,
+    "title": "Flip Game",
+    "leetcode_url": "https://leetcode.com/problems/flip-game/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Easy",
+    "description": "You are playing a Flip Game with a string that contains only '+' and '-'. Return all possible states after one valid move."
+  },
+  {
+    "id": 294,
+    "title": "Flip Game II",
+    "leetcode_url": "https://leetcode.com/problems/flip-game-ii/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "You are playing a Flip Game with a string that contains only '+' and '-'. Determine if the first player can win the game."
+  },
+  {
+    "id": 295,
+    "title": "Find Median from Data Stream",
+    "leetcode_url": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "companies": ["Google", "Meta"],
+    "difficulty": "Hard",
+    "description": "Design a data structure that supports adding numbers from a data stream and finding the median of all numbers added so far."
+  },
+  {
+    "id": 296,
+    "title": "Best Meeting Point",
+    "leetcode_url": "https://leetcode.com/problems/best-meeting-point/",
+    "companies": ["Apple", "Microsoft"],
+    "difficulty": "Hard",
+    "description": "Given an m x n grid where some cells contain a 1, find the point that minimizes the total Manhattan distance to all 1s."
+  },
+  {
+    "id": 297,
+    "title": "Serialize and Deserialize Binary Tree",
+    "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "companies": ["Meta", "Oracle"],
+    "difficulty": "Hard",
+    "description": "Design an algorithm to serialize and deserialize a binary tree."
+  },
+  {
+    "id": 298,
+    "title": "Binary Tree Longest Consecutive Sequence",
+    "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/",
+    "companies": ["Google", "Microsoft"],
+    "difficulty": "Medium",
+    "description": "Given a binary tree, find the length of the longest consecutive sequence path."
+  },
+  {
+    "id": 299,
+    "title": "Bulls and Cows",
+    "leetcode_url": "https://leetcode.com/problems/bulls-and-cows/",
+    "companies": ["Apple", "Meta"],
+    "difficulty": "Medium",
+    "description": "You are playing the Bulls and Cows game with your friend. Return the hint for the secret number and the guess."
+  },
+  {
+    "id": 300,
+    "title": "Longest Increasing Subsequence",
+    "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+    "companies": ["Microsoft", "Oracle"],
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence."
+  }
+]

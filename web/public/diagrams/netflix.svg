@@ -1,0 +1,239 @@
+<svg viewBox="0 0 1500 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1500" height="900" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="750" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Netflix Streaming Architecture</text>
+  
+  <!-- Client Devices -->
+  <g id="clients">
+    <text x="100" y="75" font-size="14" font-weight="bold" fill="#666">Client Devices</text>
+    
+    <rect x="50" y="90" width="100" height="50" rx="5" fill="#E50914" />
+    <text x="100" y="115" text-anchor="middle" fill="white" font-size="12">Smart TV</text>
+    <text x="100" y="130" text-anchor="middle" fill="white" font-size="10">Apps</text>
+    
+    <rect x="50" y="150" width="100" height="50" rx="5" fill="#E50914" />
+    <text x="100" y="175" text-anchor="middle" fill="white" font-size="12">Mobile</text>
+    <text x="100" y="190" text-anchor="middle" fill="white" font-size="10">iOS/Android</text>
+    
+    <rect x="50" y="210" width="100" height="50" rx="5" fill="#E50914" />
+    <text x="100" y="235" text-anchor="middle" fill="white" font-size="12">Web</text>
+    <text x="100" y="250" text-anchor="middle" fill="white" font-size="10">Browser</text>
+  </g>
+  
+  <!-- Open Connect CDN -->
+  <g id="cdn">
+    <text x="250" y="75" font-size="14" font-weight="bold" fill="#666">Open Connect CDN</text>
+    
+    <rect x="200" y="90" width="140" height="60" rx="5" fill="#B1060F" />
+    <text x="270" y="115" text-anchor="middle" fill="white" font-size="12">OCA Appliances</text>
+    <text x="270" y="135" text-anchor="middle" fill="white" font-size="10">(ISP Embedded)</text>
+    
+    <rect x="200" y="160" width="140" height="60" rx="5" fill="#B1060F" />
+    <text x="270" y="185" text-anchor="middle" fill="white" font-size="12">Fill Servers</text>
+    <text x="270" y="205" text-anchor="middle" fill="white" font-size="10">(Off-Peak Fill)</text>
+    
+    <rect x="200" y="230" width="140" height="60" rx="5" fill="#B1060F" />
+    <text x="270" y="255" text-anchor="middle" fill="white" font-size="12">Cache Control</text>
+    <text x="270" y="275" text-anchor="middle" fill="white" font-size="10">(Predictive)</text>
+  </g>
+  
+  <!-- AWS Region (Control Plane) -->
+  <g id="aws">
+    <text x="450" y="75" font-size="14" font-weight="bold" fill="#666">AWS Control Plane</text>
+    
+    <!-- API Gateway -->
+    <rect x="400" y="90" width="120" height="50" rx="5" fill="#FF9900" />
+    <text x="460" y="110" text-anchor="middle" fill="white" font-size="12">Zuul</text>
+    <text x="460" y="125" text-anchor="middle" fill="white" font-size="10">(API Gateway)</text>
+    
+    <!-- Service Discovery -->
+    <rect x="540" y="90" width="120" height="50" rx="5" fill="#146EB4" />
+    <text x="600" y="110" text-anchor="middle" fill="white" font-size="12">Eureka</text>
+    <text x="600" y="125" text-anchor="middle" fill="white" font-size="10">(Service Discovery)</text>
+    
+    <!-- Circuit Breaker -->
+    <rect x="680" y="90" width="120" height="50" rx="5" fill="#569A31" />
+    <text x="740" y="110" text-anchor="middle" fill="white" font-size="12">Hystrix</text>
+    <text x="740" y="125" text-anchor="middle" fill="white" font-size="10">(Circuit Breaker)</text>
+  </g>
+  
+  <!-- Microservices Layer -->
+  <g id="microservices">
+    <text x="450" y="170" font-size="14" font-weight="bold" fill="#666">Microservices</text>
+    
+    <rect x="400" y="190" width="110" height="50" rx="5" fill="#4B0082" />
+    <text x="455" y="210" text-anchor="middle" fill="white" font-size="11">Playback</text>
+    <text x="455" y="225" text-anchor="middle" fill="white" font-size="10">Service</text>
+    
+    <rect x="520" y="190" width="110" height="50" rx="5" fill="#6A0DAD" />
+    <text x="575" y="210" text-anchor="middle" fill="white" font-size="11">Recommendation</text>
+    <text x="575" y="225" text-anchor="middle" fill="white" font-size="10">Service</text>
+    
+    <rect x="640" y="190" width="110" height="50" rx="5" fill="#8B008B" />
+    <text x="695" y="210" text-anchor="middle" fill="white" font-size="11">User</text>
+    <text x="695" y="225" text-anchor="middle" fill="white" font-size="10">Service</text>
+    
+    <rect x="400" y="250" width="110" height="50" rx="5" fill="#9370DB" />
+    <text x="455" y="270" text-anchor="middle" fill="white" font-size="11">Viewing</text>
+    <text x="455" y="285" text-anchor="middle" fill="white" font-size="10">Service</text>
+    
+    <rect x="520" y="250" width="110" height="50" rx="5" fill="#9932CC" />
+    <text x="575" y="270" text-anchor="middle" fill="white" font-size="11">A/B Testing</text>
+    <text x="575" y="285" text-anchor="middle" fill="white" font-size="10">Service</text>
+    
+    <rect x="640" y="250" width="110" height="50" rx="5" fill="#BA55D3" />
+    <text x="695" y="270" text-anchor="middle" fill="white" font-size="11">Billing</text>
+    <text x="695" y="285" text-anchor="middle" fill="white" font-size="10">Service</text>
+  </g>
+  
+  <!-- Data Stores -->
+  <g id="datastores">
+    <text x="450" y="340" font-size="14" font-weight="bold" fill="#666">Data Layer</text>
+    
+    <!-- Cassandra -->
+    <rect x="400" y="360" width="130" height="60" rx="5" fill="#1287BD" />
+    <text x="465" y="385" text-anchor="middle" fill="white" font-size="12">Cassandra</text>
+    <text x="465" y="405" text-anchor="middle" fill="white" font-size="10">(User Data)</text>
+    
+    <!-- EVCache -->
+    <rect x="550" y="360" width="130" height="60" rx="5" fill="#FF6B6B" />
+    <text x="615" y="385" text-anchor="middle" fill="white" font-size="12">EVCache</text>
+    <text x="615" y="405" text-anchor="middle" fill="white" font-size="10">(Memcached)</text>
+    
+    <!-- S3 -->
+    <rect x="700" y="360" width="130" height="60" rx="5" fill="#569A31" />
+    <text x="765" y="385" text-anchor="middle" fill="white" font-size="12">S3</text>
+    <text x="765" y="405" text-anchor="middle" fill="white" font-size="10">(Video Files)</text>
+    
+    <!-- MySQL -->
+    <rect x="400" y="440" width="130" height="60" rx="5" fill="#00758F" />
+    <text x="465" y="465" text-anchor="middle" fill="white" font-size="12">MySQL</text>
+    <text x="465" y="485" text-anchor="middle" fill="white" font-size="10">(Billing/Account)</text>
+    
+    <!-- ElasticSearch -->
+    <rect x="550" y="440" width="130" height="60" rx="5" fill="#FEC514" />
+    <text x="615" y="465" text-anchor="middle" fill="black" font-size="12">ElasticSearch</text>
+    <text x="615" y="485" text-anchor="middle" fill="black" font-size="10">(Search/Logs)</text>
+    
+    <!-- Kafka -->
+    <rect x="700" y="440" width="130" height="60" rx="5" fill="#231F20" />
+    <text x="765" y="465" text-anchor="middle" fill="white" font-size="12">Kafka</text>
+    <text x="765" y="485" text-anchor="middle" fill="white" font-size="10">(Events)</text>
+  </g>
+  
+  <!-- Analytics Platform -->
+  <g id="analytics">
+    <text x="900" y="170" font-size="14" font-weight="bold" fill="#666">Analytics Platform</text>
+    
+    <rect x="880" y="190" width="120" height="50" rx="5" fill="#E25A1C" />
+    <text x="940" y="210" text-anchor="middle" fill="white" font-size="12">Spark</text>
+    <text x="940" y="225" text-anchor="middle" fill="white" font-size="10">(Batch)</text>
+    
+    <rect x="1020" y="190" width="120" height="50" rx="5" fill="#0E7C7A" />
+    <text x="1080" y="210" text-anchor="middle" fill="white" font-size="12">Flink</text>
+    <text x="1080" y="225" text-anchor="middle" fill="white" font-size="10">(Real-time)</text>
+    
+    <rect x="880" y="250" width="120" height="50" rx="5" fill="#336791" />
+    <text x="940" y="270" text-anchor="middle" fill="white" font-size="12">Presto</text>
+    <text x="940" y="285" text-anchor="middle" fill="white" font-size="10">(Query)</text>
+    
+    <rect x="1020" y="250" width="120" height="50" rx="5" fill="#FF6600" />
+    <text x="1080" y="270" text-anchor="middle" fill="white" font-size="12">Druid</text>
+    <text x="1080" y="285" text-anchor="middle" fill="white" font-size="10">(OLAP)</text>
+  </g>
+  
+  <!-- Chaos Engineering -->
+  <g id="chaos">
+    <text x="900" y="340" font-size="14" font-weight="bold" fill="#666">Chaos Engineering</text>
+    
+    <rect x="880" y="360" width="120" height="50" rx="5" fill="#8B0000" />
+    <text x="940" y="380" text-anchor="middle" fill="white" font-size="12">Chaos Monkey</text>
+    <text x="940" y="395" text-anchor="middle" fill="white" font-size="10">(Instance Killer)</text>
+    
+    <rect x="1020" y="360" width="120" height="50" rx="5" fill="#B22222" />
+    <text x="1080" y="380" text-anchor="middle" fill="white" font-size="12">Chaos Kong</text>
+    <text x="1080" y="395" text-anchor="middle" fill="white" font-size="10">(Region Failure)</text>
+    
+    <rect x="950" y="420" width="120" height="50" rx="5" fill="#DC143C" />
+    <text x="1010" y="440" text-anchor="middle" fill="white" font-size="12">FIT</text>
+    <text x="1010" y="455" text-anchor="middle" fill="white" font-size="10">(Failure Injection)</text>
+  </g>
+  
+  <!-- Container Platform -->
+  <rect x="1200" y="190" width="140" height="60" rx="5" fill="#2C3E50" />
+  <text x="1270" y="215" text-anchor="middle" fill="white" font-size="12">Titus</text>
+  <text x="1270" y="235" text-anchor="middle" fill="white" font-size="10">(Container Platform)</text>
+  
+  <!-- Encoding Pipeline -->
+  <g id="encoding">
+    <text x="1200" y="290" font-size="14" font-weight="bold" fill="#666">Encoding</text>
+    
+    <rect x="1180" y="310" width="140" height="50" rx="5" fill="#FF5722" />
+    <text x="1250" y="330" text-anchor="middle" fill="white" font-size="12">Encoding Pipeline</text>
+    <text x="1250" y="345" text-anchor="middle" fill="white" font-size="10">(Per-Title)</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Client to CDN -->
+  <line x1="150" y1="115" x2="200" y2="115" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="175" x2="200" y2="175" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="235" x2="200" y2="235" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- CDN to AWS -->
+  <line x1="340" y1="120" x2="400" y2="115" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  
+  <!-- API Gateway to Services -->
+  <line x1="460" y1="140" x2="455" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="460" y1="140" x2="575" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Services to Data -->
+  <line x1="455" y1="240" x2="465" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="575" y1="240" x2="615" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="695" y1="240" x2="765" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- To Analytics -->
+  <line x1="765" y1="500" x2="940" y2="250" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  
+  <!-- Key Metrics Box -->
+  <g id="metrics">
+    <rect x="50" y="550" width="400" height="120" rx="5" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+    <text x="60" y="570" font-size="14" font-weight="bold" fill="#333">Key Metrics:</text>
+    <text x="60" y="590" font-size="11" fill="#666">• 200M+ subscribers globally</text>
+    <text x="60" y="608" font-size="11" fill="#666">• 50M concurrent streams peak</text>
+    <text x="60" y="626" font-size="11" fill="#666">• 1000+ ISP locations with OCAs</text>
+    <text x="60" y="644" font-size="11" fill="#666">• 90% traffic served from ISP cache</text>
+    <text x="260" y="590" font-size="11" fill="#666">• 100+ microservices</text>
+    <text x="260" y="608" font-size="11" fill="#666">• 4PB content per region</text>
+    <text x="260" y="626" font-size="11" fill="#666">• 40+ encoding versions</text>
+    <text x="260" y="644" font-size="11" fill="#666">• 2 second start time</text>
+  </g>
+  
+  <!-- Architecture Patterns Box -->
+  <g id="patterns">
+    <rect x="500" y="550" width="450" height="120" rx="5" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+    <text x="510" y="570" font-size="14" font-weight="bold" fill="#333">Key Architecture Patterns:</text>
+    <text x="510" y="590" font-size="11" fill="#666">• Open Connect CDN for edge delivery</text>
+    <text x="510" y="608" font-size="11" fill="#666">• Microservices with circuit breakers</text>
+    <text x="510" y="626" font-size="11" fill="#666">• Pre-positioned content based on ML</text>
+    <text x="510" y="644" font-size="11" fill="#666">• Chaos engineering for resilience</text>
+    <text x="730" y="590" font-size="11" fill="#666">• Per-title encoding optimization</text>
+    <text x="730" y="608" font-size="11" fill="#666">• Multi-region active-active</text>
+    <text x="730" y="626" font-size="11" fill="#666">• Layered caching (EVCache)</text>
+    <text x="730" y="644" font-size="11" fill="#666">• Immutable infrastructure</text>
+  </g>
+  
+  <!-- Flow Annotations -->
+  <text x="50" y="720" font-size="12" font-weight="bold" fill="#333">Content Flow:</text>
+  <text x="50" y="740" font-size="11" fill="#666">1. Studio content → Encoding pipeline → Multiple formats/bitrates → S3 storage</text>
+  <text x="50" y="758" font-size="11" fill="#666">2. Predictive placement → Fill OCAs during off-peak → Cache popular content at ISPs</text>
+  <text x="50" y="776" font-size="11" fill="#666">3. Client request → Nearest OCA (90%) or AWS origin (10%) → Adaptive streaming</text>
+  <text x="50" y="794" font-size="11" fill="#666">4. Real-time events → Kafka → Analytics → ML models → Improved recommendations</text>
+</svg>
