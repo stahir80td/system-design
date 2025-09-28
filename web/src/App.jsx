@@ -24,7 +24,7 @@ export default function App() {
               color: '#cfe1ff',
               marginBottom: '16px'
             }}>
-              Tech Interview Prep
+              Tech Interview Prep Assistant
             </h1>
             <p style={{ 
               fontSize: '20px', 

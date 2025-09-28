@@ -2,13 +2,14 @@ package main
 
 import (
 	"bytes"
-	_ "embed" // Add this line
+	_ "embed"
 	"encoding/json"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
@@ -166,9 +167,6 @@ type Part struct {
 // GenerateContentRequest is the request body for the Gemini GenerateContent API.
 type GenerateContentRequest struct {
 	Contents []Content `json:"contents"`
-	// You can add generation config, safety settings here if needed
-	// GenerationConfig *GenerationConfig `json:"generationConfig,omitempty"`
-	// SafetySettings   []SafetySetting   `json:"safetySettings,omitempty"`
 }
 
 // GenerateContentResponse is the response body from the Gemini GenerateContent API.
@@ -183,9 +181,8 @@ type GenerateContentResponse struct {
 type Candidate struct {
 	Content       Content       `json:"content"`
 	FinishReason  string        `json:"finishReason"`
-	SafetyRatings []interface{} `json:"safetyRatings"` // Can be more specific if needed
+	SafetyRatings []interface{} `json:"safetyRatings"`
 	TokenCount    int           `json:"tokenCount"`
-	// You might find more fields depending on the model version
 }
 
 func buildPrompt(title, url, description, userPrompt, lang string) string {
@@ -220,11 +217,11 @@ Return JSON ONLY:
 }
 
 func callModelOrMock(title, url, description, userPrompt, lang string) (SolveResp, error) {
-	apiKey := os.Getenv("GEMINI_API_KEY") // Changed env var
-	model := os.Getenv("GEMINI_MODEL")    // Changed env var
+	apiKey := os.Getenv("GEMINI_API_KEY")
+	model := os.Getenv("GEMINI_MODEL")
 	if model == "" {
-		// Changed default model to the more specific version.
-		model = "gemini-1.0-pro"
+		// Use a valid Gemini model name
+		model = "gemini-pro-latest"
 	}
 	if apiKey == "" {
 		// Fallback mock for local dev
@@ -247,7 +244,7 @@ func callModelOrMock(title, url, description, userPrompt, lang string) (SolveRes
 
 	bodyBytes, _ := json.Marshal(reqBody)
 
-	// Gemini API endpoint format: https://generativelanguage.googleapis.com/v1beta/models/{model-id}:generateContent?key={API_KEY}
+	// Gemini API endpoint format
 	apiURL := fmt.Sprintf("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s", model, apiKey)
 
 	req, err := http.NewRequest(http.MethodPost, apiURL, bytes.NewReader(bodyBytes))
@@ -360,16 +357,54 @@ func main() {
 	}
 }
 
+// fileServer serves static files and handles client-side routing
+func fileServer(fs http.FileSystem) http.Handler {
+	fsh := http.FileServer(fs)
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// Try to serve the file
+		path := r.URL.Path
+		if path == "/" {
+			path = "/index.html"
+		}
+
+		// Check if file exists
+		f, err := fs.Open(filepath.Clean(path))
+		if err != nil {
+			// If file doesn't exist and it's not an API route, serve index.html (for SPA routing)
+			if !strings.HasPrefix(path, "/api/") {
+				r.URL.Path = "/index.html"
+			}
+		} else {
+			f.Close()
+		}
+
+		fsh.ServeHTTP(w, r)
+	})
+}
+
 func main() {
 	_ = godotenv.Load()
 	loadData()
+
+	// API routes
 	http.HandleFunc("/api/health", health)
 	http.HandleFunc("/api/problems", getProblems)
 	http.HandleFunc("/api/solve", solveHandler)
+
+	// Serve static files from the public directory (built React app)
+	staticDir := "./public"
+	if _, err := os.Stat(staticDir); err == nil {
+		fs := http.Dir(staticDir)
+		http.Handle("/", fileServer(fs))
+		log.Printf("Serving static files from %s", staticDir)
+	} else {
+		log.Printf("Warning: Static directory %s not found. Only API endpoints will be available.", staticDir)
+	}
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
-	log.Printf("server listening on :%s", port)
+	log.Printf("Server listening on :%s", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }

@@ -9,4 +9,18 @@ export default defineConfig({
       '/api': 'http://localhost:8080'
     }
   },
+  build: {
+    outDir: 'dist',
+    // Optional: helps with routing in production
+    assetsDir: 'assets',
+    sourcemap: false,
+    // Optional: helps reduce bundle size
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom']
+        }
+      }
+    }
+  }
 })

@@ -49,3 +49,6 @@ server/public/*
 !server/public/.gitkeep
 
 # Logs & PI
+# Built frontend
+public/
+!public/.gitkeep

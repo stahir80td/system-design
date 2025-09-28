@@ -26,7 +26,7 @@ const questionModules = {
   // E-commerce & Marketplace
   // 'amazon': () => import('../data/system-design/questions/amazon.js'),
    'uber': () => import('../data/system-design/questions/uber.js'),
-  // 'airbnb': () => import('../data/system-design/questions/airbnb.js'),
+  'airbnb': () => import('../data/system-design/questions/airbnb.js'),
   // 'ticketmaster': () => import('../data/system-design/questions/ticketmaster.js'),
   
   // Infrastructure & Tools

@@ -52,13 +52,13 @@ export const systemDesignQuestions = [
     difficulty: 'Medium',
     category: 'Social Media & Communication'
   },
-  {
-    id: 'reddit',
-    title: 'Design Reddit',
-    companies: ['Meta', 'Twitter', 'Google'],
-    difficulty: 'Medium',
-    category: 'Social Media & Communication'
-  },
+  // {
+  //   id: 'reddit',
+  //   title: 'Design Reddit',
+  //   companies: ['Meta', 'Twitter', 'Google'],
+  //   difficulty: 'Medium',
+  //   category: 'Social Media & Communication'
+  // },
   
   // Video & Streaming
   {
@@ -105,22 +105,22 @@ export const systemDesignQuestions = [
     difficulty: 'Medium',
     category: 'Storage & Files'
   },
-  {
-    id: 'google-photos',
-    title: 'Design Google Photos',
-    companies: ['Google', 'Apple', 'Amazon'],
-    difficulty: 'Medium',
-    category: 'Storage & Files'
-  },
+  // {
+  //   id: 'google-photos',
+  //   title: 'Design Google Photos',
+  //   companies: ['Google', 'Apple', 'Amazon'],
+  //   difficulty: 'Medium',
+  //   category: 'Storage & Files'
+  // },
   
   // E-commerce & Marketplace
-  {
-    id: 'amazon',
-    title: 'Design Amazon E-commerce',
-    companies: ['Amazon', 'Walmart', 'Alibaba'],
-    difficulty: 'Hard',
-    category: 'E-commerce & Marketplace'
-  },
+  // {
+  //   id: 'amazon',
+  //   title: 'Design Amazon E-commerce',
+  //   companies: ['Amazon', 'Walmart', 'Alibaba'],
+  //   difficulty: 'Hard',
+  //   category: 'E-commerce & Marketplace'
+  // },
   {
     id: 'uber',
     title: 'Design Uber/Lyft',
@@ -135,13 +135,13 @@ export const systemDesignQuestions = [
     difficulty: 'Medium',
     category: 'E-commerce & Marketplace'
   },
-  {
-    id: 'ticketmaster',
-    title: 'Design Ticketmaster',
-    companies: ['Ticketmaster', 'StubHub', 'Amazon'],
-    difficulty: 'Hard',
-    category: 'E-commerce & Marketplace'
-  },
+  // {
+  //   id: 'ticketmaster',
+  //   title: 'Design Ticketmaster',
+  //   companies: ['Ticketmaster', 'StubHub', 'Amazon'],
+  //   difficulty: 'Hard',
+  //   category: 'E-commerce & Marketplace'
+  // },
   
   // Infrastructure & Tools
   {
@@ -151,13 +151,13 @@ export const systemDesignQuestions = [
     difficulty: 'Easy',
     category: 'Infrastructure & Tools'
   },
-  {
-    id: 'pastebin',
-    title: 'Design Pastebin',
-    companies: ['Amazon', 'Microsoft', 'Google'],
-    difficulty: 'Easy',
-    category: 'Infrastructure & Tools'
-  },
+  // {
+  //   id: 'pastebin',
+  //   title: 'Design Pastebin',
+  //   companies: ['Amazon', 'Microsoft', 'Google'],
+  //   difficulty: 'Easy',
+  //   category: 'Infrastructure & Tools'
+  // },
   {
     id: 'rate-limiter',
     title: 'Design Rate Limiter',
@@ -165,20 +165,20 @@ export const systemDesignQuestions = [
     difficulty: 'Easy',
     category: 'Infrastructure & Tools'
   },
-  {
-    id: 'distributed-cache',
-    title: 'Design Distributed Cache',
-    companies: ['Redis', 'Amazon', 'Google'],
-    difficulty: 'Medium',
-    category: 'Infrastructure & Tools'
-  },
-  {
-    id: 'search-autocomplete',
-    title: 'Design Search Autocomplete',
-    companies: ['Google', 'Amazon', 'Microsoft'],
-    difficulty: 'Easy',
-    category: 'Infrastructure & Tools'
-  },
+  // {
+  //   id: 'distributed-cache',
+  //   title: 'Design Distributed Cache',
+  //   companies: ['Redis', 'Amazon', 'Google'],
+  //   difficulty: 'Medium',
+  //   category: 'Infrastructure & Tools'
+  // },
+  // {
+  //   id: 'search-autocomplete',
+  //   title: 'Design Search Autocomplete',
+  //   companies: ['Google', 'Amazon', 'Microsoft'],
+  //   difficulty: 'Easy',
+  //   category: 'Infrastructure & Tools'
+  // },
   {
     id: 'web-crawler',
     title: 'Design Web Crawler',
@@ -188,43 +188,43 @@ export const systemDesignQuestions = [
   },
   
   // Financial & Payments
-  {
-    id: 'payment-system',
-    title: 'Design Payment System (Stripe)',
-    companies: ['Stripe', 'PayPal', 'Square'],
-    difficulty: 'Medium',
-    category: 'Financial & Payments'
-  },
-  {
-    id: 'stock-trading',
-    title: 'Design Stock Trading System',
-    companies: ['Robinhood', 'Goldman Sachs', 'Morgan Stanley'],
-    difficulty: 'Medium',
-    category: 'Financial & Payments'
-  },
+  // {
+  //   id: 'payment-system',
+  //   title: 'Design Payment System (Stripe)',
+  //   companies: ['Stripe', 'PayPal', 'Square'],
+  //   difficulty: 'Medium',
+  //   category: 'Financial & Payments'
+  // },
+  // {
+  //   id: 'stock-trading',
+  //   title: 'Design Stock Trading System',
+  //   companies: ['Robinhood', 'Goldman Sachs', 'Morgan Stanley'],
+  //   difficulty: 'Medium',
+  //   category: 'Financial & Payments'
+  // },
   
   // Gaming & Real-time
-  {
-    id: 'multiplayer-game',
-    title: 'Design Online Multiplayer Game',
-    companies: ['Riot', 'Epic Games', 'Microsoft'],
-    difficulty: 'Hard',
-    category: 'Gaming & Real-time'
-  },
-  {
-    id: 'leaderboard',
-    title: 'Design Leaderboard System',
-    companies: ['Gaming Companies', 'Meta', 'Google'],
-    difficulty: 'Easy',
-    category: 'Gaming & Real-time'
-  },
-  {
-    id: 'notification-system',
-    title: 'Design Notification System',
-    companies: ['Apple', 'Google', 'Meta'],
-    difficulty: 'Medium',
-    category: 'Gaming & Real-time'
-  }
+  // {
+  //   id: 'multiplayer-game',
+  //   title: 'Design Online Multiplayer Game',
+  //   companies: ['Riot', 'Epic Games', 'Microsoft'],
+  //   difficulty: 'Hard',
+  //   category: 'Gaming & Real-time'
+  // },
+  // {
+  //   id: 'leaderboard',
+  //   title: 'Design Leaderboard System',
+  //   companies: ['Gaming Companies', 'Meta', 'Google'],
+  //   difficulty: 'Easy',
+  //   category: 'Gaming & Real-time'
+  // },
+  // {
+  //   id: 'notification-system',
+  //   title: 'Design Notification System',
+  //   companies: ['Apple', 'Google', 'Meta'],
+  //   difficulty: 'Medium',
+  //   category: 'Gaming & Real-time'
+  // }
 ]
 
 // Categories for filtering
