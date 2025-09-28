@@ -15,7 +15,7 @@ RUN cd web && npm run build
 # ------------------------------------------------------------
 # Stage 2: Build the Go backend
 # ------------------------------------------------------------
-FROM golang:1.21-alpine AS go-build
+FROM golang:1.22-alpine AS go-build
 WORKDIR /app
 
 # Install build dependencies
